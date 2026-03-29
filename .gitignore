@@ -1,23 +1,12 @@
-# Large data folders
+# Large data folders - exclude from git
+*.png
+*.jpg
+*.jpeg
 data/
 mambavision/data/
-training_VIT/V2/split_dataset_3_aug/
+training_VIT/*/split_dataset*/
 training_VIT/time-domain-ori/
 training_fft/
-
-# Generated results
-training_VIT/V2/vit_output_V3_aug/
-training_VIT/V2/*.json
-training_VIT/V2/*.png
-training_VIT/V2/*.log
-mambavision/results/
-mambavision/checkpoints/
-
-# Python cache
-__pycache__/
-*.pyc
-*.pyo
-
-# IDE
-.vscode/
-.idea/
+*.pth
+*.bin
+*.pt
