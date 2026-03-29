@@ -1,0 +1,649 @@
+{
+  "accuracy": 39.130434782608695,
+  "results": [
+    {
+      "image": "sine_1hz_1hz_10_absolute_original_first250.png",
+      "gt": "sine",
+      "pred": "square",
+      "is_correct": false,
+      "reasoning": "Result: C"
+    },
+    {
+      "image": "sine_100hz_100hz_4_absolute_reverse_first250.png",
+      "gt": "sine",
+      "pred": "sine",
+      "is_correct": true,
+      "reasoning": "Result: B"
+    },
+    {
+      "image": "sine_100hz_100hz_5_absolute_original_first250.png",
+      "gt": "sine",
+      "pred": "sine",
+      "is_correct": true,
+      "reasoning": "Result: B"
+    },
+    {
+      "image": "sine_1hz_1hz_3_absolute_reverse_first250.png",
+      "gt": "sine",
+      "pred": "sine",
+      "is_correct": true,
+      "reasoning": "Result: B"
+    },
+    {
+      "image": "sine_1hz_1hz_3_absolute_pool_size3_first250.png",
+      "gt": "sine",
+      "pred": "sine",
+      "is_correct": true,
+      "reasoning": "Result: B"
+    },
+    {
+      "image": "sine_900hz_900hz_7_absolute_original_first250.png",
+      "gt": "sine",
+      "pred": "square",
+      "is_correct": false,
+      "reasoning": "Result: C"
+    },
+    {
+      "image": "sine_100hz_100hz_10_absolute_timewarp_moderate_first250.png",
+      "gt": "sine",
+      "pred": "square",
+      "is_correct": false,
+      "reasoning": "Result: C"
+    },
+    {
+      "image": "sine_100hz_100hz_4_absolute_timewarp_strong_first250.png",
+      "gt": "sine",
+      "pred": "sine",
+      "is_correct": true,
+      "reasoning": "Result: B"
+    },
+    {
+      "image": "sine_100hz_100hz_8_absolute_pool_size2_first250.png",
+      "gt": "sine",
+      "pred": "sine",
+      "is_correct": true,
+      "reasoning": "Result: B"
+    },
+    {
+      "image": "sine_1hz_1hz_9_absolute_timewarp_mild_first250.png",
+      "gt": "sine",
+      "pred": "sine",
+      "is_correct": true,
+      "reasoning": "Result: B"
+    },
+    {
+      "image": "sine_900hz_900hz_3_absolute_reverse_first250.png",
+      "gt": "sine",
+      "pred": "sine",
+      "is_correct": true,
+      "reasoning": "Result: B"
+    },
+    {
+      "image": "sine_100hz_100hz_3_absolute_timewarp_mild_first250.png",
+      "gt": "sine",
+      "pred": "square",
+      "is_correct": false,
+      "reasoning": "Result: C"
+    },
+    {
+      "image": "sine_1hz_1hz_8_absolute_timewarp_strong_first250.png",
+      "gt": "sine",
+      "pred": "square",
+      "is_correct": false,
+      "reasoning": "Result: C"
+    },
+    {
+      "image": "sine_100hz_100hz_1_absolute_pool_size2_first250.png",
+      "gt": "sine",
+      "pred": "square",
+      "is_correct": false,
+      "reasoning": "Result: C"
+    },
+    {
+      "image": "sine_1hz_1hz_12_absolute_timewarp_mild_first250.png",
+      "gt": "sine",
+      "pred": "sine",
+      "is_correct": true,
+      "reasoning": "Result: B"
+    },
+    {
+      "image": "sine_1hz_1hz_11_absolute_timewarp_strong_first250.png",
+      "gt": "sine",
+      "pred": "square",
+      "is_correct": false,
+      "reasoning": "Result: C"
+    },
+    {
+      "image": "sine_900hz_900hz_9_absolute_reverse_first250.png",
+      "gt": "sine",
+      "pred": "noise",
+      "is_correct": false,
+      "reasoning": "Result: A"
+    },
+    {
+      "image": "sine_1hz_1hz_3_absolute_timewarp_strong_first250.png",
+      "gt": "sine",
+      "pred": "square",
+      "is_correct": false,
+      "reasoning": "Result: C"
+    },
+    {
+      "image": "sine_900hz_900hz_9_absolute_timewarp_strong_first250.png",
+      "gt": "sine",
+      "pred": "square",
+      "is_correct": false,
+      "reasoning": "Result: C"
+    },
+    {
+      "image": "sine_1hz_1hz_2_absolute_pool_size3_first250.png",
+      "gt": "sine",
+      "pred": "sine",
+      "is_correct": true,
+      "reasoning": "Result: B"
+    },
+    {
+      "image": "sine_100hz_100hz_8_absolute_timewarp_moderate_first250.png",
+      "gt": "sine",
+      "pred": "square",
+      "is_correct": false,
+      "reasoning": "Result: C"
+    },
+    {
+      "image": "sine_1hz_1hz_12_absolute_timewarp_moderate_first250.png",
+      "gt": "sine",
+      "pred": "sine",
+      "is_correct": true,
+      "reasoning": "Result: B"
+    },
+    {
+      "image": "sine_900hz_900hz_1_absolute_timewarp_strong_first250.png",
+      "gt": "sine",
+      "pred": "square",
+      "is_correct": false,
+      "reasoning": "Result: C"
+    },
+    {
+      "image": "sine_900hz_900hz_2_absolute_original_first250.png",
+      "gt": "sine",
+      "pred": "sine",
+      "is_correct": true,
+      "reasoning": "Result: B"
+    },
+    {
+      "image": "sine_900hz_900hz_1_absolute_timewarp_moderate_first250.png",
+      "gt": "sine",
+      "pred": "square",
+      "is_correct": false,
+      "reasoning": "Result: C"
+    },
+    {
+      "image": "sine_100hz_100hz_12_absolute_reverse_first250.png",
+      "gt": "sine",
+      "pred": "square",
+      "is_correct": false,
+      "reasoning": "Result: C"
+    },
+    {
+      "image": "sine_1hz_1hz_5_absolute_timewarp_mild_first250.png",
+      "gt": "sine",
+      "pred": "sine",
+      "is_correct": true,
+      "reasoning": "Result: B"
+    },
+    {
+      "image": "sine_1hz_absolute_pool_size3_first250.png",
+      "gt": "sine",
+      "pred": "square",
+      "is_correct": false,
+      "reasoning": "Result: C"
+    },
+    {
+      "image": "sine_1hz_1hz_1_absolute_timewarp_moderate_first250.png",
+      "gt": "sine",
+      "pred": "sine",
+      "is_correct": true,
+      "reasoning": "Result: B"
+    },
+    {
+      "image": "sine_1hx_absolute_pool_size2_first250.png",
+      "gt": "sine",
+      "pred": "square",
+      "is_correct": false,
+      "reasoning": "Result: C"
+    },
+    {
+      "image": "sine_100hz_100hz_1_absolute_timewarp_moderate_first250.png",
+      "gt": "sine",
+      "pred": "square",
+      "is_correct": false,
+      "reasoning": "Result: C"
+    },
+    {
+      "image": "sine_900hz_900hz_1_absolute_original_first250.png",
+      "gt": "sine",
+      "pred": "square",
+      "is_correct": false,
+      "reasoning": "Result: C"
+    },
+    {
+      "image": "sine_1hz_1hz_9_absolute_pool_size3_first250.png",
+      "gt": "sine",
+      "pred": "sine",
+      "is_correct": true,
+      "reasoning": "Result: B"
+    },
+    {
+      "image": "sine_1hx_absolute_original_first250.png",
+      "gt": "sine",
+      "pred": "sine",
+      "is_correct": true,
+      "reasoning": "Result: B"
+    },
+    {
+      "image": "sine_100hz_100hz_13_absolute_timewarp_moderate_first250.png",
+      "gt": "sine",
+      "pred": "sine",
+      "is_correct": true,
+      "reasoning": "Result: B"
+    },
+    {
+      "image": "sine_1hz_1hz_11_absolute_pool_size3_first250.png",
+      "gt": "sine",
+      "pred": "sine",
+      "is_correct": true,
+      "reasoning": "Result: B"
+    },
+    {
+      "image": "sine_100hz_100hz_2_absolute_pool_size2_first250.png",
+      "gt": "sine",
+      "pred": "square",
+      "is_correct": false,
+      "reasoning": "Result: C"
+    },
+    {
+      "image": "sine_900hz_900hz_12_absolute_original_first250.png",
+      "gt": "sine",
+      "pred": "sine",
+      "is_correct": true,
+      "reasoning": "Result: B"
+    },
+    {
+      "image": "sine_1hz_1hz_12_absolute_pool_size3_first250.png",
+      "gt": "sine",
+      "pred": "sine",
+      "is_correct": true,
+      "reasoning": "Result: B"
+    },
+    {
+      "image": "sine_900hz_900hz_1_absolute_reverse_first250.png",
+      "gt": "sine",
+      "pred": "square",
+      "is_correct": false,
+      "reasoning": "Result: C"
+    },
+    {
+      "image": "sine_100hz_100hz_8_absolute_timewarp_strong_first250.png",
+      "gt": "sine",
+      "pred": "sine",
+      "is_correct": true,
+      "reasoning": "Result: B"
+    },
+    {
+      "image": "sine_100hz_100hz_7_absolute_original_first250.png",
+      "gt": "sine",
+      "pred": "square",
+      "is_correct": false,
+      "reasoning": "Result: C"
+    },
+    {
+      "image": "sine_1hz_1hz_8_absolute_reverse_first250.png",
+      "gt": "sine",
+      "pred": "square",
+      "is_correct": false,
+      "reasoning": "Result: C"
+    },
+    {
+      "image": "sine_100hz_100hz_9_absolute_reverse_first250.png",
+      "gt": "sine",
+      "pred": "square",
+      "is_correct": false,
+      "reasoning": "Result: C"
+    },
+    {
+      "image": "sine_1hz_1hz_7_absolute_timewarp_strong_first250.png",
+      "gt": "sine",
+      "pred": "square",
+      "is_correct": false,
+      "reasoning": "Result: C"
+    },
+    {
+      "image": "sine_900hz_900hz_11_absolute_timewarp_strong_first250.png",
+      "gt": "sine",
+      "pred": "square",
+      "is_correct": false,
+      "reasoning": "Result: C"
+    },
+    {
+      "image": "sine_1hz_1hz_4_absolute_timewarp_mild_first250.png",
+      "gt": "sine",
+      "pred": "noise",
+      "is_correct": false,
+      "reasoning": "Result: A"
+    },
+    {
+      "image": "sine_100hz_100hz_4_absolute_timewarp_moderate_first250.png",
+      "gt": "sine",
+      "pred": "sine",
+      "is_correct": true,
+      "reasoning": "Result: B"
+    },
+    {
+      "image": "sine_100hz_100hz_12_absolute_timewarp_moderate_first250.png",
+      "gt": "sine",
+      "pred": "square",
+      "is_correct": false,
+      "reasoning": "Result: C"
+    },
+    {
+      "image": "sine_1hz_1hz_7_absolute_reverse_first250.png",
+      "gt": "sine",
+      "pred": "noise",
+      "is_correct": false,
+      "reasoning": "Result: A"
+    },
+    {
+      "image": "sine_100hz_100hz_6_absolute_timewarp_moderate_first250.png",
+      "gt": "sine",
+      "pred": "sine",
+      "is_correct": true,
+      "reasoning": "Result: B"
+    },
+    {
+      "image": "sine_100hz_100hz_12_absolute_timewarp_strong_first250.png",
+      "gt": "sine",
+      "pred": "noise",
+      "is_correct": false,
+      "reasoning": "Result: A"
+    },
+    {
+      "image": "sine_1hz_1hz_5_absolute_reverse_first250.png",
+      "gt": "sine",
+      "pred": "square",
+      "is_correct": false,
+      "reasoning": "Result: C"
+    },
+    {
+      "image": "sine_900hz_900hz_2_absolute_reverse_first250.png",
+      "gt": "sine",
+      "pred": "square",
+      "is_correct": false,
+      "reasoning": "Result: C"
+    },
+    {
+      "image": "sine_1hz_absolute_timewarp_moderate_first250.png",
+      "gt": "sine",
+      "pred": "sine",
+      "is_correct": true,
+      "reasoning": "Result: B"
+    },
+    {
+      "image": "sine_1hz_1hz_6_absolute_reverse_first250.png",
+      "gt": "sine",
+      "pred": "square",
+      "is_correct": false,
+      "reasoning": "Result: C"
+    },
+    {
+      "image": "sine_100hz_100hz_12_absolute_original_first250.png",
+      "gt": "sine",
+      "pred": "sine",
+      "is_correct": true,
+      "reasoning": "Result: B"
+    },
+    {
+      "image": "sine_900hz_900hz_10_absolute_timewarp_strong_first250.png",
+      "gt": "sine",
+      "pred": "square",
+      "is_correct": false,
+      "reasoning": "Result: C"
+    },
+    {
+      "image": "sine_100hz_100hz_11_absolute_timewarp_mild_first250.png",
+      "gt": "sine",
+      "pred": "square",
+      "is_correct": false,
+      "reasoning": "Result: C"
+    },
+    {
+      "image": "sine_1hz_1hz_5_absolute_timewarp_moderate_first250.png",
+      "gt": "sine",
+      "pred": "sine",
+      "is_correct": true,
+      "reasoning": "Result: B"
+    },
+    {
+      "image": "sine_100hz_100hz_13_absolute_timewarp_strong_first250.png",
+      "gt": "sine",
+      "pred": "square",
+      "is_correct": false,
+      "reasoning": "Result: C"
+    },
+    {
+      "image": "sine_900hz_900hz_8_absolute_timewarp_mild_first250.png",
+      "gt": "sine",
+      "pred": "square",
+      "is_correct": false,
+      "reasoning": "Result: C"
+    },
+    {
+      "image": "sine_100hz_100hz_2_absolute_timewarp_strong_first250.png",
+      "gt": "sine",
+      "pred": "square",
+      "is_correct": false,
+      "reasoning": "Result: C"
+    },
+    {
+      "image": "sine_1hz_1hz_7_absolute_pool_size2_first250.png",
+      "gt": "sine",
+      "pred": "sine",
+      "is_correct": true,
+      "reasoning": "Result: B"
+    },
+    {
+      "image": "sine_900hz_900hz_10_absolute_timewarp_moderate_first250.png",
+      "gt": "sine",
+      "pred": "square",
+      "is_correct": false,
+      "reasoning": "Result: C"
+    },
+    {
+      "image": "sine_100hz_absolute_timewarp_moderate_first250.png",
+      "gt": "sine",
+      "pred": "square",
+      "is_correct": false,
+      "reasoning": "Result: C\n\nThe description mentions a'square wave-like appearance','sharp, near-vertical lines','step function', and 'binary states'. Although it oscillates consistently, the key characteristic of a SQUARE wave is the presence of 'horizontal sections of stability' and 'binary states', which are not explicitly mentioned. However, the description does mention'sharp, near-vertical lines' and'step function', which are indicative of a SQUARE wave. The consistent density, regular spacing, and rapid changes in displacement also support this classification."
+    },
+    {
+      "image": "sine_1hz_1hz_10_absolute_pool_size2_first250.png",
+      "gt": "sine",
+      "pred": "noise",
+      "is_correct": false,
+      "reasoning": "Result: A"
+    },
+    {
+      "image": "sine_1hz_1hz_8_absolute_pool_size3_first250.png",
+      "gt": "sine",
+      "pred": "sine",
+      "is_correct": true,
+      "reasoning": "Result: B"
+    },
+    {
+      "image": "sine_1hz_1hz_1_absolute_pool_size3_first250.png",
+      "gt": "sine",
+      "pred": "noise",
+      "is_correct": false,
+      "reasoning": "Result: A"
+    },
+    {
+      "image": "sine_1hz_absolute_original_first250.png",
+      "gt": "sine",
+      "pred": "square",
+      "is_correct": false,
+      "reasoning": "Result: C"
+    },
+    {
+      "image": "sine_100hz_absolute_reverse_first250.png",
+      "gt": "sine",
+      "pred": "square",
+      "is_correct": false,
+      "reasoning": "Result: C"
+    },
+    {
+      "image": "sine_100hz_100hz_9_absolute_timewarp_strong_first250.png",
+      "gt": "sine",
+      "pred": "sine",
+      "is_correct": true,
+      "reasoning": "Result: B"
+    },
+    {
+      "image": "sine_100hz_100hz_11_absolute_reverse_first250.png",
+      "gt": "sine",
+      "pred": "sine",
+      "is_correct": true,
+      "reasoning": "Result: B"
+    },
+    {
+      "image": "sine_1hz_absolute_reverse_first250.png",
+      "gt": "sine",
+      "pred": "square",
+      "is_correct": false,
+      "reasoning": "Result: C"
+    },
+    {
+      "image": "sine_900hz_900hz_13_absolute_timewarp_mild_first250.png",
+      "gt": "sine",
+      "pred": "square",
+      "is_correct": false,
+      "reasoning": "Result: C"
+    },
+    {
+      "image": "sine_100hz_100hz_8_absolute_original_first250.png",
+      "gt": "sine",
+      "pred": "square",
+      "is_correct": false,
+      "reasoning": "Result: C"
+    },
+    {
+      "image": "sine_900hz_900hz_13_absolute_original_first250.png",
+      "gt": "sine",
+      "pred": "sine",
+      "is_correct": true,
+      "reasoning": "Result: B"
+    },
+    {
+      "image": "sine_100hz_100hz_10_absolute_timewarp_mild_first250.png",
+      "gt": "sine",
+      "pred": "square",
+      "is_correct": false,
+      "reasoning": "Result: C"
+    },
+    {
+      "image": "sine_900hz_900hz_2_absolute_timewarp_mild_first250.png",
+      "gt": "sine",
+      "pred": "square",
+      "is_correct": false,
+      "reasoning": "Result: C"
+    },
+    {
+      "image": "sine_1hz_1hz_2_absolute_original_first250.png",
+      "gt": "sine",
+      "pred": "square",
+      "is_correct": false,
+      "reasoning": "Result: C"
+    },
+    {
+      "image": "sine_1hz_1hz_6_absolute_timewarp_strong_first250.png",
+      "gt": "sine",
+      "pred": "square",
+      "is_correct": false,
+      "reasoning": "Result: C"
+    },
+    {
+      "image": "sine_100hz_100hz_7_absolute_timewarp_mild_first250.png",
+      "gt": "sine",
+      "pred": "noise",
+      "is_correct": false,
+      "reasoning": "Result: A"
+    },
+    {
+      "image": "sine_1hz_1hz_11_absolute_timewarp_moderate_first250.png",
+      "gt": "sine",
+      "pred": "noise",
+      "is_correct": false,
+      "reasoning": "Result: A"
+    },
+    {
+      "image": "sine_1hz_1hz_5_absolute_original_first250.png",
+      "gt": "sine",
+      "pred": "square",
+      "is_correct": false,
+      "reasoning": "Result: C"
+    },
+    {
+      "image": "sine_100hz_100hz_8_absolute_reverse_first250.png",
+      "gt": "sine",
+      "pred": "sine",
+      "is_correct": true,
+      "reasoning": "Result: B"
+    },
+    {
+      "image": "sine_100hz_100hz_9_absolute_timewarp_moderate_first250.png",
+      "gt": "sine",
+      "pred": "square",
+      "is_correct": false,
+      "reasoning": "Result: C"
+    },
+    {
+      "image": "sine_1hz_1hz_10_absolute_reverse_first250.png",
+      "gt": "sine",
+      "pred": "square",
+      "is_correct": false,
+      "reasoning": "Result: C"
+    },
+    {
+      "image": "sine_1hz_1hz_12_absolute_original_first250.png",
+      "gt": "sine",
+      "pred": "square",
+      "is_correct": false,
+      "reasoning": "Result: C"
+    },
+    {
+      "image": "sine_100hz_100hz_7_absolute_timewarp_moderate_first250.png",
+      "gt": "sine",
+      "pred": "sine",
+      "is_correct": true,
+      "reasoning": "Result: B"
+    },
+    {
+      "image": "sine_1hz_1hz_11_absolute_original_first250.png",
+      "gt": "sine",
+      "pred": "sine",
+      "is_correct": true,
+      "reasoning": "Result: B"
+    },
+    {
+      "image": "sine_1hz_absolute_timewarp_mild_first250.png",
+      "gt": "sine",
+      "pred": "sine",
+      "is_correct": true,
+      "reasoning": "Result: B"
+    },
+    {
+      "image": "sine_1hz_1hz_4_absolute_original_first250.png",
+      "gt": "sine",
+      "pred": "sine",
+      "is_correct": true,
+      "reasoning": "Result: B"
+    }
+  ]
+}

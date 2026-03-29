@@ -1,0 +1,257 @@
+{
+  "accuracy": 72.22222222222221,
+  "results": [
+    {
+      "image": "square_100hz_100hz_4_absolute_pool_size3_first250.png",
+      "gt": "square",
+      "pred": "square",
+      "is_correct": true,
+      "reasoning": "Result: C"
+    },
+    {
+      "image": "square_1hz_1hz_5_absolute_timewarp_mild_first250.png",
+      "gt": "square",
+      "pred": "square",
+      "is_correct": true,
+      "reasoning": "Result: C"
+    },
+    {
+      "image": "square_1hz_1hz_3_absolute_reverse_first250.png",
+      "gt": "square",
+      "pred": "square",
+      "is_correct": true,
+      "reasoning": "Result: C"
+    },
+    {
+      "image": "square_1000hz_1000hz_2_absolute_timewarp_moderate_first250.png",
+      "gt": "square",
+      "pred": "square",
+      "is_correct": true,
+      "reasoning": "Result: C"
+    },
+    {
+      "image": "square_600hz_600hz_1_absolute_pool_size3_first250.png",
+      "gt": "square",
+      "pred": "sine",
+      "is_correct": false,
+      "reasoning": "Result: B"
+    },
+    {
+      "image": "square_100hz_100hz_9_absolute_pool_size3_first250.png",
+      "gt": "square",
+      "pred": "square",
+      "is_correct": true,
+      "reasoning": "Result: C"
+    },
+    {
+      "image": "square_400hz_400hz_12_absolute_pool_size3_first250.png",
+      "gt": "square",
+      "pred": "square",
+      "is_correct": true,
+      "reasoning": "Result: C"
+    },
+    {
+      "image": "square_400hz_400hz_9_absolute_pool_size3_first250.png",
+      "gt": "square",
+      "pred": "square",
+      "is_correct": true,
+      "reasoning": "Result: C"
+    },
+    {
+      "image": "square_100hz_100hz_2_absolute_pool_size3_first250.png",
+      "gt": "square",
+      "pred": "square",
+      "is_correct": true,
+      "reasoning": "Result: C"
+    },
+    {
+      "image": "square_800hz_800hz_11_absolute_pool_size3_first250.png",
+      "gt": "square",
+      "pred": "sine",
+      "is_correct": false,
+      "reasoning": "Result: B"
+    },
+    {
+      "image": "square_1hz_1hz_7_absolute_pool_size2_first250.png",
+      "gt": "square",
+      "pred": "square",
+      "is_correct": true,
+      "reasoning": "Result: C"
+    },
+    {
+      "image": "square_300hz_300hz_11_absolute_pool_size3_first250.png",
+      "gt": "square",
+      "pred": "noise",
+      "is_correct": false,
+      "reasoning": "Result: A"
+    },
+    {
+      "image": "square_200hz_200hz_8_absolute_pool_size3_first250.png",
+      "gt": "square",
+      "pred": "square",
+      "is_correct": true,
+      "reasoning": "Result: C"
+    },
+    {
+      "image": "square_500hz_absolute_pool_size3_first250.png",
+      "gt": "square",
+      "pred": "square",
+      "is_correct": true,
+      "reasoning": "Result: C"
+    },
+    {
+      "image": "square_800hz_absolute_pool_size3_first250.png",
+      "gt": "square",
+      "pred": "square",
+      "is_correct": true,
+      "reasoning": "Result: C"
+    },
+    {
+      "image": "square_500hz_500hz_1_absolute_pool_size3_first250.png",
+      "gt": "square",
+      "pred": "square",
+      "is_correct": true,
+      "reasoning": "Result: C"
+    },
+    {
+      "image": "square_200hz_200hz_1_absolute_pool_size3_first250.png",
+      "gt": "square",
+      "pred": "square",
+      "is_correct": true,
+      "reasoning": "Result: C"
+    },
+    {
+      "image": "square_400hz_400hz_10_absolute_pool_size3_first250.png",
+      "gt": "square",
+      "pred": "square",
+      "is_correct": true,
+      "reasoning": "Result: C"
+    },
+    {
+      "image": "square_800hz_800hz_2_absolute_pool_size3_first250.png",
+      "gt": "square",
+      "pred": "square",
+      "is_correct": true,
+      "reasoning": "Result: C"
+    },
+    {
+      "image": "square_500hz_500hz_10_absolute_pool_size3_first250.png",
+      "gt": "square",
+      "pred": "sine",
+      "is_correct": false,
+      "reasoning": "Result: B"
+    },
+    {
+      "image": "square_600hz_600hz_9_absolute_pool_size3_first250.png",
+      "gt": "square",
+      "pred": "square",
+      "is_correct": true,
+      "reasoning": "Result: C"
+    },
+    {
+      "image": "square_600hz_600hz_3_absolute_pool_size3_first250.png",
+      "gt": "square",
+      "pred": "sine",
+      "is_correct": false,
+      "reasoning": "Result: B"
+    },
+    {
+      "image": "square_900hz_900hz_1_absolute_pool_size3_first250.png",
+      "gt": "square",
+      "pred": "square",
+      "is_correct": true,
+      "reasoning": "Result: C"
+    },
+    {
+      "image": "square_400hz_absolute_pool_size3_first250.png",
+      "gt": "square",
+      "pred": "sine",
+      "is_correct": false,
+      "reasoning": "Result: B"
+    },
+    {
+      "image": "square_1hz_1hz_11_absolute_pool_size3_first250.png",
+      "gt": "square",
+      "pred": "square",
+      "is_correct": true,
+      "reasoning": "Result: C"
+    },
+    {
+      "image": "square_600hz_600hz_8_absolute_pool_size3_first250.png",
+      "gt": "square",
+      "pred": "square",
+      "is_correct": true,
+      "reasoning": "Result: C"
+    },
+    {
+      "image": "square_800hz_800hz_5_absolute_pool_size3_first250.png",
+      "gt": "square",
+      "pred": "sine",
+      "is_correct": false,
+      "reasoning": "Result: B"
+    },
+    {
+      "image": "square_400hz_400hz_4_absolute_pool_size3_first250.png",
+      "gt": "square",
+      "pred": "sine",
+      "is_correct": false,
+      "reasoning": "Result: B"
+    },
+    {
+      "image": "square_600hz_600hz_5_absolute_pool_size3_first250.png",
+      "gt": "square",
+      "pred": "square",
+      "is_correct": true,
+      "reasoning": "Result: C"
+    },
+    {
+      "image": "square_500hz_500hz_4_absolute_pool_size3_first250.png",
+      "gt": "square",
+      "pred": "square",
+      "is_correct": true,
+      "reasoning": "Result: C\n\nThe description mentions'repetitive pattern of high and low displacement values', 'oscillations', 'binary states', and 'horizontal sections of stability'. Although the density of repetitions is not uniform, the signal still exhibits a'repetitive pattern' and 'binary states' with distinct displacement levels, which aligns with the characteristics of a SQUARE wave. The'sharp, almost vertical' transitions also support this classification, as SQUARE waves typically have abrupt changes in displacement."
+    },
+    {
+      "image": "square_400hz_400hz_13_absolute_pool_size3_first250.png",
+      "gt": "square",
+      "pred": "square",
+      "is_correct": true,
+      "reasoning": "Result: C"
+    },
+    {
+      "image": "square_1hz_1hz_4_absolute_original_first250.png",
+      "gt": "square",
+      "pred": "square",
+      "is_correct": true,
+      "reasoning": "Result: C"
+    },
+    {
+      "image": "square_300hz_300hz_2_absolute_pool_size3_first250.png",
+      "gt": "square",
+      "pred": "sine",
+      "is_correct": false,
+      "reasoning": "Result: B"
+    },
+    {
+      "image": "square_600hz_600hz_6_absolute_pool_size3_first250.png",
+      "gt": "square",
+      "pred": "square",
+      "is_correct": true,
+      "reasoning": "Result: C"
+    },
+    {
+      "image": "square_600hz_600hz_1_absolute_pool_size2_first250.png",
+      "gt": "square",
+      "pred": "noise",
+      "is_correct": false,
+      "reasoning": "Result: A"
+    },
+    {
+      "image": "square_800hz_800hz_1_absolute_pool_size3_first250.png",
+      "gt": "square",
+      "pred": "square",
+      "is_correct": true,
+      "reasoning": "Result: C"
+    }
+  ]
+}

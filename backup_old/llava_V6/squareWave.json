@@ -1,0 +1,614 @@
+[
+  {
+    "image": "square_100Hz_100Hz_4_absolute_pool_size3_first250.png",
+    "conversation": [
+      {
+        "question": "Describe the repetition and density of the signal across the timeline.",
+        "answer": "<s> The signal exhibits a repetitive pattern of sharp, rapid drops followed by a relatively longer period of stability. The density of these drops is not uniform across the timeline. The signal starts with a series of rapid drops, followed by a period of stability. After a while, the signal resumes the pattern of rapid drops, but with a slightly different spacing and duration. The density of the drops increases slightly towards the end of the timeline. The signal is not perfectly periodic, as the spacing between the drops varies."
+      },
+      {
+        "question": "Identify the shape of the most prominent 'edges' or 'transitions'.",
+        "answer": "<s> The most prominent 'edges' or 'transitions' are characterized by near-instantaneous, vertical drops followed by a horizontal period of stability. The transitions are very sharp and appear almost vertical, indicating a rapid change in displacement. The horizontal sections between the drops are relatively flat, suggesting a stable state before the next drop."
+      },
+      {
+        "question": "State the vertical range (min/max) and the polarity (positive/negative) of the displacement.",
+        "answer": "<s>  The vertical range spans from a minimum of approximately -80 nm to a maximum of approximately -40 nm. The polarity of the displacement is entirely negative, as all values are below zero."
+      }
+    ]
+  },
+  {
+    "image": "square_1Hz_1Hz_5_absolute_timewarp_mild_first250.png",
+    "conversation": [
+      {
+        "question": "Describe the repetition and density of the signal across the timeline.",
+        "answer": "<s> The signal exhibits a highly repetitive pattern across the timeline. The signal is characterized by a series of sharp, near-vertical transitions between two distinct displacement levels. The density of these transitions is relatively consistent throughout the displayed timeframe, indicating a relatively constant frequency or periodicity. The signal is not a sine wave, but rather a square wave or a pulse wave."
+      },
+      {
+        "question": "Identify the shape of the most prominent 'edges' or 'transitions'.",
+        "answer": "<s> The most prominent 'edges' or 'transitions' are characterized by near-vertical lines. These transitions are very abrupt, creating a square wave or pulse wave appearance. The signal does not exhibit gradual slopes or curves, but rather rapid shifts between two distinct displacement levels."
+      },
+      {
+        "question": "State the vertical range (min/max) and the polarity (positive/negative) of the displacement.",
+        "answer": "<s>  The vertical range of the displacement spans from approximately -40 nm to -20 nm. The polarity of the displacement is entirely negative, as all displacement values are below zero."
+      }
+    ]
+  },
+  {
+    "image": "square_1Hz_1Hz_3_absolute_reverse_first250.png",
+    "conversation": [
+      {
+        "question": "Describe the repetition and density of the signal across the timeline.",
+        "answer": "<s> The signal exhibits a repetitive pattern of square waves. The density of the signal is relatively consistent across the timeline, with a regular spacing of the square wave peaks. However, the amplitude of the square waves varies. Some peaks are higher than others, indicating a non-uniform displacement. The signal is not perfectly periodic, as there are variations in the amplitude of the square waves."
+      },
+      {
+        "question": "Identify the shape of the most prominent 'edges' or 'transitions'.",
+        "answer": "<s> The most prominent 'edges' or 'transitions' are characterized by near-vertical lines. The transitions between the flat portions of the square wave and the peaks are very steep, creating a sharp, almost instantaneous change in displacement. This is a characteristic of a square wave, where the transitions are abrupt."
+      },
+      {
+        "question": "State the vertical range (min/max) and the polarity (positive/negative) of the displacement.",
+        "answer": "<s>  The vertical range of the displacement spans from approximately 2770 nm to 3070 nm. The polarity of the displacement is entirely positive, as all values are above zero."
+      }
+    ]
+  },
+  {
+    "image": "square_1000Hz_1000Hz_2_absolute_timewarp_moderate_first250.png",
+    "conversation": [
+      {
+        "question": "Describe the repetition and density of the signal across the timeline.",
+        "answer": "<s> The signal exhibits a repetitive pattern of sharp, rapid transitions between two distinct displacement levels. The density of these transitions is relatively consistent across the timeline, with a few exceptions. There are regions where the signal remains at a constant level for a longer duration, and some areas where the signal oscillates between two levels with a lower frequency. The signal is not perfectly periodic, but the underlying pattern is clear."
+      },
+      {
+        "question": "Identify the shape of the most prominent 'edges' or 'transitions'.",
+        "answer": "<s> The most prominent 'edges' or 'transitions' are characterized by near-instantaneous, vertical jumps between the two displacement levels. The transitions are very sharp and appear almost vertical, creating a step-like shape. There are some regions where the transitions are slightly more gradual, but the overall shape remains the same."
+      },
+      {
+        "question": "State the vertical range (min/max) and the polarity (positive/negative) of the displacement.",
+        "answer": "<s> The vertical range of the displacement spans from approximately -100 nm to -70 nm. The polarity of the displacement is entirely negative, as all displacement values are below zero."
+      }
+    ]
+  },
+  {
+    "image": "square_600Hz_600Hz_1_absolute_pool_size3_first250.png",
+    "conversation": [
+      {
+        "question": "Describe the repetition and density of the signal across the timeline.",
+        "answer": "<s> The signal exhibits a repetitive pattern across the timeline. The repetition is consistent, with a regular spacing of peaks and troughs. The density of the signal is moderate, with approximately 12-13 cycles within the 250 ms timeframe. The signal's frequency appears to be approximately 100 Hz, as suggested by the title."
+      },
+      {
+        "question": "Identify the shape of the most prominent 'edges' or 'transitions'.",
+        "answer": "<s> The most prominent 'edges' or 'transitions' are characterized by sharp, near-vertical ascents and descents. The signal rapidly rises and falls between its minimum and maximum displacement values. The transitions are not perfectly smooth, indicating a more abrupt change in displacement."
+      },
+      {
+        "question": "State the vertical range (min/max) and the polarity (positive/negative) of the displacement.",
+        "answer": "<s>  The vertical range spans from approximately -400 nm to -250 nm. The polarity of the displacement is entirely negative, as all displacement values are below zero."
+      }
+    ]
+  },
+  {
+    "image": "square_100Hz_100Hz_9_absolute_pool_size3_first250.png",
+    "conversation": [
+      {
+        "question": "Describe the repetition and density of the signal across the timeline.",
+        "answer": "<s> The signal exhibits a repetitive pattern of sharp, near-vertical transitions. The density of these transitions is relatively consistent across the timeline, indicating a periodic signal. The signal is not perfectly periodic, as there are some variations in the duration of the high and low states. The signal appears to be a square wave, which is a type of periodic signal with a constant frequency and amplitude."
+      },
+      {
+        "question": "Identify the shape of the most prominent 'edges' or 'transitions'.",
+        "answer": "<s> The most prominent edges or transitions are characterized by near-vertical lines. These transitions are very abrupt, creating a square wave-like appearance. The signal transitions between the high and low states almost instantaneously, creating a sharp, step-like shape."
+      },
+      {
+        "question": "State the vertical range (min/max) and the polarity (positive/negative) of the displacement.",
+        "answer": "<s>  The vertical range of the displacement spans from approximately -80 nm to -50 nm. The polarity of the displacement is entirely negative, as all displacement values are below zero."
+      }
+    ]
+  },
+  {
+    "image": "square_400Hz_400Hz_12_absolute_pool_size3_first250.png",
+    "conversation": [
+      {
+        "question": "Describe the repetition and density of the signal across the timeline.",
+        "answer": "<s> The signal exhibits a highly repetitive pattern across the timeline. The density of the signal is consistent, with a regular spacing of peaks and troughs. The frequency appears to be relatively constant throughout the displayed timeframe, suggesting a stable signal. The signal is not a perfect square wave, as the peaks and troughs are not perfectly symmetrical. The signal is a distorted square wave, with a slight variation in the shape of the peaks and troughs."
+      },
+      {
+        "question": "Identify the shape of the most prominent 'edges' or 'transitions'.",
+        "answer": "<s> The most prominent 'edges' or 'transitions' are characterized by sharp, near-vertical ascents and descents. The signal rapidly transitions between the minimum and maximum displacement values. The edges are not perfectly sharp, but they are close to it. The signal is not a perfect square wave, as the peaks and troughs are not perfectly symmetrical. The signal is a distorted square wave, with a slight variation in the shape of the peaks and troughs."
+      },
+      {
+        "question": "State the vertical range (min/max) and the polarity (positive/negative) of the displacement.",
+        "answer": "<s>  The vertical range of the displacement is approximately from 280 nm to 320 nm. The polarity of the displacement is entirely positive, as all displacement values are above zero."
+      }
+    ]
+  },
+  {
+    "image": "square_400Hz_400Hz_9_absolute_pool_size3_first250.png",
+    "conversation": [
+      {
+        "question": "Describe the repetition and density of the signal across the timeline.",
+        "answer": "<s> The signal exhibits a repeating pattern of sharp, near-vertical transitions. The density of these transitions is relatively consistent across the timeline, with a few variations in spacing. The signal is not perfectly periodic, as there are some gaps between the transitions. The density of the signal is not uniform; some regions have more frequent transitions than others. The signal appears to be a timewarp of a square wave, with the timewarp being applied to the rising edge of the square wave."
+      },
+      {
+        "question": "Identify the shape of the most prominent 'edges' or 'transitions'.",
+        "answer": "<s> The most prominent 'edges' or 'transitions' are characterized by near-vertical lines. These transitions are very sharp, almost instantaneous, creating a step-like appearance. The signal transitions are not smooth curves; they are abrupt, almost square-like in shape. The transitions are not perfectly vertical, but they are close. The signal is not a sine wave, but rather a square wave with timewarp applied to the rising edge."
+      },
+      {
+        "question": "State the vertical range (min/max) and the polarity (positive/negative) of the displacement.",
+        "answer": "<s>  The vertical range of the displacement spans from approximately -500 nm to -300 nm. The polarity of the displacement is entirely negative, as all displacement values are below zero."
+      }
+    ]
+  },
+  {
+    "image": "square_100Hz_100Hz_2_absolute_pool_size3_first250.png",
+    "conversation": [
+      {
+        "question": "Describe the repetition and density of the signal across the timeline.",
+        "answer": "<s> The signal exhibits a repetitive pattern of square wave pulses. The density of the signal is relatively consistent across the timeline, with a regular spacing between the pulses. The graph shows a total of 250 ms, and the signal is present for the entire duration. The frequency of the pulses appears to be constant, although the amplitude varies. The signal is not a sine wave, but rather a square wave, which means the signal changes abruptly between two discrete levels."
+      },
+      {
+        "question": "Identify the shape of the most prominent 'edges' or 'transitions'.",
+        "answer": "<s> The most prominent 'edges' or 'transitions' are characterized by near-instantaneous vertical jumps. The signal transitions between the two levels of the square wave very quickly, creating a sharp, near-vertical edge. This is typical of a square wave, where the signal switches between two states without any gradual slope. The transitions are not smooth curves, but rather abrupt changes in displacement."
+      },
+      {
+        "question": "State the vertical range (min/max) and the polarity (positive/negative) of the displacement.",
+        "answer": "<s>  The vertical range of the displacement is approximately from 280 nm to 320 nm. The polarity of the displacement is entirely positive, as all values are above zero. The signal does not dip below the zero displacement line."
+      }
+    ]
+  },
+  {
+    "image": "square_800Hz_800Hz_11_absolute_pool_size3_first250.png",
+    "conversation": [
+      {
+        "question": "Describe the repetition and density of the signal across the timeline.",
+        "answer": "<s> The signal exhibits a clear repetitive pattern across the timeline. The density of the signal is relatively consistent, with a regular spacing of the peaks and troughs. There are approximately 15-20 cycles within the 250 ms timeframe, indicating a frequency of around 10-12 Hz. The signal appears to be a periodic waveform, with a relatively constant period."
+      },
+      {
+        "question": "Identify the shape of the most prominent 'edges' or 'transitions'.",
+        "answer": "<s> The most prominent 'edges' or 'transitions' are characterized by sharp, near-vertical ascents and descents. The signal rapidly rises and falls between the minimum and maximum displacement values. The transitions are not perfectly smooth, but rather exhibit a stepped or stair-like appearance."
+      },
+      {
+        "question": "State the vertical range (min/max) and the polarity (positive/negative) of the displacement.",
+        "answer": "<s>  The vertical range of the displacement spans from approximately -120 nm to -80 nm. The polarity of the displacement is entirely negative, as all displacement values are below zero."
+      }
+    ]
+  },
+  {
+    "image": "square_1Hz_1Hz_7_absolute_pool_size2_first250.png",
+    "conversation": [
+      {
+        "question": "Describe the repetition and density of the signal across the timeline.",
+        "answer": "<s> The signal exhibits a repetitive pattern of sharp, near-vertical spikes. The density of these spikes is relatively consistent across the timeline, with a few variations in the spacing between them. The signal appears to be a square wave, which is characterized by these repeating patterns of high and low displacement values. The title suggests the graph represents a 250Hz square wave, which aligns with the observed frequency of the spikes."
+      },
+      {
+        "question": "Identify the shape of the most prominent 'edges' or 'transitions'.",
+        "answer": "<s> The most prominent 'edges' or 'transitions' are characterized by near-vertical lines. These transitions are very steep, indicating rapid changes in displacement. The signal transitions between the high and low states of the square wave very quickly, creating a sharp, almost instantaneous change in displacement."
+      },
+      {
+        "question": "State the vertical range (min/max) and the polarity (positive/negative) of the displacement.",
+        "answer": "<s>  The vertical range of the displacement spans from a minimum of approximately 2770 nm to a maximum of approximately 3070 nm. The polarity of the displacement is entirely positive, as all values are above zero."
+      }
+    ]
+  },
+  {
+    "image": "square_300Hz_300Hz_11_absolute_pool_size3_first250.png",
+    "conversation": [
+      {
+        "question": "Describe the repetition and density of the signal across the timeline.",
+        "answer": "<s> The signal exhibits a repetitive pattern of sharp, rapid drops followed by a period of relative stability. The density of these drops is relatively consistent across the timeline, with a few exceptions. There are sections where the signal remains at a constant level for a longer duration, and some areas where the drops are more frequent. The signal is not perfectly periodic, as the duration of the drops and the stability periods vary."
+      },
+      {
+        "question": "Identify the shape of the most prominent 'edges' or 'transitions'.",
+        "answer": "<s> The most prominent 'edges' or 'transitions' are characterized by very sharp, almost vertical lines. These indicate rapid changes in displacement. The signal transitions from the stable state to the drop, and vice versa, are very abrupt, creating a sawtooth-like appearance. The signal does not have a gradual slope, but rather a near-instantaneous change in displacement."
+      },
+      {
+        "question": "State the vertical range (min/max) and the polarity (positive/negative) of the displacement.",
+        "answer": "<s>  The vertical range of the displacement spans from approximately -75 nm to -45 nm. The polarity is entirely negative, as all displacement values are below zero."
+      }
+    ]
+  },
+  {
+    "image": "square_200Hz_200Hz_8_absolute_pool_size3_first250.png",
+    "conversation": [
+      {
+        "question": "Describe the repetition and density of the signal across the timeline.",
+        "answer": "<s> The signal exhibits a highly repetitive pattern across the timeline. The signal is characterized by a series of sharp, rapid transitions between two distinct displacement levels. The density of these transitions is consistent throughout the displayed timeframe, indicating a constant frequency of state changes. The signal is not a sine wave, but rather a square wave with a high duty cycle."
+      },
+      {
+        "question": "Identify the shape of the most prominent 'edges' or 'transitions'.",
+        "answer": "<s> The most prominent 'edges' or 'transitions' are very sharp and nearly vertical. These transitions are almost instantaneous, creating a square wave-like appearance. The transitions are not smooth curves, but rather abrupt changes in displacement. The signal does not exhibit any significant rounding or sloping at the corners of the transitions."
+      },
+      {
+        "question": "State the vertical range (min/max) and the polarity (positive/negative) of the displacement.",
+        "answer": "<s>  The vertical range of the displacement spans from approximately 275 nm to 307 nm. The polarity of the displacement is entirely positive, as all displacement values are above zero."
+      }
+    ]
+  },
+  {
+    "image": "square_500Hz_absolute_pool_size3_first250.png",
+    "conversation": [
+      {
+        "question": "Describe the repetition and density of the signal across the timeline.",
+        "answer": "<s> The signal exhibits a highly repetitive pattern across the timeline. The signal oscillates between two distinct displacement levels, with a relatively consistent density of transitions between these levels. The repetition rate appears relatively constant, suggesting a stable frequency. The graph shows a total of 17 full cycles within the 250 ms timeframe, indicating a frequency of approximately 13.3 Hz (1/17 cycles per second)."
+      },
+      {
+        "question": "Identify the shape of the most prominent 'edges' or 'transitions'.",
+        "answer": "<s> The most prominent 'edges' or 'transitions' are characterized by near-instantaneous, vertical jumps between the two displacement levels. The transitions appear as sharp, step-like changes, rather than gradual slopes. This suggests a square wave-like behavior."
+      },
+      {
+        "question": "State the vertical range (min/max) and the polarity (positive/negative) of the displacement.",
+        "answer": "<s>  The vertical range spans from a minimum of approximately 3070 nm to a maximum of approximately 3100 nm. The polarity of the displacement is entirely positive, as all values are above zero."
+      }
+    ]
+  },
+  {
+    "image": "square_800Hz_absolute_pool_size3_first250.png",
+    "conversation": [
+      {
+        "question": "Describe the repetition and density of the signal across the timeline.",
+        "answer": "<s> The signal exhibits a highly repetitive pattern across the timeline. The density of the signal is consistent, with a regular spacing of the peaks and troughs. The title suggests that the signal represents a square wave, which is characterized by a repeating pattern of high and low displacement values. The frequency of the square wave appears to be relatively constant throughout the displayed timeframe."
+      },
+      {
+        "question": "Identify the shape of the most prominent 'edges' or 'transitions'.",
+        "answer": "<s> The most prominent 'edges' or 'transitions' are characterized by near-vertical lines. The signal transitions between the high and low displacement values are very abrupt, creating a stepped or stair-like appearance. This indicates a relatively high slew rate or a fast switching mechanism, which is typical of a square wave."
+      },
+      {
+        "question": "State the vertical range (min/max) and the polarity (positive/negative) of the displacement.",
+        "answer": "<s>  The vertical range of the displacement spans from approximately -70 nm to -40 nm. The polarity of the displacement is entirely negative, as all values are below zero."
+      }
+    ]
+  },
+  {
+    "image": "square_500Hz_500Hz_1_absolute_pool_size3_first250.png",
+    "conversation": [
+      {
+        "question": "Describe the repetition and density of the signal across the timeline.",
+        "answer": "<s> The signal exhibits a highly repetitive pattern across the timeline. The graph shows a square wave, which is characterized by a series of rapid transitions between two distinct displacement levels. The density of these transitions is high, indicating a relatively frequent change in displacement. The title suggests that the signal is sampled at 200Hz, which is consistent with the observed frequency of transitions. The graph spans from 0 ms to 250 ms, and the signal demonstrates a consistent repetition rate throughout the displayed timeframe."
+      },
+      {
+        "question": "Identify the shape of the most prominent 'edges' or 'transitions'.",
+        "answer": "<s> The most prominent 'edges' or 'transitions' are characterized by near-instantaneous vertical shifts. The transitions between the two displacement levels are very steep, creating a near-vertical line. This indicates a very rapid change in displacement. The graph is a square wave, which means the transitions are symmetrical, and the signal switches between two levels with equal ease. The transitions are not smooth, but rather abrupt, giving the signal a square-like appearance."
+      },
+      {
+        "question": "State the vertical range (min/max) and the polarity (positive/negative) of the displacement.",
+        "answer": "<s>  The vertical range of the displacement is approximately from 2775 nm to 3075 nm. The polarity of the displacement is entirely positive, as all displacement values are above zero."
+      }
+    ]
+  },
+  {
+    "image": "square_200Hz_200Hz_1_absolute_pool_size3_first250.png",
+    "conversation": [
+      {
+        "question": "Describe the repetition and density of the signal across the timeline.",
+        "answer": "<s> The signal exhibits a repetitive pattern of sharp, rapid drops followed by periods of relative stability. The density of these drops is not uniform across the timeline. From 0 to approximately 100 ms, the signal is mostly stable, with a single large drop. From 100 to 150 ms, there is a cluster of rapid drops. From 150 to 200 ms, the signal remains mostly stable. From 200 to 250 ms, there is another cluster of rapid drops. From 250 to 300 ms, the signal is mostly stable. The density of the drops is higher in the clusters, with longer periods of stability in between."
+      },
+      {
+        "question": "Identify the shape of the most prominent 'edges' or 'transitions'.",
+        "answer": "<s> The most prominent 'edges' or 'transitions' are characterized by near-instantaneous, vertical drops. The signal transitions from the stable state to the drop, and then back to the stable state, with very little slope. The drops are sharp and appear to be close to ideal step functions."
+      },
+      {
+        "question": "State the vertical range (min/max) and the polarity (positive/negative) of the displacement.",
+        "answer": "<s>  The vertical range spans from approximately 2775 nm to 3075 nm. The polarity of the displacement is entirely positive, as all values are above zero."
+      }
+    ]
+  },
+  {
+    "image": "square_400Hz_400Hz_10_absolute_pool_size3_first250.png",
+    "conversation": [
+      {
+        "question": "Describe the repetition and density of the signal across the timeline.",
+        "answer": "<s> The signal exhibits a repetitive pattern of square waves. The density of the signal is relatively consistent across the timeline, with a regular spacing of transitions between the high and low states. The frequency of the square waves appears to remain constant throughout the displayed timeframe."
+      },
+      {
+        "question": "Identify the shape of the most prominent 'edges' or 'transitions'.",
+        "answer": "<s> The most prominent 'edges' or 'transitions' are characterized by sharp, nearly vertical lines. The transitions between the high and low states are very abrupt, creating a square wave-like appearance. This suggests a high-frequency, high-resolution signal."
+      },
+      {
+        "question": "State the vertical range (min/max) and the polarity (positive/negative) of the displacement.",
+        "answer": "<s> The vertical range of the displacement spans from approximately -80 nm to -40 nm. The polarity of the displacement is entirely negative."
+      }
+    ]
+  },
+  {
+    "image": "square_800Hz_800Hz_2_absolute_pool_size3_first250.png",
+    "conversation": [
+      {
+        "question": "Describe the repetition and density of the signal across the timeline.",
+        "answer": "<s> The signal exhibits a repeating pattern of sharp, rapid drops followed by a flat period. The density of these drops is relatively consistent across the timeline, with a few variations in the duration of the flat sections. The signal is not uniform; some drops are larger than others, and the flat sections vary in length. The title suggests that this is a square wave, which implies a repeating pattern, but the variations in the signal's characteristics make it more complex than a simple square wave."
+      },
+      {
+        "question": "Identify the shape of the most prominent 'edges' or 'transitions'.",
+        "answer": "<s> The most prominent 'edges' or 'transitions' are characterized by near-vertical lines, indicating very rapid changes in displacement. The signal transitions from the flat sections to the drops almost instantaneously, creating a sharp, almost rectangular shape. The rising edges of the drops are also very steep, creating a similar rectangular shape. The signal does not appear to have any gradual slopes or curves in these transitions."
+      },
+      {
+        "question": "State the vertical range (min/max) and the polarity (positive/negative) of the displacement.",
+        "answer": "<s>  The vertical range of the displacement spans from approximately -80 nm to -40 nm. The polarity of the displacement is entirely negative, as all values are below zero."
+      }
+    ]
+  },
+  {
+    "image": "square_500Hz_500Hz_10_absolute_pool_size3_first250.png",
+    "conversation": [
+      {
+        "question": "Describe the repetition and density of the signal across the timeline.",
+        "answer": "<s> The signal exhibits a repeating pattern of sharp, rapid drops followed by a plateau. The density of these drops is relatively consistent across the timeline, with a few variations in the duration of the plateaus. The signal is not uniform; there are clusters of drops followed by longer plateaus, and vice versa. The overall pattern suggests a periodic event triggering these rapid drops."
+      },
+      {
+        "question": "Identify the shape of the most prominent 'edges' or 'transitions'.",
+        "answer": "<s> The most prominent edges or transitions are very sharp and nearly vertical, indicating a rapid change in displacement. The transitions between the plateaus and the drops are also very steep, creating a step-like appearance. The signal does not exhibit gradual slopes or curves; it transitions abruptly between the different displacement levels."
+      },
+      {
+        "question": "State the vertical range (min/max) and the polarity (positive/negative) of the displacement.",
+        "answer": "<s>  The vertical range of the displacement spans from approximately -7.500e8 nm to -5.500e8 nm. The polarity of the displacement is entirely negative, as all values are below zero."
+      }
+    ]
+  },
+  {
+    "image": "square_600Hz_600Hz_9_absolute_pool_size3_first250.png",
+    "conversation": [
+      {
+        "question": "Describe the repetition and density of the signal across the timeline.",
+        "answer": "<s> The signal exhibits a highly repetitive pattern across the timeline. The density of the signal is consistent, with a regular spacing of peaks and troughs. The graph shows approximately 25 cycles within the 250 ms timeframe, indicating a frequency of roughly 10 Hz. The signal is a square wave, meaning the signal transitions abruptly between two discrete levels. The title of the graph suggests that the signal is being measured at 1000 Hz, but the actual signal exhibits a frequency closer to 10 Hz."
+      },
+      {
+        "question": "Identify the shape of the most prominent 'edges' or 'transitions'.",
+        "answer": "<s> The most prominent 'edges' or 'transitions' are characterized by near-vertical lines. The signal transitions between the two displacement levels very quickly, creating a sharp, almost instantaneous change in the displacement value. This is typical of a square wave signal. The transitions are not perfectly vertical, but they are close to it, indicating a very short transition time."
+      },
+      {
+        "question": "State the vertical range (min/max) and the polarity (positive/negative) of the displacement.",
+        "answer": "<s>  The vertical range of the displacement is approximately from -100 nm to -50 nm. The polarity of the displacement is entirely negative, as all displacement values are below zero."
+      }
+    ]
+  },
+  {
+    "image": "square_600Hz_600Hz_3_absolute_pool_size3_first250.png",
+    "conversation": [
+      {
+        "question": "Describe the repetition and density of the signal across the timeline.",
+        "answer": "<s> The signal exhibits a repetitive pattern throughout the timeline. The density of the signal is consistent, with a regular spacing between the peaks and troughs. The frequency appears to be approximately 1 Hz, as indicated in the title. The signal oscillates between a minimum displacement value and a maximum displacement value, which are approximately 270 nm and 307 nm, respectively. The signal is not perfectly periodic, as there are some variations in the amplitude of the peaks and troughs."
+      },
+      {
+        "question": "Identify the shape of the most prominent 'edges' or 'transitions'.",
+        "answer": "<s> The most prominent 'edges' or 'transitions' are characterized by sharp, near-vertical lines. The signal transitions between the minimum and maximum displacement values are particularly abrupt. The edges are not perfectly vertical, but they are close, indicating a rapid change in displacement. The signal does not exhibit any significant sloping or gradual transitions."
+      },
+      {
+        "question": "State the vertical range (min/max) and the polarity (positive/negative) of the displacement.",
+        "answer": "<s>  The vertical range of the displacement is approximately 270 nm to 307 nm. The polarity of the displacement is entirely positive, as all displacement values are above zero."
+      }
+    ]
+  },
+  {
+    "image": "square_900Hz_900Hz_1_absolute_pool_size3_first250.png",
+    "conversation": [
+      {
+        "question": "Describe the repetition and density of the signal across the timeline.",
+        "answer": "<s> The signal exhibits a highly repetitive pattern across the timeline. It consists of a series of square waves, each with a distinct amplitude. The density of the signal is quite high, with numerous cycles occurring within the 250 ms timeframe. The signal is not a sine wave, but rather a square wave, which means the signal changes state abruptly between two discrete levels."
+      },
+      {
+        "question": "Identify the shape of the most prominent 'edges' or 'transitions'.",
+        "answer": "<s> The most prominent 'edges' or 'transitions' are characterized by sharp, almost vertical lines. This indicates rapid changes in displacement between the two levels of the square wave. The transitions are not smooth, but rather appear as near-instantaneous jumps."
+      },
+      {
+        "question": "State the vertical range (min/max) and the polarity (positive/negative) of the displacement.",
+        "answer": "<s>  The vertical range of the displacement spans from approximately -80 nm to -40 nm. The polarity of the displacement is entirely negative, as all displacement values are below zero."
+      }
+    ]
+  },
+  {
+    "image": "square_400Hz_absolute_pool_size3_first250.png",
+    "conversation": [
+      {
+        "question": "Describe the repetition and density of the signal across the timeline.",
+        "answer": "<s> The signal exhibits a repetitive pattern of peaks and troughs across the timeline. The density of these repetitions is relatively consistent throughout the 250 ms window displayed. The signal is not perfectly periodic, as the spacing between peaks and troughs varies slightly. However, the underlying pattern is clear."
+      },
+      {
+        "question": "Identify the shape of the most prominent 'edges' or 'transitions'.",
+        "answer": "<s> The most prominent 'edges' or 'transitions' are characterized by sharp, near-vertical ascents and descents. The signal rapidly rises and falls between the peaks and troughs, creating a stepped appearance. This indicates a relatively abrupt change in displacement at these points. The signal is not perfectly sinusoidal, as the transitions are not perfectly smooth."
+      },
+      {
+        "question": "State the vertical range (min/max) and the polarity (positive/negative) of the displacement.",
+        "answer": "<s>  The vertical range spans from a minimum of approximately 375 nm to a maximum of approximately 475 nm. The polarity of the displacement is entirely positive, as all values are above zero."
+      }
+    ]
+  },
+  {
+    "image": "square_1Hz_1Hz_11_absolute_pool_size3_first250.png",
+    "conversation": [
+      {
+        "question": "Describe the repetition and density of the signal across the timeline.",
+        "answer": "<s> The signal exhibits a repetitive pattern of sharp, downward spikes. The density of these spikes is relatively consistent across the timeline, with a few variations in the amplitude of the spikes. The signal is not a constant value, but instead, it oscillates between a minimum and maximum displacement. The title suggests that this is a square wave, which implies a regular, repeating pattern of high and low states."
+      },
+      {
+        "question": "Identify the shape of the most prominent 'edges' or 'transitions'.",
+        "answer": "<s> The most prominent 'edges' or 'transitions' are characterized by near-instantaneous, vertical drops from the high displacement level to the low displacement level. The transitions are very sharp and nearly vertical, creating a square wave-like appearance. The signal does not exhibit gradual slopes or curves at these transitions."
+      },
+      {
+        "question": "State the vertical range (min/max) and the polarity (positive/negative) of the displacement.",
+        "answer": "<s>  The vertical range of the displacement is approximately from -275 nm to -175 nm. The polarity of the displacement is entirely negative, as all displacement values are below zero."
+      }
+    ]
+  },
+  {
+    "image": "square_600Hz_600Hz_8_absolute_pool_size3_first250.png",
+    "conversation": [
+      {
+        "question": "Describe the repetition and density of the signal across the timeline.",
+        "answer": "<s> The signal exhibits a repetitive pattern of square waves. The density of these repetitions is relatively consistent across the timeline, with a frequency that appears to be constant. The signal is not a sine wave, but rather a series of square pulses. The title of the graph suggests that the signal is being sampled at a rate of 1000Hz, which would be consistent with the observed frequency of the square waves."
+      },
+      {
+        "question": "Identify the shape of the most prominent 'edges' or 'transitions'.",
+        "answer": "<s> The most prominent 'edges' or 'transitions' are characterized by sharp, almost vertical lines. These transitions are very abrupt, indicating a very fast rise and fall time for the square pulses. The edges are close to being ideal step functions, indicating a digital or discrete nature to the signal."
+      },
+      {
+        "question": "State the vertical range (min/max) and the polarity (positive/negative) of the displacement.",
+        "answer": "<s>  The vertical range of the displacement spans from approximately -80 nm to -40 nm. The polarity of the displacement is entirely negative, as all displacement values are below zero."
+      }
+    ]
+  },
+  {
+    "image": "square_800Hz_800Hz_5_absolute_pool_size3_first250.png",
+    "conversation": [
+      {
+        "question": "Describe the repetition and density of the signal across the timeline.",
+        "answer": "<s> The signal exhibits a repetitive pattern of sharp, rapid drops followed by a flat period. The density of these drops is relatively consistent across the timeline, with a few exceptions. There are clusters of drops that occur more frequently than others. The flat periods between the drops are also consistent, but the duration of the drops varies. Some drops are shorter, while others are longer. The overall pattern suggests a periodic signal with varying amplitude and duration."
+      },
+      {
+        "question": "Identify the shape of the most prominent 'edges' or 'transitions'.",
+        "answer": "<s> The most prominent 'edges' or 'transitions' are characterized by near-instantaneous, almost vertical drops followed by horizontal flat sections. The transitions are very sharp, creating a sawtooth-like appearance. The signal jumps abruptly between the flat sections and the drops, creating a step-like behavior. The signal does not appear to have a gradual slope or curve during the drops."
+      },
+      {
+        "question": "State the vertical range (min/max) and the polarity (positive/negative) of the displacement.",
+        "answer": "<s>  The vertical range of the displacement spans from approximately 2770 nm to 3070 nm. The polarity of the displacement is entirely positive, as all values are above zero."
+      }
+    ]
+  },
+  {
+    "image": "square_400Hz_400Hz_4_absolute_pool_size3_first250.png",
+    "conversation": [
+      {
+        "question": "Describe the repetition and density of the signal across the timeline.",
+        "answer": "<s> The signal exhibits a repetitive pattern across the timeline. The density of the signal is relatively consistent, with a regular spacing of peaks and troughs. The frequency appears to be roughly 1 Hz, as indicated in the title. The signal alternates between a relatively flat line and a square wave pattern, creating a repeating pattern of alternating states."
+      },
+      {
+        "question": "Identify the shape of the most prominent 'edges' or 'transitions'.",
+        "answer": "<s> The most prominent 'edges' or 'transitions' are characterized by sharp, almost vertical lines. The transitions between the flat line and the square wave are very abrupt, creating a near-instantaneous change in displacement. The edges are not smooth curves, but rather sharp, almost rectangular transitions. This suggests a digital or quantized nature to the signal."
+      },
+      {
+        "question": "State the vertical range (min/max) and the polarity (positive/negative) of the displacement.",
+        "answer": "<s>  The vertical range of the displacement spans from a minimum of approximately 2870 nm to a maximum of approximately 3070 nm. The polarity of the displacement is entirely positive, as all values are above zero."
+      }
+    ]
+  },
+  {
+    "image": "square_600Hz_600Hz_5_absolute_pool_size3_first250.png",
+    "conversation": [
+      {
+        "question": "Describe the repetition and density of the signal across the timeline.",
+        "answer": "<s> The signal exhibits a repetitive pattern of square waves. The density of these repetitions is relatively consistent across the timeline, with a frequency that appears to be approximately 1 Hz. The signal is plotted as a function of time, and the title suggests that the graph represents a 250Hz signal, which is consistent with the observed square wave pattern. The graph shows a 250Hz square wave signal, but the actual signal is a 1Hz square wave."
+      },
+      {
+        "question": "Identify the shape of the most prominent 'edges' or 'transitions'.",
+        "answer": "<s> The most prominent 'edges' or 'transitions' are characterized by near-vertical lines. These represent the rapid changes in displacement between the minimum and maximum values of each square wave cycle. The transitions are very sharp, indicating a high slew rate or a fast switching mechanism. The transitions are not perfectly vertical, but they are close to it."
+      },
+      {
+        "question": "State the vertical range (min/max) and the polarity (positive/negative) of the displacement.",
+        "answer": "<s>  The vertical range of the displacement is approximately 2875 nm to 3075 nm. The polarity of the displacement is entirely positive, as all values are above zero."
+      }
+    ]
+  },
+  {
+    "image": "square_500Hz_500Hz_4_absolute_pool_size3_first250.png",
+    "conversation": [
+      {
+        "question": "Describe the repetition and density of the signal across the timeline.",
+        "answer": "<s> The signal exhibits a repetitive pattern of high and low displacement values. The density of these repetitions is not uniform across the timeline. The initial section (0-100 ms) shows a higher density of repetitions compared to the latter section (100-250 ms). The signal is not constant; it oscillates between a minimum and a maximum value. The frequency of the oscillations is not constant either. The title suggests that the signal is a square wave, which implies a regular repetition of a fixed pattern. However, the density of the repetitions varies."
+      },
+      {
+        "question": "Identify the shape of the most prominent 'edges' or 'transitions'.",
+        "answer": "<s> The most prominent 'edges' or 'transitions' are characterized by near-instantaneous vertical jumps between the minimum and maximum displacement values. The transitions are very sharp, almost vertical, indicating a very rapid change in displacement. This suggests a digital or stepped nature to the signal. The signal does not smoothly transition between the two displacement levels."
+      },
+      {
+        "question": "State the vertical range (min/max) and the polarity (positive/negative) of the displacement.",
+        "answer": "<s> The vertical range of the displacement is approximately 2875 nm to 3075 nm. The polarity of the displacement is entirely positive, as all values are above zero."
+      }
+    ]
+  },
+  {
+    "image": "square_400Hz_400Hz_13_absolute_pool_size3_first250.png",
+    "conversation": [
+      {
+        "question": "Describe the repetition and density of the signal across the timeline.",
+        "answer": "<s> The signal exhibits a highly repetitive pattern across the timeline. The density of the signal is consistent, with a regular spacing between the peaks and troughs. The frequency appears to be relatively constant throughout the displayed timeframe. The signal is essentially a square wave with a slight variation in the amplitude of the peaks and troughs."
+      },
+      {
+        "question": "Identify the shape of the most prominent 'edges' or 'transitions'.",
+        "answer": "<s> The most prominent 'edges' or 'transitions' are characterized by sharp, almost vertical lines. The signal transitions rapidly between the high and low displacement values. The edges are very steep, indicating a very fast change in displacement. This is consistent with the square wave nature of the signal."
+      },
+      {
+        "question": "State the vertical range (min/max) and the polarity (positive/negative) of the displacement.",
+        "answer": "<s>  The vertical range of the displacement is approximately 280 nm to 320 nm. The polarity of the displacement is entirely positive, as all displacement values are above zero."
+      }
+    ]
+  },
+  {
+    "image": "square_1Hz_1Hz_4_absolute_original_first250.png",
+    "conversation": [
+      {
+        "question": "Describe the repetition and density of the signal across the timeline.",
+        "answer": "<s> The signal exhibits a repetitive pattern of square waves. The density of these repetitions is relatively consistent across the timeline, with a regular spacing of the peaks and troughs. The frequency appears to be approximately 1 Hz, as indicated in the title. The signal is not a sine wave, but rather a square wave, which means the signal switches between two distinct levels (high and low) at a constant rate."
+      },
+      {
+        "question": "Identify the shape of the most prominent 'edges' or 'transitions'.",
+        "answer": "<s> The most prominent 'edges' or 'transitions' are characterized by near-vertical lines. This indicates very rapid transitions between the high and low displacement levels. The signal switches almost instantaneously between the two states. The transitions are not smooth curves, but rather abrupt changes."
+      },
+      {
+        "question": "State the vertical range (min/max) and the polarity (positive/negative) of the displacement.",
+        "answer": "<s>  The vertical range of the displacement spans from approximately -80 nm to -40 nm. The polarity of the displacement is entirely negative, as all displacement values are below zero."
+      }
+    ]
+  },
+  {
+    "image": "square_300Hz_300Hz_2_absolute_pool_size3_first250.png",
+    "conversation": [
+      {
+        "question": "Describe the repetition and density of the signal across the timeline.",
+        "answer": "<s> The signal exhibits a highly repetitive pattern throughout the timeline. The density of the signal is consistent, with a regular spacing between the peaks and troughs. The frequency appears to be relatively constant, although the amplitude (height) of the peaks varies. The signal is predominantly square-wave-like, with a flat top and bottom, but there are some variations in the shape of the peaks."
+      },
+      {
+        "question": "Identify the shape of the most prominent 'edges' or 'transitions'.",
+        "answer": "<s> The most prominent 'edges' or 'transitions' are characterized by near-vertical lines. The signal transitions between the flat top and bottom with minimal slope, creating a square-wave-like appearance. The peaks and troughs are generally sharp and abrupt, indicating a high-frequency component to the signal."
+      },
+      {
+        "question": "State the vertical range (min/max) and the polarity (positive/negative) of the displacement.",
+        "answer": "<s> The vertical range spans from approximately -90 nm to -40 nm. The polarity of the displacement is entirely negative, as all values are below zero."
+      }
+    ]
+  },
+  {
+    "image": "square_600Hz_600Hz_6_absolute_pool_size3_first250.png",
+    "conversation": [
+      {
+        "question": "Describe the repetition and density of the signal across the timeline.",
+        "answer": "<s> The signal exhibits a repeating pattern of alternating high and low displacement values. The density of these repetitions is relatively consistent across the timeline, with approximately one cycle occurring every 10 ms. The signal does not appear to be a periodic waveform, but rather a series of discrete events."
+      },
+      {
+        "question": "Identify the shape of the most prominent 'edges' or 'transitions'.",
+        "answer": "<s> The most prominent 'edges' or 'transitions' are characterized by relatively sharp, near-vertical ascents and descents from the baseline displacement value. The transitions are not perfectly vertical, but they are close, indicating a rapid change in displacement. The signal is not a sine wave, but rather a square wave."
+      },
+      {
+        "question": "State the vertical range (min/max) and the polarity (positive/negative) of the displacement.",
+        "answer": "<s>  The vertical range spans from approximately 2875 nm to 3075 nm. The polarity of the displacement is entirely positive, as all values are above zero."
+      }
+    ]
+  },
+  {
+    "image": "square_600Hz_600Hz_1_absolute_pool_size2_first250.png",
+    "conversation": [
+      {
+        "question": "Describe the repetition and density of the signal across the timeline.",
+        "answer": "<s> The signal exhibits a repetitive pattern across the timeline. The signal is predominantly flat, with a few sharp, rapid drops. The density of these drops is not uniform. There are clusters of drops, followed by periods of flat signal. The overall density of the signal is relatively low, with long periods of stability interspersed with brief, intense drops."
+      },
+      {
+        "question": "Identify the shape of the most prominent 'edges' or 'transitions'.",
+        "answer": "<s> The most prominent 'edges' or 'transitions' are characterized by sharp, near-vertical drops. The transitions from the flat signal to the drops are very abrupt, creating a step-like shape. The signal then returns to a flat state after the drop."
+      },
+      {
+        "question": "State the vertical range (min/max) and the polarity (positive/negative) of the displacement.",
+        "answer": "<s>  The vertical range of the displacement spans from approximately -80 nm to -40 nm. The polarity of the displacement is entirely negative, as all values are below zero."
+      }
+    ]
+  },
+  {
+    "image": "square_800Hz_800Hz_1_absolute_pool_size3_first250.png",
+    "conversation": [
+      {
+        "question": "Describe the repetition and density of the signal across the timeline.",
+        "answer": "<s> The signal exhibits a highly repetitive pattern across the timeline. The density of the signal is consistent, with a regular spacing of peaks and troughs. The frequency appears to be approximately 1 Hz, as indicated in the title. The signal is a square wave, meaning the signal transitions between two distinct levels (high and low) at a constant rate. The graph shows a total of 250 cycles within the 250 ms timeframe, indicating a high level of repetition."
+      },
+      {
+        "question": "Identify the shape of the most prominent 'edges' or 'transitions'.",
+        "answer": "<s> The most prominent 'edges' or 'transitions' are characterized by near-vertical lines. The signal transitions between the high and low states very quickly, creating sharp, almost instantaneous changes in displacement. This is typical of a square wave, where the transitions are abrupt. The signal does not appear to have any significant sloping or gradual changes in the edges."
+      },
+      {
+        "question": "State the vertical range (min/max) and the polarity (positive/negative) of the displacement.",
+        "answer": "<s>  The vertical range of the displacement is approximately from -500 nm to -300 nm. The polarity of the displacement is entirely negative, as all displacement values are below zero."
+      }
+    ]
+  }
+]
