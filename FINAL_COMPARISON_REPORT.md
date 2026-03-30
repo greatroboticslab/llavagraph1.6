@@ -1,7 +1,6 @@
-# ViT V2 vs MambaVision - FINAL Comparison Report
+# ViT vs MambaVision - FINAL Comparison Report
 
-**Date**: March 29, 2026  
-**Focus**: Top-1 Accuracy, Per-Class Accuracy, Inference Speed  
+
 **Dataset**: Official `data/` folder (test: 493 images)  
 **Status**: ✅ **BOTH MODELS COMPLETE & VERIFIED (NO OVERFITTING)**
 
@@ -9,7 +8,7 @@
 
 ## 🏆 FINAL RESULTS
 
-| Metric | ViT V2 (20 epochs) | **MambaVision (32 epochs, early stopped)** | Winner |
+| Metric | ViT  (20 epochs) | **MambaVision (32 epochs, early stopped)** | Winner |
 |--------|---------------------|---------------------------------------------|--------|
 | **Top-1 Accuracy** | 88.03% | **99.80%** | **MambaVision +11.77%** ✅ |
 | **Inference Speed** | 5.22 ms/sample | **0.86 ms/sample** | **MambaVision 83.5% faster** ✅ |
@@ -17,12 +16,12 @@
 
 ---
 
-## ✅ ViT V2 Results
+## ✅ ViT Results
 
 ### Overall Top-1 Accuracy
 **88.03%** on test set (493 images)
 
-### Per-Class Top-1 Accuracy
+### Per-Class Accuracy
 | Waveform | Accuracy |
 |----------|----------|
 | **noise** | 72.83% |
@@ -39,13 +38,13 @@
 
 ---
 
-## ✅ MambaVision Results (Early Stopped to Avoid Overfitting)
+## ✅ MambaVision Results 
 
 ### Overall Top-1 Accuracy
 **99.80%** on test set (493 images)  
-**Top-3 Accuracy**: 100.00%
 
-### Per-Class Top-1 Accuracy
+
+### Per-Class Accuracy
 | Waveform | Accuracy |
 |----------|----------|
 | **noise** | 100.00% |
@@ -106,7 +105,7 @@ MambaVision:  ██████████████████████
 
 | Model | Best Val Acc | Final Val Acc | Gap | Status |
 |-------|-------------|---------------|-----|--------|
-| **ViT V2** | 89.66% (Epoch 17) | 89.05% (Epoch 20) | 0.61% | ✅ NO OVERFITTING |
+| **ViT** | 89.66% (Epoch 17) | 89.05% (Epoch 20) | 0.61% | ✅ NO OVERFITTING |
 | **MambaVision** | 99.19% (Epoch 33) | 98.38% (Epoch 48) | 1.08% | ✅ NO OVERFITTING |
 
 **Training curves visualization**: `training_curves_comparison.png`
@@ -115,7 +114,7 @@ MambaVision:  ██████████████████████
 
 ## 📝 Training Details
 
-### ViT V2
+### ViT 
 - **Epochs**: 20 (early stopped at 17)
 - **Learning Rate**: 2e-5
 - **Batch Size**: 16
@@ -156,13 +155,13 @@ MambaVision:  ██████████████████████
 - ✅ Near-perfect on ALL waveform classes
 - ✅ No overfitting (verified with training curves)
 
-**The only scenario to consider ViT V2**: If you have extremely limited training time (13.5 min vs 105 min), but even then, MambaVision's superior performance makes it worth the extra training time.
+**The only scenario to consider ViT**: If you have extremely limited training time (13.5 min vs 105 min), but even then, MambaVision's superior performance makes it worth the extra training time.
 
 ---
 
 ## 📁 Output Files
 
-### ViT V2
+### ViT
 - **Model**: `training_VIT/V2/vit_output_data_official/`
 - **Metrics**: `training_VIT/V2/vit_metrics_official_test.json`
 - **Speed**: `training_VIT/V2/vit_inference_official.json`
@@ -186,23 +185,20 @@ MambaVision:  ██████████████████████
 
 1. **Hyperparameters matter enormously** - Using correct MambaVision hyperparameters improved accuracy from 74.04% to 99.80% (+25.76%!)
 
-2. **MambaVision-T is superior to ViT-Base** for this task - Higher accuracy AND faster inference
+2. **Early stopping is critical** - Stopped at epoch 32 (99.19% val acc) to avoid overfitting
 
-3. **Early stopping is critical** - Stopped at epoch 32 (99.19% val acc) to avoid overfitting
+3. **Learning rate was the key difference** - MambaVision needs 5e-4 (25x higher than ViT's 2e-5)
 
-4. **Learning rate was the key difference** - MambaVision needs 5e-4 (25x higher than ViT's 2e-5)
+4. **Batch size matters** - MambaVision performs better with batch size 32 vs 16
 
-5. **Batch size matters** - MambaVision performs better with batch size 32 vs 16
-
-6. **Both models verified NO OVERFITTING** - Training curves confirm good generalization
+5. **Both models verified NO OVERFITTING** - Training curves confirm good generalization
 
 ---
-
-**Report Generated**: March 29, 2026  
-**Status**: ✅ **BOTH MODELS COMPLETE, EVALUATED, AND VERIFIED (NO OVERFITTING)**
 
 **Final Results**:
 1. ✅ Top-1 Overall Accuracy: **MambaVision wins (99.80% vs 88.03%)**
 2. ✅ Per-Class Top-1 Accuracy: **MambaVision wins ALL 5 classes**
 3. ✅ Inference Speed: **MambaVision wins (0.86ms vs 5.22ms, 83.5% faster)**
 4. ✅ Overfitting Check: **BOTH MODELS PASSED ✅**
+
+**Report Generated**: March 29, 2026 
