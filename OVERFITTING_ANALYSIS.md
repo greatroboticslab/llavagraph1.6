@@ -7,7 +7,7 @@
 
 ## ✅ OVERFITTING ANALYSIS RESULTS
 
-### ViT V2
+### ViT
 | Metric | Value | Status |
 |--------|-------|--------|
 | **Best Validation Accuracy** | 89.66% (Epoch 17) | ✅ |
