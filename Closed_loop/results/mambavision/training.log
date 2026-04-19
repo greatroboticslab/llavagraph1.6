@@ -1,0 +1,40 @@
+19:08:57  ============================================================
+19:08:57    MambaVision — Closed-Loop Training
+19:08:57    Model    : nvidia/MambaVision-T-1K
+19:08:57    Data     : /Users/ilminurablikim/llavagraph1.6/open_close_data/close_images
+19:08:57    Device   : mps
+19:08:57    Epochs   : 50  BS: 16  LR: 0.0003
+19:08:57  ============================================================
+19:26:13  Epoch 001/50  train_loss=0.4435 acc=0.8871  |  val_loss=0.3431 acc=0.9435  (1035.4s)
+19:26:14    ✓ best val_acc=0.9435 saved
+19:43:34  Epoch 002/50  train_loss=0.3180 acc=0.9563  |  val_loss=0.3264 acc=0.9558  (1039.6s)
+19:43:34    ✓ best val_acc=0.9558 saved
+20:00:55  Epoch 003/50  train_loss=0.2885 acc=0.9735  |  val_loss=0.3579 acc=0.9421  (1041.3s)
+20:18:11  Epoch 004/50  train_loss=0.2726 acc=0.9818  |  val_loss=0.3785 acc=0.9457  (1035.5s)
+20:35:25  Epoch 005/50  train_loss=0.2629 acc=0.9867  |  val_loss=0.3991 acc=0.9471  (1034.7s)
+20:52:46  Epoch 006/50  train_loss=0.2585 acc=0.9886  |  val_loss=0.3706 acc=0.9508  (1040.9s)
+21:09:58  Epoch 007/50  train_loss=0.2528 acc=0.9919  |  val_loss=0.3884 acc=0.9471  (1031.2s)
+21:27:10  Epoch 008/50  train_loss=0.2528 acc=0.9921  |  val_loss=0.3781 acc=0.9537  (1032.0s)
+21:44:23  Epoch 009/50  train_loss=0.2502 acc=0.9929  |  val_loss=0.3554 acc=0.9602  (1033.6s)
+21:44:24    ✓ best val_acc=0.9602 saved
+22:01:36  Epoch 010/50  train_loss=0.2487 acc=0.9937  |  val_loss=0.3660 acc=0.9551  (1032.3s)
+23:17:06  Epoch 011/50  train_loss=0.2443 acc=0.9953  |  val_loss=0.3679 acc=0.9573  (4529.6s)
+23:51:21  Epoch 012/50  train_loss=0.2449 acc=0.9954  |  val_loss=0.3492 acc=0.9631  (2055.4s)
+23:51:22    ✓ best val_acc=0.9631 saved
+00:22:18  Epoch 013/50  train_loss=0.2457 acc=0.9949  |  val_loss=0.3666 acc=0.9573  (1856.3s)
+00:57:23  Epoch 014/50  train_loss=0.2440 acc=0.9957  |  val_loss=0.3815 acc=0.9551  (2104.9s)
+01:28:55  Epoch 015/50  train_loss=0.2432 acc=0.9960  |  val_loss=0.3814 acc=0.9537  (1892.4s)
+01:58:15  Epoch 016/50  train_loss=0.2417 acc=0.9965  |  val_loss=0.3605 acc=0.9587  (1760.0s)
+02:27:18  Epoch 017/50  train_loss=0.2407 acc=0.9970  |  val_loss=0.3819 acc=0.9529  (1742.9s)
+02:53:35  Epoch 018/50  train_loss=0.2409 acc=0.9967  |  val_loss=0.3882 acc=0.9515  (1577.0s)
+03:48:18  Epoch 019/50  train_loss=0.2383 acc=0.9980  |  val_loss=0.3914 acc=0.9558  (3282.6s)
+04:13:57  Epoch 020/50  train_loss=0.2411 acc=0.9968  |  val_loss=0.3879 acc=0.9529  (1539.2s)
+05:17:41  Epoch 021/50  train_loss=0.2387 acc=0.9979  |  val_loss=0.3541 acc=0.9638  (3824.5s)
+05:17:42    ✓ best val_acc=0.9638 saved
+05:40:44  Epoch 022/50  train_loss=0.2376 acc=0.9981  |  val_loss=0.3807 acc=0.9566  (1381.8s)
+06:06:41  Epoch 023/50  train_loss=0.2374 acc=0.9983  |  val_loss=0.3559 acc=0.9616  (1557.2s)
+07:26:41  Epoch 024/50  train_loss=0.2378 acc=0.9980  |  val_loss=0.3952 acc=0.9515  (4800.1s)
+07:50:14  Epoch 025/50  train_loss=0.2373 acc=0.9982  |  val_loss=0.3730 acc=0.9602  (1413.2s)
+08:16:26  Epoch 026/50  train_loss=0.2370 acc=0.9984  |  val_loss=0.3722 acc=0.9616  (1572.3s)
+09:11:09  Epoch 027/50  train_loss=0.2360 acc=0.9986  |  val_loss=0.3646 acc=0.9638  (3283.0s)
+09:36:57  Epoch 028/50  train_loss=0.2364 acc=0.9984  |  val_loss=0.3698 acc=0.9587  (1547.2s)

@@ -1,0 +1,5 @@
+results/mambavision/checkpoints/
+results/vit/checkpoints/
+results/vit/run.log
+__pycache__/
+*.pyc
