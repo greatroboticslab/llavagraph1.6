@@ -1,0 +1,38 @@
+# Model weights and adapters (too large for GitHub — use HuggingFace Hub)
+final_adapter/
+checkpoints/
+*.bin
+*.safetensors
+*.pt
+*.pth
+
+# Raw sensor data (large binary/CSV files)
+piezo_data/
+data_csv/
+
+# Old/intermediate feature and training data versions
+features.csv
+features_v2.csv
+training_data.csv
+training_data_v2.csv
+
+# Logs and generated artifacts
+generation_log.txt
+generation_log_v3.txt
+upload_to_cluster.sh
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+
+# Secrets
+.env
+*.env
+
+# macOS
+.DS_Store
+Icon?

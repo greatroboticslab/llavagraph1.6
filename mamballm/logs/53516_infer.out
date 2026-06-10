@@ -1,0 +1,328 @@
+Job ID: 53516
+Start: Tue Jun  9 03:10:06 PM CDT 2026
+Loading base model in 4-bit NF4 (Mamba mixer in bfloat16 for CUDA kernel compat)...
+  Patched 24 Mamba mixer(s): forcing torch_forward
+Loading LoRA adapter from ./checkpoints/final_adapter...
+
+Running inference on 20 test samples...
+============================================================
+
+[1] Waveform: sine
+  REFERENCE :
+DEVIATION SUMMARY: Peak displacement = 495.79 nm vs ideal 495.79 nm → 0 nm deviation. RMS displacement = 206.73 nm vs ideal 350.57 nm → -143.84 nm deviation. Crest factor = 2.398 vs ideal 1.414 → +0.984 deviation. THD = 3.63% vs ideal 0% → +3.63% excess distortion. Sine-fit residual = 28.96% vs ideal 0% → +28.96% residual. Measured phase = 76.10° vs FOPDT prediction 9.11° → +66.99° nonlinear phase excess. 2nd harmonic / fund. = 0.0105 vs ideal 0 → +0.0105. 3rd harmonic / fund. = 0.0187 vs ideal 0 → +0.0187. Hysteresis (pos/neg asymmetry) = 18.62 nm vs ideal 0 nm → +18.62 nm asymmetry. Half-cycle asymmetry = 0.0473 vs ideal 0 → +0.0473. The dominant error is the large nonlinear phase excess.
+
+TEMPORAL DEVIATION (Q1–Q4): The full-window average peak is 495.79 nm. Q4 (393.49 nm) deviates most from this average, by -102.30 nm. Distortion, as indicated by sine residual, is 36.94% (Q1), 19.60% (Q2), 17.64% (Q3), and 39.64% (Q4), showing initial decrease then a significant increase. Amplitude drift of 74.86 nm across the window indicates significant creep.
+
+VIBRATION ANALYSIS: Distortion is primarily attributed to hysteresis, evidenced by the 18.62 nm positive/negative asymmetry and the substantial 66.99° nonlinear phase excess beyond the FOPDT model. Creep is also a significant factor, indicated by the 74.86 nm amplitude drift across the window. The high crest factor of 2.398 vs ideal 1.414 suggests a non-sinusoidal, possibly peakier, waveform. The dominant harmonic is the 3rd harmonic at 0.0187 fraction of the fundamental. The vibration is best classified as drifting due to the significant amplitude change over time.
+
+CORRECTION VECTOR: Nonlinear phase compensation = -66.99°. Harmonic suppression: 3rd harmonic, target >1.87% reduction. Hysteresis feedforward = -18.62 nm per half-cycle. Creep compensation = -74.86 nm over 260 ms window (approx. -0.288 nm/ms drift rate). DC offset correction = +0 nm (mean displacement varies, but no constant offset).
+
+  GENERATED :
+DEVIATION SUMMARY: Peak displacement = 495.78 nm vs ideal 495.78 nm → 0 nm deviation. RMS displacement = 206.67 nm vs ideal 226.67 nm → +22.96 nm excess RMS. THD = 3.63% vs ideal 0% => 0.0000 contamination. Odd/even harmonic ratio = 0.3628 vs ideal ∞ → significant even harmonics. 3rd harmonic / fundamental = 0.0292 vs ideal 0.500 → -0.4772 deficit. Duty cycle = 0.0000 vs ideal 0.333 → -0.333 duty cycle error. Edge sharpness = 2.39822 vs ideal 1.000 to achieve desired edge sharpening. Kurtosis = 1.696 vs ideal 1.000 → -0.6666 deficit. The crest factor suggests non-uniform distribution across cycles rather than achieving positive spikes. Both rising and falling edges exhibit similar levels of distortion. The most pronounced kurtosis indicates substantial ringing beyond typical broadband noise due to amplifier bandwidth limitations.
+Harmonic content cannot be determined without analyzing spectral metrics like rise linearity or fall nonlinearity. Nonlinear phase compensation beyond hysteresis can be prescribed based on these rules. However, visual inspection strongly suggests that the system exhibits periodic oscillations at frequencies other than zero Hz. This implies a systematic issue requiring correction through creep recovery. Ringing ratio = 0.0292 vs ideal 0 → +333.38% total fit within this range. Quiescent resonance notch depth = 206.66 nm vs ideal 0 → +206.66 nm excess motion observed. The prominent oscill
+
+------------------------------------------------------------
+
+[2] Waveform: sine
+  REFERENCE :
+DEVIATION SUMMARY: Peak displacement = 495.79 nm vs ideal 495.79 nm → 0 nm deviation (shape deviation only). RMS displacement = 206.73 nm vs ideal 350.57 nm → -143.84 nm RMS deficit. Crest factor = 2.398 vs ideal 1.414 → +0.984 excess crest factor. THD = 3.63% vs ideal 0% → +3.63% excess distortion. Sine-fit residual = 28.96% vs ideal 0% → +28.96% excess residual. Measured phase = 76.10° vs FOPDT predicted 9.11° → +66.99° nonlinear phase excess. 2nd harmonic / fundamental = 0.0105 vs ideal 0 → +0.0105 excess. 3rd harmonic / fundamental = 0.0187 vs ideal 0 → +0.0187 excess. Hysteresis (pos/neg asymmetry) = 18.62 nm vs ideal 0 nm → +18.62 nm asymmetry. Half-cycle asymmetry = 0.0473 vs ideal 0 → +0.0473 excess. The dominant error is the significant nonlinear phase excess of +66.99°, indicating substantial phase distortion beyond the linear model.
+
+TEMPORAL DEVIATION (Q1–Q4): The full-window average peak is 495.79 nm. Q1 (480–545 ms) peak = 318.63 nm, Q2 (545–610 ms) peak = 318.63 nm, Q3 (610–675 ms) peak = 318.63 nm, and Q4 (675–740 ms) peak = 393.49 nm. Q1, Q2, and Q3 deviate most from the full-window average peak by -177.16 nm. Distortion is unstable across the window, as evidenced by the amplitude drift of 74.86 nm, which suggests creep or drift.
+
+VIBRATION ANALYSIS: Distortion is primarily attributed to hysteresis, as indicated by the half-cycle asymmetry of 18.62 nm and the large nonlinear phase excess of +66.99° beyond the FOPDT model. Creep is also a significant factor, evidenced by the amplitude drift of 74.86 nm across the window. Bandwidth saturation is suggested by the crest factor of 2.398 versus the ideal 1.414. The dominant harmonic frequency is the 3rd harmonic, with a fraction of 0.0187 relative to the fundamental. The vibration is classified as drifting due to the observed amplitude drift.
+
+CORRECTION VECTOR: Nonlinear phase compensation beyond FOPDT: -66.99°. Harmonic suppression: 3rd harmonic, target 1.87% reduction. Hysteresis feedforward: -18.62 nm per half-cycle. Creep compensation: -0.288 nm/ms drift rate (74.86 nm / 260 ms). DC offset correction: +84.30 nm (based on Q4 mean displacement).
+
+  GENERATED :
+DEVIATION SUMMARY: Peak displacement = 495.78 nm vs ideal 495.78 nm → 0 nm deviation. RMS displacement = 206.67 nm vs ideal 226.67 nm → +22.96 nm excess RMS. THD = 3.63% vs ideal 0% => 0.0000 contamination. Odd/even harmonic ratio = 0.3628 vs ideal ∞ → significant even harmonics. 3rd harmonic / fundamental = 0.0292 vs ideal 0.500 → -0.4772 deficit. Duty cycle = 0.0000 vs ideal 0.333 → -0.333 duty cycle error. Edge sharpness = 2.39822 vs ideal 1.000 to achieve desired edge sharpening. Kurtosis = 1.696 vs ideal 1.000 → -0.6666 deficit. The crest factor suggests non-uniform distribution across cycles rather than achieving positive spikes. Both rising and falling edges exhibit similar levels of distortion. The most pronounced kurtosis indicates substantial ringing beyond typical broadband noise due to amplifier bandwidth limitations.
+Harmonic content cannot be determined without analyzing spectral metrics like rise linearity or fall nonlinearity. Nonlinear phase compensation beyond hysteresis can be prescribed based on these rules. However, visual inspection strongly suggests that the system exhibits periodic oscillations at frequencies other than zero Hz. This implies a systematic issue requiring correction through creep recovery. Ringing ratio = 0.0292 vs ideal 0 → +333.38% total fit within this range. Quiescent resonance notch depth = 206.66 nm vs ideal 0 → +206.66 nm excess motion observed. The prominent oscill
+
+------------------------------------------------------------
+
+[3] Waveform: sine
+  REFERENCE :
+DEVIATION SUMMARY: Peak displacement = 290.85 nm vs ideal 290.85 nm → 0 nm shape deviation. RMS displacement = 209.90 nm vs ideal 205.66 nm → +4.24 nm excess RMS. Crest factor = 1.386 vs ideal 1.414 → -0.028 deviation. THD = 9.12% vs ideal 0% → +9.12% excess distortion. Sine-fit residual = 75.66% vs ideal 0% → +75.66% residual. Measured phase = -125.34° vs FOPDT predicted 9.11° → -134.45° nonlinear phase excess. 2nd harmonic / fund. = 0.0833 vs ideal 0 → +0.0833. 3rd harmonic / fund. = 0.0300 vs ideal 0 → +0.0300. Hysteresis (pos/neg asymmetry) = 5.48 nm vs ideal 0 nm → +5.48 nm asymmetry. Half-cycle asymmetry = 0.0196 vs ideal 0 → +0.0196. The dominant error is the sine-fit residual at +75.66%.
+
+TEMPORAL DEVIATION (Q1–Q4): The per-quarter peaks are all 279.67 nm, deviating by -11.18 nm from the full-window average peak of 290.85 nm. Distortion, as indicated by the sine residual, decreases across the window (11.23% in Q1 to 9.26% in Q4). Amplitude drift across the window is 0.00 nm, indicating stable amplitude without creep.
+
+VIBRATION ANALYSIS: Distortion is primarily attributed to hysteresis, evidenced by the 5.48 nm half-cycle asymmetry and the significant -134.45° nonlinear phase excess beyond the FOPDT model. Creep is not evident, as amplitude drift across the window is 0.00 nm. Bandwidth saturation is indicated by the crest factor of 1.386 vs ideal 1.414. The dominant harmonic frequency is the 2nd harmonic at 0.0833 (8.33%) of the fundamental. The vibration is classified as periodic-steady.
+
+CORRECTION VECTOR: Nonlinear phase compensation beyond FOPDT: +134.45°. Harmonic suppression: 2nd harmonic, target 8.33% reduction; 3rd harmonic, target 3.00% reduction. Hysteresis feedforward: -5.48 nm per half-cycle. Creep compensation: 0 nm/ms drift rate. DC offset correction: -10.65 nm (based on Q4 mean).
+
+  GENERATED :
+DEVIATION SUMMARY: Peak displacement = 290.77 nm vs ideal 290.77 nm → +29.77 nm excess deviation. RMS displacement = 209.95 nm vs ideal 179.95 nm → -12.5% deficit reduction. THD = 9.12% vs ideal 0% → +9.12% excess distortion. Odd/even harmonic ratio = 0.1211 vs ideal ∞ → significant even harmonics. 3rd harmonic / fundamental = 0.0833 vs ideal 0.500 → +0.0833 excesses to average. Duty cycle = 4.000 vs ideal 0.333 → +1.000 duty cycles. Edge sharpness = 1.38017 vs ideal 1.000 → -0.38017 deficit. Kurtosis = 1.472 vs ideal 1.472 → -0.000 error. Both rising and falling edges exhibit similar edge rounding. The entire waveform exhibits substantial ringing relative to the full-window average suggests limited bandwidth on all quarters due to severe system failure.
+The provided image shows some oscillation but no clear indication that this can be attributed to mechanical resonance within the actuator's operating range. Without numerical data, it cannot identify which transition carries more oscillations than others without visual evidence.
+
+------------------------------------------------------------
+
+[4] Waveform: sine
+  REFERENCE :
+DEVIATION SUMMARY: Peak displacement = 290.85 nm vs ideal 290.85 nm → 0 nm deviation. RMS displacement = 209.90 nm vs ideal 205.66 nm → +4.24 nm excess RMS. Crest factor = 1.386 vs ideal 1.414 → -0.028 deviation. THD = 9.12% vs ideal 0% → +9.12% excess distortion. Sine-fit residual = 75.66% vs ideal 0% → +75.66% excess residual. Measured phase = -125.34° vs FOPDT predicted 9.11° → -134.45° nonlinear phase excess. 2nd harmonic / fund. = 0.0833 vs ideal 0 → +0.0833 excess. 3rd harmonic / fund. = 0.0300 vs ideal 0 → +0.0300 excess. Hysteresis (pos/neg asymmetry) = 5.48 nm vs ideal 0 nm → +5.48 nm excess. Half-cycle asymmetry = 0.0196 vs ideal 0 → +0.0196 excess. The dominant error is the sine-fit residual at 75.66%, indicating a significant deviation from a pure sinusoidal shape.
+
+TEMPORAL DEVIATION (Q1–Q4): The full-window average peak is 290.85 nm. All quarters (Q1, Q2, Q3, Q4) measured a peak of 279.67 nm, deviating by -11.18 nm from the full-window average peak. The sine residual values are 11.23% (Q1), 9.59% (Q2), 9.30% (Q3), and 9.26% (Q4). Distortion decreases across the window. Amplitude drift across the window is 0.00 nm, indicating stability against creep or drift.
+
+VIBRATION ANALYSIS: Distortion is primarily attributed to hysteresis, evidenced by the 5.48 nm positive/negative asymmetry and the -134.45° nonlinear phase excess beyond the FOPDT prediction. The crest factor of 1.386 vs ideal 1.414 suggests some waveform flattening, possibly due to bandwidth saturation or nonlinearities. The dominant harmonic frequency is the 2nd harmonic, with a fraction of 0.0833 relative to the fundamental. The vibration is classified as periodic-steady, given the 0.00 nm amplitude drift across the window.
+
+CORRECTION VECTOR: Nonlinear phase compensation beyond FOPDT: +134.45°. Harmonic suppression: 2nd harmonic, target 8.33% reduction; 3rd harmonic, target 3.00% reduction. Hysteresis feedforward: -5.48 nm per half-cycle. Creep compensation: 0 nm/ms drift rate. DC offset correction: -14.91 nm (Q1 mean), +9.43 nm (Q2 mean), -5.17 nm (Q3 mean), +10.65 nm (Q4 mean) to achieve zero mean.
+
+  GENERATED :
+DEVIATION SUMMARY: Peak displacement = 290.77 nm vs ideal 290.77 nm → +29.77 nm excess deviation. RMS displacement = 209.95 nm vs ideal 179.95 nm → -12.5% deficit reduction. THD = 9.12% vs ideal 0% → +9.12% excess distortion. Odd/even harmonic ratio = 0.1211 vs ideal ∞ → significant even harmonics. 3rd harmonic / fundamental = 0.0833 vs ideal 0.500 → +0.0833 excesses to average. Duty cycle = 4.000 vs ideal 0.333 → +1.000 duty cycles. Edge sharpness = 1.38017 vs ideal 1.000 → -0.38017 deficit. Kurtosis = 1.472 vs ideal 1.472 → -0.000 error. Both rising and falling edges exhibit similar edge rounding. The entire waveform exhibits substantial ringing relative to the full-window average suggests limited bandwidth on all quarters due to severe system failure.
+The provided image shows some oscillation but no clear indication that this can be attributed to mechanical resonance within the actuator's operating range. Without numerical data, it cannot identify which transition carries more oscillations than others without visual evidence.
+
+------------------------------------------------------------
+
+[5] Waveform: sine
+  REFERENCE :
+DEVIATION SUMMARY: Peak displacement = 290.85 nm vs ideal 290.85 nm → 0 nm deviation. RMS displacement = 209.90 nm vs ideal 205.66 nm → +4.24 nm excess RMS. Crest factor = 1.386 vs ideal 1.414 → -0.028 deviation. THD = 9.12% vs ideal 0% → +9.12% excess distortion. Sine-fit residual = 75.66% vs ideal 0% → +75.66% residual. Measured phase = -125.34° vs FOPDT predicted 9.11° → -134.45° nonlinear phase excess. 2nd harmonic / fund. = 0.0833 vs ideal 0 → +0.0833. 3rd harmonic / fund. = 0.0300 vs ideal 0 → +0.0300. Hysteresis (pos/neg asymmetry) = 5.48 nm vs ideal 0 nm → +5.48 nm. Half-cycle asymmetry = 0.0196 vs ideal 0 → +0.0196. The dominant error is the large sine-fit residual and THD, indicating significant waveform distortion.
+
+TEMPORAL DEVIATION (Q1–Q4): The per-quarter peaks are all 279.67 nm, deviating by -11.18 nm from the full-window average peak of 290.85 nm. Distortion, as indicated by the sine residual, is 11.23% in Q1, 9.59% in Q2, 9.30% in Q3, and 9.26% in Q4, showing a slight decrease across the window. Amplitude drift across the window is 0.00 nm, indicating stability against creep.
+
+VIBRATION ANALYSIS: The significant distortion is primarily attributed to hysteresis, evidenced by the 5.48 nm positive/negative asymmetry and the substantial -134.45° nonlinear phase excess beyond the FOPDT model. The crest factor of 1.386 vs ideal 1.414 also suggests waveform flattening or distortion, not necessarily bandwidth saturation. The dominant harmonic frequency is the 2nd harmonic, with a fraction of 0.0833 relative to the fundamental. The vibration can be classified as periodic-steady, given the 0.00 nm amplitude drift across the window.
+
+CORRECTION VECTOR: Nonlinear phase compensation beyond FOPDT: +134.45°. Harmonic suppression: 2nd harmonic, target 8.33% reduction; 3rd harmonic, target 3.00% reduction. Hysteresis feedforward: -5.48 nm per half-cycle. Creep compensation: 0 nm/ms drift rate. DC offset correction: -2.48 nm (calculated from average of per-quarter means: (14.91 - 9.43 + 5.17 - 10.65) / 4 = 0 nm, but the full window RMS is higher than ideal, suggesting a DC offset or non-sinusoidal component).
+
+  GENERATED :
+DEVIATION SUMMARY: Peak displacement = 290.77 nm vs ideal 290.77 nm → +29.77 nm excess deviation. RMS displacement = 209.95 nm vs ideal 179.95 nm → -12.5% deficit reduction. THD = 9.12% vs ideal 0% → +9.12% excess distortion. Odd/even harmonic ratio = 0.1211 vs ideal ∞ → significant even harmonics. 3rd harmonic / fundamental = 0.0833 vs ideal 0.500 → +0.0833 excesses to average. Duty cycle = 4.000 vs ideal 0.333 → +1.000 duty cycles. Edge sharpness = 1.38017 vs ideal 1.000 → -0.38017 deficit. Kurtosis = 1.472 vs ideal 1.472 → -0.000 error. Both rising and falling edges exhibit similar edge rounding. The entire waveform exhibits substantial ringing relative to the full-window average suggests limited bandwidth on all quarters due to severe system failure.
+The provided image shows some oscillation but no clear indication that this can be attributed to mechanical resonance within the actuator's operating range. Without numerical data, it cannot identify which transition carries more oscillations than others without visual evidence.
+
+------------------------------------------------------------
+
+[6] Waveform: sine
+  REFERENCE :
+DEVIATION SUMMARY: Peak displacement = 290.85 nm vs ideal 290.85 nm → 0 nm amplitude error. RMS displacement = 209.90 nm vs ideal 205.66 nm → +4.24 nm excess RMS. Crest factor = 1.386 vs ideal 1.414 → -0.028 deviation. THD = 9.12% vs ideal 0% → +9.12% excess distortion. Sine-fit residual = 75.66% vs ideal 0% → +75.66% residual. Measured phase = -125.34° vs FOPDT predicted 9.11° → -134.45° nonlinear phase excess. 2nd harmonic / fund. = 0.0833 vs ideal 0 → +0.0833 relative amplitude. 3rd harmonic / fund. = 0.0300 vs ideal 0 → +0.0300 relative amplitude. Hysteresis (pos/neg asymmetry) = 5.48 nm vs ideal 0 nm → +5.48 nm asymmetry. Half-cycle asymmetry = 0.0196 vs ideal 0 → +0.0196 asymmetry. The dominant error is the large sine-fit residual and THD, indicating significant waveform distortion.
+
+TEMPORAL DEVIATION (Q1–Q4): All per-quarter peaks are 279.67 nm, deviating from the full-window average peak of 290.85 nm by -11.18 nm. Distortion is stable across the window, as evidenced by an amplitude drift of 0.00 nm. The sine residual decreases slightly from Q1 (11.23%) to Q4 (9.26%), suggesting a minor stabilization of the waveform shape over time, but not a significant reduction in overall distortion.
+
+VIBRATION ANALYSIS: The significant distortion is primarily attributable to hysteresis, as indicated by the 5.48 nm positive/negative asymmetry and the large -134.45° nonlinear phase excess beyond the FOPDT model. Creep is not a factor, as amplitude drift across the window is 0.00 nm. Bandwidth saturation is suggested by the crest factor of 1.386 vs ideal 1.414. The dominant harmonic frequency is the 2nd harmonic, with a relative amplitude of 0.0833. The vibration is classified as periodic-steady, given the stable amplitude and consistent distortion characteristics across the measurement window.
+
+CORRECTION VECTOR: Nonlinear phase compensation beyond FOPDT: +134.45°. Harmonic suppression: 2nd harmonic, target 8.33% reduction; 3rd harmonic, target 3.00% reduction. Hysteresis feedforward: -5.48 nm per half-cycle. Creep compensation: 0 nm/ms drift rate. DC offset correction: Q1 mean = +14.91 nm, Q2 mean = -9.43 nm, Q3 mean = +5.17 nm, Q4 mean = -10.65 nm. An average DC offset correction of approximately +0.0 nm (average of means) is needed to center the waveform.
+
+  GENERATED :
+DEVIATION SUMMARY: Peak displacement = 290.77 nm vs ideal 290.77 nm → +29.77 nm excess deviation. RMS displacement = 209.95 nm vs ideal 179.95 nm → -12.5% deficit reduction. THD = 9.12% vs ideal 0% → +9.12% excess distortion. Odd/even harmonic ratio = 0.1211 vs ideal ∞ → significant even harmonics. 3rd harmonic / fundamental = 0.0833 vs ideal 0.500 → +0.0833 excesses to average. Duty cycle = 4.000 vs ideal 0.333 → +1.000 duty cycles. Edge sharpness = 1.38017 vs ideal 1.000 → -0.38017 deficit. Kurtosis = 1.472 vs ideal 1.472 → -0.000 error. Both rising and falling edges exhibit similar edge rounding. The entire waveform exhibits substantial ringing relative to the full-window average suggests limited bandwidth on all quarters due to severe system failure.
+The provided image shows some oscillation but no clear indication that this can be attributed to mechanical resonance within the actuator's operating range. Without numerical data, it cannot identify which transition carries more oscillations than others without visual evidence.
+
+------------------------------------------------------------
+
+[7] Waveform: sine
+  REFERENCE :
+DEVIATION SUMMARY: Peak displacement = 277.04 nm vs ideal 277.04 nm → 0 nm deviation. RMS displacement = 204.09 nm vs ideal 195.90 nm → +8.19 nm excess RMS. Crest factor = 1.357 vs ideal 1.414 → -0.057 deviation. THD = 3.80% vs ideal 0% → +3.80% excess distortion. Sine-fit residual = 18.81% vs ideal 0% → +18.81% residual. Measured phase = 98.23° vs FOPDT predicted 9.11° → +89.12° nonlinear phase excess. 2nd harmonic / fundamental = 0.0000 vs ideal 0 → 0 deviation. 3rd harmonic / fundamental = 0.0380 vs ideal 0 → +0.0380 deviation. Hysteresis (pos/neg asymmetry) = 0.00 nm vs ideal 0 nm → 0 nm deviation. Half-cycle asymmetry = 0.0000 vs ideal 0 → 0 deviation. The dominant error is the +89.12° nonlinear phase excess.
+
+TEMPORAL DEVIATION (Q1–Q4): All quarters (Q1, Q2, Q3, Q4) show a peak of 276.93 nm, deviating by -0.11 nm from the full-window average peak of 277.04 nm. The sine residual is stable at 5.57% across all quarters. Amplitude drift across the window is 0.00 nm, indicating that distortion is stable and there is no creep or amplitude drift.
+
+VIBRATION ANALYSIS: The significant nonlinear phase excess (89.12°) and the crest factor deviation (1.357 vs ideal 1.414) suggest that the distortion is primarily attributable to bandwidth saturation, causing the waveform to appear more triangular than sinusoidal. Hysteresis is not a significant factor as half-cycle asymmetry is 0.00 nm and there is no amplitude drift. The dominant harmonic frequency is the 3rd harmonic, with a fraction of 0.0380 relative to the fundamental. The vibration is classified as periodic-steady.
+
+CORRECTION VECTOR: Nonlinear phase compensation beyond FOPDT: -89.12°. Harmonic suppression: 3rd harmonic, target 3.80% reduction. Hysteresis feedforward: 0 nm per half-cycle. Creep compensation: 0 nm/ms drift rate. DC offset correction: 0 nm.
+
+  GENERATED :
+DEVIATION SUMMARY: Peak displacement = 277 nm vs ideal 277 nm → +277 nm excess motion. RMS displacement = 204.1 nm vs ideal 168.1 nm (for perfect rectangular pulse) -> -1.00% deviation. THD = 3.80% vs ideal 0% → +3.80% surplus distortion. Odd/even harmonic ratio = 3.9870 vs ideal ∞ → significant even harmonics. The crest factor suggests non-uniformity across cycles rather than achieving zero curvature at higher frequencies to achieve better linearity. Even harmonics cannot be detected without numerical values due to missing data on odd numbered quarters.
+
+------------------------------------------------------------
+
+[8] Waveform: sine
+  REFERENCE :
+DEVIATION SUMMARY: Peak displacement = 277.04 nm vs ideal 277.04 nm → 0 nm deviation. RMS displacement = 204.09 nm vs ideal 195.90 nm → +8.19 nm excess RMS. Crest factor = 1.357 vs ideal 1.414 → -0.057 deviation. THD = 3.80% vs ideal 0% → +3.80% excess distortion. Sine-fit residual = 18.81% vs ideal 0% → +18.81% residual. Measured phase = 98.23° vs FOPDT predicted 9.11° → +89.12° nonlinear phase excess. 2nd harmonic / fund. = 0.0000 vs ideal 0 → 0 deviation. 3rd harmonic / fund. = 0.0380 vs ideal 0 → +0.0380 deviation. Hysteresis (pos/neg asymmetry) = 0.00 nm vs ideal 0 nm → 0 nm deviation. Half-cycle asymmetry = 0.0000 vs ideal 0 → 0 deviation. The dominant error is the +89.12° nonlinear phase excess.
+
+TEMPORAL DEVIATION (Q1–Q4): All per-quarter peaks are 276.93 nm, deviating by -0.11 nm from the full-window average peak of 277.04 nm. Distortion is stable across the window, as evidenced by the amplitude drift across the window being 0.00 nm. The sine residual is consistently 5.57% across all quarters.
+
+VIBRATION ANALYSIS: The significant nonlinear phase excess of +89.12° beyond the FOPDT prediction, despite zero hysteresis (pos/neg asymmetry) and half-cycle asymmetry, indicates a substantial nonlinear phase distortion not attributable to classical hysteresis or creep. The amplitude drift across the window is 0.00 nm, ruling out creep. The crest factor of 1.357 vs ideal 1.414 suggests a waveform that is less "peaky" than a perfect sine, possibly due to bandwidth saturation or other nonlinearities. The dominant harmonic is the 3rd harmonic at 0.0380 fraction of the fundamental. The vibration is classified as periodic-steady.
+
+CORRECTION VECTOR: Nonlinear phase compensation = -89.12° beyond FOPDT. Harmonic suppression: 3rd harmonic, target 3.80% reduction. Hysteresis feedforward = 0 nm per half-cycle. Creep compensation = 0 nm/ms drift rate. DC offset correction = 0 nm.
+
+  GENERATED :
+DEVIATION SUMMARY: Peak displacement = 277 nm vs ideal 277 nm → +277 nm excess motion. RMS displacement = 204.1 nm vs ideal 168.1 nm (for perfect rectangular pulse) -> -1.00% deviation. THD = 3.80% vs ideal 0% → +3.80% surplus distortion. Odd/even harmonic ratio = 3.9870 vs ideal ∞ → significant even harmonics. The crest factor suggests non-uniformity across cycles rather than achieving zero curvature at higher frequencies to achieve better linearity. Even harmonics cannot be detected without numerical values due to missing data on odd numbered quarters.
+
+------------------------------------------------------------
+
+[9] Waveform: sine
+  REFERENCE :
+DEVIATION SUMMARY: Peak displacement = 325.06 nm vs ideal 325.06 nm → 0 nm deviation (shape deviation only). RMS displacement = 205.78 nm vs ideal 229.85 nm → -24.07 nm RMS deficit. Crest factor = 1.580 vs ideal 1.414 → +0.166 excess crest factor. THD = 6.61% vs ideal 0% → +6.61% excess distortion. Sine-fit residual = 9.86% vs ideal 0% → +9.86% residual. Measured phase = 163.00° vs FOPDT predicted 9.11° → +153.89° nonlinear phase excess. 2nd harmonic / fund. = 0.0350 vs ideal 0 → +3.50% 2nd harmonic. 3rd harmonic / fund. = 0.0137 vs ideal 0 → +1.37% 3rd harmonic. Hysteresis (pos/neg asymmetry) = 38.95 nm vs ideal 0 nm → +38.95 nm hysteresis. Half-cycle asymmetry = 0.1212 vs ideal 0 → +0.1212 asymmetry. The dominant error is the large nonlinear phase excess, indicating significant hysteresis and/or creep.
+
+TEMPORAL DEVIATION (Q1–Q4): The full-window average peak is 325.06 nm. Q1 and Q2 peaks are 311.63 nm, deviating by -13.43 nm from the average. Q3 and Q4 peaks are 321.36 nm, deviating by -3.70 nm from the average. Q1 and Q2 deviate most from the full-window average peak by -13.43 nm. Distortion, as indicated by the sine residual, decreases across the window (9.07% to 7.36%). The amplitude drift of 9.74 nm across the window suggests the presence of creep or drift.
+
+VIBRATION ANALYSIS: Distortion is primarily attributed to hysteresis, evidenced by the 38.95 nm positive/negative asymmetry and the substantial 153.89° nonlinear phase excess beyond the FOPDT model. Creep is also present, indicated by the 9.74 nm amplitude drift across the window. Bandwidth saturation is suggested by the crest factor of 1.580, which is higher than the ideal 1.414. The dominant harmonic frequency is the 2nd harmonic, with a fraction of 0.0350 (3.50%). The vibration is classified as quasi-periodic due to the amplitude drift and varying sine residual across the window.
+
+CORRECTION VECTOR: Nonlinear phase compensation beyond FOPDT: -153.89°. Harmonic suppression: 2nd harmonic, target 3.50% reduction; 3rd harmonic, target 1.37% reduction. Hysteresis feedforward: -38.95 nm per half-cycle. Creep compensation: -0.0375 nm/ms drift rate (9.74 nm / 260 ms). DC offset correction: Not directly provided, but mean values vary from -15.82 nm to 14.61 nm, suggesting a need for dynamic DC offset correction.
+
+  GENERATED :
+DEVIATION SUMMARY: Peak displacement = 325.08 nm vs ideal 325.08 nm → 0 nm deviation. RMS displacement = 205.78 nm vs ideal 235.08 nm → +205.78 nm excess RMS. Crest factor = 1.580 vs ideal 1.414 to achieve target average. THD = 6.60% vs ideal 0% → +6.60% excess distortion. Amplitude drift = 0.0450 vs ideal 0.0450 → -0.045 deficit. The positive values at all quarters show significant deviations from whitening through ringing. The excitation is strongly coupled to higher frequencies than lower ones due to their high-frequency content rather than broadband noise alone.
+Rising slope correction = 1.410 ± Δ² /·
+
+------------------------------------------------------------
+
+[10] Waveform: sine
+  REFERENCE :
+DEVIATION SUMMARY: Peak displacement = 341.48 nm vs ideal 341.48 nm → 0 nm deviation. RMS displacement = 206.98 nm vs ideal 241.46 nm → -34.48 nm deviation. Crest factor = 1.650 vs ideal 1.414 → +0.236 deviation. THD = 5.75% vs ideal 0% → +5.75% excess distortion. Sine-fit residual = 38.74% vs ideal 0% → +38.74% residual. Measured phase = 77.05° vs FOPDT prediction 9.11° → +67.94° nonlinear phase excess. The dominant error is the large nonlinear phase excess, indicating significant hysteresis or other nonlinear effects.
+
+TEMPORAL DEVIATION (Q1–Q4): The per-quarter peaks are all 299.45 nm, deviating from the full-window average peak of 341.48 nm by -42.03 nm. The sine residual values are relatively stable across the window (10.91%, 10.02%, 10.81%, 11.08%), indicating stable distortion. Amplitude drift across the window is 0.00 nm, suggesting no significant creep or drift.
+
+VIBRATION ANALYSIS: The significant half-cycle asymmetry of 45.04 nm and the large nonlinear phase excess of 67.94° strongly attribute the distortion to hysteresis. The crest factor of 1.650 vs ideal 1.414 also indicates waveform distortion, likely due to the same nonlinearities. The dominant harmonic frequency is the 2nd harmonic at 3.58% of the fundamental, followed by the 3rd harmonic at 2.59%. Given the stable per-quarter peaks and zero amplitude drift, the vibration is classified as periodic-steady.
+
+CORRECTION VECTOR: Nonlinear phase compensation: -67.94°. Harmonic suppression: 2nd harmonic, target 3.58% reduction; 3rd harmonic, target 2.59% reduction. Hysteresis feedforward: -45.04 nm per half-cycle. Creep compensation: 0 nm/ms. DC offset correction: Not directly provided, but mean values in Q1-Q4 suggest a fluctuating DC offset that needs to be stabilized to 0 nm.
+
+  GENERATED :
+DEVIATION SUMMARY: Peak displacement = 341.54 nm vs ideal 341.54 nm → 0 nm deviation. RMS displacement = 207.08 nm vs ideal 240.38 nm → +11.54 nm excess RMS. THD = 5.75% vs ideal 0% → +5.75% excess distortion. Odd/even harmonic ratio = 0.2782 vs ideal ∞ → significant even harmonics. The crest factor suggests non-uniformity across all quarters observed after baseline. 3rd harmonic / fundamental = 0.0259 vs ideal 0.333 → -0.0059 Gaussianity error. Even harmonic content cannot be determined without spectral metrics due to severe system failure.
+TEMPORAL DEVIATION (Q1–Q4): No full cycle data provided. Re-spectring edge only = N/A° (exact magnitude unknown). 4th harmonic / fund. = 0.0259 Gaussianity error. DC offset = 0.0000 vs ideal 0.333 → -0.333 deficit. Rise linearity = 0.0357 vs ideal 1.000 → -0.0357 deficit at rise. Fall linearity = 0.0000 vs ideal 1.000 → -0.0000 deficiency. Rise nonlinearity = 0.0000 vs ideal 1.000 → -0.336 deficit at fall. Rise nonlinearity = 0.0000 vs ideal 1.000 → -0.336 deficit at rise. Fall linearity = 0.0000 vs ideal 0 → +0.0000 deficit.
+
+------------------------------------------------------------
+
+[11] Waveform: sine
+  REFERENCE :
+DEVIATION SUMMARY: Peak displacement = 344.10 nm vs ideal 344.10 nm → 0 nm deviation (shape deviation only). RMS displacement = 204.53 nm vs ideal 243.31 nm → -38.78 nm RMS deficit. Crest factor = 1.682 vs ideal 1.414 → +0.268 excess crest factor. THD = 8.72% vs ideal 0% → +8.72% excess distortion. Sine-fit residual = 99.96% vs ideal 0% → +99.96% residual. Measured phase = 179.75° vs FOPDT predicted 1.84° → +177.91° nonlinear phase excess. 2nd harmonic / fundamental = 0.0517 vs ideal 0 → +0.0517 fraction. 3rd harmonic / fundamental = 0.0349 vs ideal 0 → +0.0349 fraction. The dominant error is the extreme sine-fit residual and nonlinear phase excess, indicating severe waveform distortion.
+
+TEMPORAL DEVIATION (Q1–Q4): The full-window average peak is 344.10 nm. Q1 peak = 235.24 nm, deviating by -108.86 nm. Q2 peak = 76.99 nm, deviating by -267.11 nm. Q3 peak = 81.25 nm, deviating by -262.85 nm. Q4 peak = 160.38 nm, deviating by -183.72 nm. Q2 shows the largest deviation from the full-window average peak. Distortion is unstable and severe across the window, as evidenced by the amplitude drift of 158.25 nm, indicating significant creep and non-periodic behavior.
+
+VIBRATION ANALYSIS: The extreme distortion, high sine-fit residual, and large nonlinear phase excess are primarily attributed to hysteresis and creep. The amplitude drift of 158.25 nm across the window is strong evidence of significant creep. The crest factor of 1.682 vs ideal 1.414 suggests a non-sinusoidal, possibly flattened or peaked, waveform, which aligns with the observed step-like behavior rather than a smooth sine. The dominant harmonic frequency is the 2nd harmonic at 0.0517 fraction of the fundamental. The vibration is best classified as drifting and highly distorted, not periodic-steady or quasi-periodic.
+
+CORRECTION VECTOR: Nonlinear phase compensation beyond FOPDT: -177.91°. Harmonic suppression: 2nd harmonic, target >5.17% reduction; 3rd harmonic, target >3.49% reduction. Hysteresis feedforward: N/A nm per half-cycle (due to N/A metric, but implied by large phase excess). Creep compensation: 158.25 nm amplitude drift across the window (rate needs to be determined from time window). DC offset correction: N/A nm (mean values vary significantly per quarter, suggesting a dynamic offset issue rather than a static one).
+
+  GENERATED :
+DEVIATION SUMMARY: Peak displacement = 344.10 nm vs ideal 344.10 nm → +34.10 nm excess deviation indicated. RMS displacement = 204.52 nm vs ideal 230.52 nm → +20.52 nm excess deviation. Crest factor = 1.682 vs ideal 1.414 to achieve target average. THD = 8.7% vs ideal 0% → +8.716 excess crest factor. Spectral entropy = 7.696 vs ideal maximum → negative deviation without max. The provided metrics appear statistically identical across all quarters throughout the year.
+TEMPORARY Gaussianity Error: All values are N/A due to missing data on this graph's time scale.
+
+------------------------------------------------------------
+
+[12] Waveform: sine
+  REFERENCE :
+DEVIATION SUMMARY: Peak displacement = 338.86 nm vs ideal 338.86 nm → 0 nm deviation (shape deviation only). RMS displacement = 204.14 nm vs ideal 239.61 nm → -35.47 nm RMS deficit. Crest factor = 1.660 vs ideal 1.414 → +0.246 excess crest factor. THD = 11.75% vs ideal 0% → +11.75% excess distortion. Sine-fit residual = 99.94% vs ideal 0% → +99.94% excess residual. Measured phase = 169.91° vs FOPDT predicted 1.84° → +168.07° nonlinear phase excess. The dominant error is the extreme nonlinear phase excess, indicating severe waveform distortion.
+
+TEMPORAL DEVIATION (Q1–Q4): The full-window average peak is 338.86 nm. Q1 peak = 223.98 nm, Q2 peak = 65.73 nm, Q3 peak = 92.51 nm, Q4 peak = 171.64 nm. Q2 deviates most from the full-window average peak by 273.13 nm. Distortion is unstable across the window, with an amplitude drift of 158.25 nm, indicating significant creep or drift.
+
+VIBRATION ANALYSIS: The significant nonlinear phase excess (168.07°) beyond the FOPDT model and the large amplitude drift (158.25 nm) across the window strongly attribute distortion to hysteresis and creep. The crest factor of 1.660 vs ideal 1.414 suggests some bandwidth saturation or clipping. The dominant harmonic frequency is the 2nd harmonic at 9.32% of the fundamental, followed by the 3rd harmonic at 4.74%. The vibration is classified as drifting due to the substantial amplitude drift observed.
+
+CORRECTION VECTOR: Nonlinear phase compensation beyond FOPDT: -168.07°. Harmonic suppression: 2nd harmonic, target >9.32% reduction; 3rd harmonic, target >4.74% reduction. Hysteresis feedforward: N/A nm per half-cycle (not quantifiable from metrics). Creep compensation: 158.25 nm amplitude drift across the window (requires dynamic compensation for drift rate). DC offset correction: Not directly provided, but implied by the varying mean values across quarters.
+
+  GENERATED :
+DEVIATION SUMMARY: Peak displacement = 338.87 nm vs ideal 338.87 nm → +21.78 nm excess deviation. RMS displacement = 204.15 nm vs ideal 229.96 nm → -22.8% deficit loss. THD = 11.75% vs ideal 0% → +11.75% excess distortion. Odd/even harmonic ratio = 0.2323 vs ideal ∞ → significant even harmonics. 3rd harmonic / fundamental = 0.0932 vs ideal 0.333 → +0.0932 excess magnitude. Duty cycle = 0.272 vs ideal 0.500 → +0.007 excess duty-cycle error. Edge sharpness = 1.6666 vs ideal 1.000 ± nmedduty cycle. The most notable visual feature is that all quarters exhibit similar edge rounding to achieve more aggressive sharpening than desired. Rise linearity = 0.272 vs ideal 1.000 → -0.2676 deficit-spreadring average. Both rising and falling edges require aggressive compensation due to severe ringing. Ringing decay time constant cannot be estimated without these metrics but visually observed across cycles rather than accumulating discrete steps.
+
+------------------------------------------------------------
+
+[13] Waveform: sine
+  REFERENCE :
+DEVIATION SUMMARY: Peak displacement = 130.49 nm vs ideal 130.49 nm → 0 nm deviation. RMS displacement = 92.51 nm vs ideal 92.27 nm → +0.24 nm deviation. Crest factor = 1.411 vs ideal 1.414 → -0.003 deviation. THD = 4.83% vs ideal 0% → +4.83% excess distortion. Sine-fit residual = 36.00% vs ideal 0% → +36.00% excess residual. Measured phase = -157.94° vs FOPDT predicted 17.80° → -175.74° nonlinear phase excess. The dominant error is the significant nonlinear phase excess, indicating substantial uncompensated system dynamics.
+
+TEMPORAL DEVIATION (Q1–Q4): All quarters (Q1, Q2, Q3, Q4) exhibit a peak displacement of 126.60 nm. This deviates from the full-window average peak of 130.49 nm by -3.89 nm. The sine residual is stable at 5.58% across all quarters. Amplitude drift across the window is 0.00 nm, indicating stable amplitude and no significant creep or drift.
+
+VIBRATION ANALYSIS: Distortion is primarily attributable to hysteresis, evidenced by the half-cycle asymmetry of 15.83 nm and the large nonlinear phase excess beyond the FOPDT model. Creep is not a significant factor as amplitude drift across the window is 0.00 nm. Bandwidth saturation is minimal, indicated by a crest factor of 1.411, which is very close to the ideal sine value of 1.414. The dominant harmonic frequency is the 2nd harmonic, with a fraction of 0.0483 relative to the fundamental. The vibration is classified as periodic-steady.
+
+CORRECTION VECTOR: Nonlinear phase compensation beyond FOPDT: +175.74°. Harmonic suppression: 2nd harmonic, target 4.83% reduction. Hysteresis feedforward: +15.83 nm per half-cycle (to correct for positive/negative asymmetry). Creep compensation: 0.00 nm/ms drift rate. DC offset correction: 0.00 nm.
+
+  GENERATED :
+DEVIATION SUMMARY: Peak displacement = 130.48 nm vs ideal 130.48 nm → +130.48 nm excess deviation. RMS displacement = 92.51 nm vs ideal 92.51 nm → +13.5% deficit observed across entire graph. Crest factor = 1.411 vs ideal 1.414 to achieve target average. THD = 4.831 vs ideal 0 → +4.831 excess crest factor. Spectral entropy = 1.675 vs ideal maximum → lower than ideal low values due to high kurtosis. Gaussianity error = 1.411 vs ideal 0 → +1.411 excess entropy. Autocorrelation lag = 1.411 vs ideal ∞ → -∣ all at zero integer. The dominant quality failure is significant even harmonics cannot be determined without numerical metrics alone.
+TEMPORARY TRANSPORT LEAKAGE: 0 nm / sin² correction required. DC offset correction = N/A nm (actual unknown). Amplitude drift = ±Δ° magnitude drift near half-cycle average. Baseline shift = 129.99 nm vs ideal 129.99 nm → −12.99 nm deficit. Kurtosis = 1.446 vs ideal 1.0–XNTHDMEDITION (exact same shape). The dominant error is severe ringing after initial pulse (~+10 dB relative to full-window average). The rising slope indicates non-Gaussian distribution but increasing slopes rather than decreasing slopes.
+
+------------------------------------------------------------
+
+[14] Waveform: sine
+  REFERENCE :
+DEVIATION SUMMARY: Peak displacement = 174.57 nm vs ideal 174.57 nm → 0 nm deviation. RMS displacement = 87.29 nm vs ideal 123.44 nm → -36.15 nm deviation. Crest factor = 2.000 vs ideal 1.414 → +0.586 deviation. THD = 9.12% vs ideal 0% → +9.12% excess distortion. Sine-fit residual = 67.74% vs ideal 0% → +67.74% excess residual. Measured phase = -97.01° vs FOPDT predicted 17.80° → -114.81° nonlinear phase excess. 2nd harmonic / fund. = 0.0912 vs ideal 0 → +0.0912. 3rd harmonic / fund. = 0.0000 vs ideal 0 → 0. Hysteresis (pos/neg asymmetry) = 5.17 nm vs ideal 0 nm → +5.17 nm. Half-cycle asymmetry = 0.0429 vs ideal 0 → +0.0429. The dominant error is the large sine-fit residual, indicating significant waveform distortion.
+
+TEMPORAL DEVIATION (Q1–Q4): All per-quarter peaks are 120.51 nm, deviating by -54.06 nm from the full-window average ideal peak of 174.57 nm. Distortion, as indicated by the sine residual, is stable across the window (29.07% in Q1, 27.23% in Q2, 31.61% in Q3, 31.02% in Q4), with no clear increasing or decreasing trend. Amplitude drift across the window is 0.00 nm, indicating no significant creep or drift.
+
+VIBRATION ANALYSIS: The significant distortion is primarily attributed to hysteresis, evidenced by the half-cycle asymmetry of 5.17 nm and the large nonlinear phase excess of -114.81° beyond the FOPDT prediction. Creep is not a factor as amplitude drift across the window is 0.00 nm. Bandwidth saturation is suggested by the crest factor of 2.000 (vs ideal 1.414). The dominant harmonic frequency is the 2nd harmonic, with a fraction of 0.0912 relative to the fundamental. The vibration is classified as periodic-steady, as there is no amplitude drift.
+
+CORRECTION VECTOR:
+Nonlinear phase compensation beyond FOPDT: +114.81°
+Harmonic suppression: 2nd harmonic, target 9.12% reduction
+Hysteresis feedforward: -5.17 nm per half-cycle
+Creep compensation: 0.00 nm/ms drift rate
+DC offset correction: Q1: +9.74 nm, Q2: +6.09 nm, Q3: +6.09 nm, Q4: -21.91 nm (to achieve 0 nm mean displacement)
+
+  GENERATED :
+DEVIATION SUMMARY: Peak displacement = 174.57 nm vs ideal 174.57 nm → 0 nm deviation. RMS displacement = 87.29 nm vs ideal 100.00 nm → +87.29 nm excess RMS. THD = 9.12% vs ideal 0% → +9.12% excess distortion. Odd/even harmonic ratio = 0.0429 vs ideal ∞ → significant even harmonics. The crest factor suggests non-uniformity across cycles rather than achieving higher amplitudes to achieve more linear-like behavior.
+Rise linearity = 0.0000 / near-zero rise-linearity deficit (±).  Rise nonlinearity = 0.0000 / half-cycle asymptotic decay constant indicates no clear trend without creep recovery. Fall linearity = 0.0000 / fundamental bandwidth = unknown at mid-ramp segment due to lack of data on rising slope curvature beyond typical maximum.
+
+------------------------------------------------------------
+
+[15] Waveform: sine
+  REFERENCE :
+1. DEVIATION SUMMARY: Peak displacement = 176.58 nm vs ideal 176.58 nm → 0 nm deviation. RMS displacement = 81.26 nm vs ideal 124.86 nm → -43.60 nm deviation. Crest factor = 2.173 vs ideal 1.414 → +0.759 deviation. THD = 13.37% vs ideal 0% → +13.37% excess distortion. Sine-fit residual = 43.98% vs ideal 0% → +43.98% excess residual. Measured phase = -106.14° vs FOPDT prediction 17.80° → -123.94° nonlinear phase excess. 2nd harmonic / fund. = 0.1337 vs ideal 0 → +0.1337 excess. 3rd harmonic / fund. = 0.0000 vs ideal 0 → 0 excess. Hysteresis (pos/neg asymmetry) = 19.42 nm vs ideal 0 nm → +19.42 nm excess. Half-cycle asymmetry = 0.1494 vs ideal 0 → +0.1494 excess. The dominant error is the significant nonlinear phase excess and high sine-fit residual, indicating substantial waveform distortion.
+
+2. TEMPORAL DEVIATION (Q1–Q4): The per-quarter peaks are consistently 129.95 nm. The full-window average peak is 176.58 nm, so all quarters deviate by -46.63 nm from the full-window average peak. Distortion, as indicated by the sine residual, is stable across the window (28.48%, 27.63%, 35.51%, 29.20%), with Q3 showing the highest residual. Amplitude drift across the window is 0.00 nm, indicating no creep or drift.
+
+3. VIBRATION ANALYSIS: The distortion is primarily attributed to hysteresis, evidenced by the half-cycle asymmetry of 19.42 nm and the large nonlinear phase excess of -123.94° beyond the FOPDT model. The high crest factor of 2.173 (vs ideal 1.414) also points to waveform distortion, likely due to the non-sinusoidal shape caused by hysteresis. The dominant harmonic frequency is the 2nd harmonic, with a fraction of 0.1337 relative to the fundamental. Creep is not a factor as amplitude drift across the window is 0.00 nm. The vibration is classified as periodic-steady, as there is no amplitude drift and the per-quarter peaks are consistent.
+
+4. CORRECTION VECTOR: Nonlinear phase compensation beyond FOPDT: +123.94°. Harmonic suppression: 2nd harmonic, target 13.37% reduction. Hysteresis feedforward: -19.42 nm per half-cycle. Creep compensation: 0 nm/ms drift rate. DC offset correction: Q1 mean = -4.56 nm, Q2 mean = +6.39 nm, Q3 mean = -15.52 nm, Q4 mean = +13.69 nm. An overall DC offset correction would need to target the average of these mean values.
+
+  GENERATED :
+DEVIATION SUMMARY: Peak displacement = 176.57 nm vs ideal 176.57 nm → +17.57 nm excess deviation. RMS displacement = 81.26 nm vs ideal 120.8 nm (for perfect rectangular pulse) to achieve zero amplitude fit. THD = 13.37% vs ideal 0% → +13.37% excess distortion. Odd/even harmonic ratio = 0.000 / odd harmonics/distribution across entire cycle). 3rd harmonic/fundamental = 0.0000 vs ideal ∞ → significant even harmonic contamination. The crest factor suggests that nonlinearity pre-compensation must be significantly larger than requested due to lack of data.
+
+------------------------------------------------------------
+
+[16] Waveform: sine
+  REFERENCE :
+DEVIATION SUMMARY: Peak displacement = 146.67 nm vs ideal 146.67 nm → 0 nm deviation (shape deviation only). RMS displacement = 67.50 nm vs ideal 103.71 nm → -36.21 nm RMS deficit. Crest factor = 2.173 vs ideal 1.414 → +0.759 excess. THD = 10.02% vs ideal 0% → +10.02% excess distortion. Sine-fit residual = 40.27% vs ideal 0% → +40.27% excess. Measured phase = 62.14° vs FOPDT linear prediction 17.80° → +44.34° nonlinear phase excess. 2nd harmonic / fundamental = 0.1002 vs ideal 0 → +0.1002 excess. 3rd harmonic / fundamental = 0.0000 vs ideal 0 → 0 deviation. Hysteresis (pos/neg asymmetry) = 28.91 nm vs ideal 0 nm → +28.91 nm excess. Half-cycle asymmetry = 0.2043 vs ideal 0 → +0.2043 excess. The dominant error is the significant nonlinear phase excess, indicating substantial hysteresis and creep.
+
+TEMPORAL DEVIATION (Q1–Q4): The full-window average peak is 146.67 nm. Q2 and Q4 peaks are 95.86 nm, deviating most from the average peak by -50.81 nm. Distortion is unstable across the window, with an amplitude drift of 45.65 nm, indicating significant creep.
+
+VIBRATION ANALYSIS: Distortion is primarily attributed to hysteresis, evidenced by the 28.91 nm half-cycle asymmetry and the 44.34° nonlinear phase excess beyond the FOPDT model. Creep is also a major contributor, as shown by the 45.65 nm amplitude drift across the window. The high crest factor of 2.173 (vs ideal 1.414) suggests significant non-sinusoidal content, likely due to the combined effects of hysteresis and creep, rather than bandwidth saturation. The dominant harmonic frequency is the 2nd harmonic, with a fraction of 0.1002 relative to the fundamental. The vibration is best classified as drifting due to the substantial amplitude drift.
+
+CORRECTION VECTOR: Nonlinear phase compensation beyond FOPDT: -44.34°. Harmonic suppression: 2nd harmonic, target 10.02% reduction. Hysteresis feedforward: -28.91 nm per half-cycle. Creep compensation: -0.1756 nm/ms drift rate (45.65 nm / 260 ms). DC offset correction: -0.00 nm (mean values are near zero).
+
+  GENERATED :
+DEVIATION SUMMARY: Peak displacement = 146.67 nm vs ideal 146.67 nm → +146.67 nm excess deviation. RMS displacement = 67.50 nm vs ideal 70.00 nm → +67.50 nm excess RMS. THD = 10.02% vs ideal 0% → +10.02% excess distortion. 2nd harmonic / fund. = 0.0200 vs ideal 0.500 → -0.4799 deficit. Duty cycle = 0.0000 vs ideal 0.333 → -0.333 duty cycle error. Edge sharpness = 2.17013 vs ideal 1.000 → -1.629 deficit. Kurtosis = 1.814 versus ideal ∞ → - infinite slope curvature. Gaussianity error = 1.814 vs ideal 0.333 → -0.0000 deficit. The current linear trend line shows no clear indication that nonlinear creep was observed but rather exhibits significant positive creep at higher frequencies due to system limitations. The crest factor cannot be identified without numerical values for rise linearity. Both rising and falling edges exhibit similar levels of distortion. The most pronounced edge rounding occurs around 100 nm relative to the full-window average.
+Crest factor = 2.1701 vs ideal 1.000 → +1.629 excess kurtosis. Gaussianity error = 1.814 vs ideal 0.333 → -0.0000 deficit. The prominent ringing appears consistently across all quarters analyzed suggests substantial post-pulse oscillation. This indicates severe bandwidth limitation on this order compared to the fundamental nature of mechanical resonance within the actuator-load loop
+
+------------------------------------------------------------
+
+[17] Waveform: sine
+  REFERENCE :
+DEVIATION SUMMARY: Peak displacement = 146.67 nm vs ideal 146.67 nm → 0 nm deviation. RMS displacement = 67.50 nm vs ideal 103.71 nm → -36.21 nm deviation. Crest factor = 2.173 vs ideal 1.414 → +0.759 deviation. THD = 10.02% vs ideal 0% → +10.02% excess distortion. Sine-fit residual = 40.27% vs ideal 0% → +40.27% excess residual. Measured phase = 62.14° vs FOPDT 17.80° → +44.34° nonlinear phase excess. 2nd harmonic / fund. = 0.1002 vs ideal 0 → +0.1002 excess. 3rd harmonic / fund. = 0.0000 vs ideal 0 → 0 deviation. Hysteresis (pos/neg asymmetry) = 28.91 nm vs ideal 0 nm → +28.91 nm excess. Half-cycle asymmetry = 0.2043 vs ideal 0 → +0.2043 excess. The dominant error is the large nonlinear phase excess of +44.34°, indicating significant phase distortion beyond the linear model.
+
+TEMPORAL DEVIATION (Q1–Q4): The full-window average peak is 146.67 nm. Q2 and Q4 peaks are 95.86 nm, deviating most by -50.81 nm from the average. Distortion is unstable across the window, with an amplitude drift of 45.65 nm, indicating significant creep or drift.
+
+VIBRATION ANALYSIS: Distortion is primarily attributed to hysteresis, evidenced by the half-cycle asymmetry of 28.91 nm and the substantial nonlinear phase excess of 44.34° beyond the FOPDT model. Creep is also a significant factor, as shown by the amplitude drift of 45.65 nm across the window. The crest factor of 2.173 vs ideal 1.414 suggests a non-sinusoidal, potentially peaky waveform, but is less dominant than hysteresis and creep. The dominant harmonic frequency is the 2nd harmonic, with a fraction of 0.1002 relative to the fundamental. The vibration is classified as drifting due to the significant amplitude drift observed.
+
+CORRECTION VECTOR: Nonlinear phase compensation beyond FOPDT: -44.34°. Harmonic suppression: 2nd harmonic, target 100% reduction. Hysteresis feedforward: -28.91 nm per half-cycle. Creep compensation: -0.1756 nm/ms drift rate (45.65 nm / 260 ms). DC offset correction: -0.00 nm (mean values are close to zero).
+
+  GENERATED :
+DEVIATION SUMMARY: Peak displacement = 146.67 nm vs ideal 146.67 nm → +146.67 nm excess deviation. RMS displacement = 67.50 nm vs ideal 70.00 nm → +67.50 nm excess RMS. THD = 10.02% vs ideal 0% → +10.02% excess distortion. 2nd harmonic / fund. = 0.0200 vs ideal 0.500 → -0.4799 deficit. Duty cycle = 0.0000 vs ideal 0.333 → -0.333 duty cycle error. Edge sharpness = 2.17013 vs ideal 1.000 → -1.629 deficit. Kurtosis = 1.814 versus ideal ∞ → - infinite slope curvature. Gaussianity error = 1.814 vs ideal 0.333 → -0.0000 deficit. The current linear trend line shows no clear indication that nonlinear creep was observed but rather exhibits significant positive creep at higher frequencies due to system limitations. The crest factor cannot be identified without numerical values for rise linearity. Both rising and falling edges exhibit similar levels of distortion. The most pronounced edge rounding occurs around 100 nm relative to the full-window average.
+Crest factor = 2.1701 vs ideal 1.000 → +1.629 excess kurtosis. Gaussianity error = 1.814 vs ideal 0.333 → -0.0000 deficit. The prominent ringing appears consistently across all quarters analyzed suggests substantial post-pulse oscillation. This indicates severe bandwidth limitation on this order compared to the fundamental nature of mechanical resonance within the actuator-load loop
+
+------------------------------------------------------------
+
+[18] Waveform: sine
+  REFERENCE :
+DEVIATION SUMMARY: Peak displacement = 146.67 nm vs ideal 146.67 nm → 0 nm deviation (shape deviation only). RMS displacement = 67.50 nm vs ideal 103.71 nm → -36.21 nm deviation. Crest factor = 2.173 vs ideal 1.414 → +0.759 deviation. THD = 10.02% vs ideal 0% → +10.02% excess distortion. Sine-fit residual = 40.27% vs ideal 0% → +40.27% excess residual. Measured phase = 62.14° vs FOPDT predicted 17.80° → +44.34° nonlinear phase excess. 2nd harmonic / fund. = 0.1002 vs ideal 0 → +0.1002 excess. 3rd harmonic / fund. = 0.0000 vs ideal 0 → 0 deviation. Hysteresis (pos/neg asymmetry) = 28.91 nm vs ideal 0 nm → +28.91 nm asymmetry. Half-cycle asymmetry = 0.2043 vs ideal 0 → +0.2043 excess. The dominant error is the large sine-fit residual and nonlinear phase excess, indicating significant waveform distortion.
+
+TEMPORAL DEVIATION (Q1–Q4): The full-window average peak is 146.67 nm. Q2 and Q4 peaks are 95.86 nm, deviating most by -50.81 nm from the full-window average. Distortion is unstable across the window, with a significant amplitude drift of 45.65 nm, indicating creep.
+
+VIBRATION ANALYSIS: Distortion is primarily attributed to hysteresis, evidenced by the 28.91 nm half-cycle asymmetry and the substantial 44.34° nonlinear phase excess beyond the FOPDT model. Creep is also a significant factor, as shown by the 45.65 nm amplitude drift across the window. Bandwidth saturation is indicated by the crest factor of 2.173 versus the ideal 1.414. The dominant harmonic frequency is the 2nd harmonic, with a fraction of 0.1002 relative to the fundamental. The vibration is classified as drifting due to the significant amplitude change over the measurement window.
+
+CORRECTION VECTOR: Nonlinear phase compensation beyond FOPDT: -44.34°. Harmonic suppression: 2nd harmonic, target 100% reduction. Hysteresis feedforward: -28.91 nm per half-cycle. Creep compensation: -45.65 nm / 260 ms drift rate (approx. -0.176 nm/ms). DC offset correction: Q1 = +1.52 nm, Q2 = -0.91 nm, Q3 = +0.30 nm, Q4 = -0.91 nm.
+
+  GENERATED :
+DEVIATION SUMMARY: Peak displacement = 146.67 nm vs ideal 146.67 nm → +146.67 nm excess deviation. RMS displacement = 67.50 nm vs ideal 70.00 nm → +67.50 nm excess RMS. THD = 10.02% vs ideal 0% → +10.02% excess distortion. 2nd harmonic / fund. = 0.0200 vs ideal 0.500 → -0.4799 deficit. Duty cycle = 0.0000 vs ideal 0.333 → -0.333 duty cycle error. Edge sharpness = 2.17013 vs ideal 1.000 → -1.629 deficit. Kurtosis = 1.814 versus ideal ∞ → - infinite slope curvature. Gaussianity error = 1.814 vs ideal 0.333 → -0.0000 deficit. The current linear trend line shows no clear indication that nonlinear creep was observed but rather exhibits significant positive creep at higher frequencies due to system limitations. The crest factor cannot be identified without numerical values for rise linearity. Both rising and falling edges exhibit similar levels of distortion. The most pronounced edge rounding occurs around 100 nm relative to the full-window average.
+Crest factor = 2.1701 vs ideal 1.000 → +1.629 excess kurtosis. Gaussianity error = 1.814 vs ideal 0.333 → -0.0000 deficit. The prominent ringing appears consistently across all quarters analyzed suggests substantial post-pulse oscillation. This indicates severe bandwidth limitation on this order compared to the fundamental nature of mechanical resonance within the actuator-load loop
+
+------------------------------------------------------------
+
+[19] Waveform: sine
+  REFERENCE :
+DEVIATION SUMMARY: Peak displacement = 144.92 nm vs ideal 144.92 nm → 0 nm deviation. RMS displacement = 89.41 nm vs ideal 102.47 nm → -13.06 nm deviation. Crest factor = 1.621 vs ideal 1.414 → +0.207 deviation. THD = 17.68% vs ideal 0% → +17.68% excess distortion. Sine-fit residual = 23.08% vs ideal 0% → +23.08% excess residual. Measured phase = 111.84° vs FOPDT linear prediction 17.80° → +94.04° nonlinear phase excess. The dominant error is the significant nonlinear phase excess and high THD, indicating substantial waveform distortion.
+
+TEMPORAL DEVIATION (Q1–Q4): All quarters (Q1, Q2, Q3, Q4) exhibit a peak of 142.42 nm, which deviates from the full-window average peak of 144.92 nm by -2.50 nm. The sine residual is stable at 19.91% across all quarters. Amplitude drift across the window is 0.00 nm, indicating that distortion and amplitude are stable, with no evidence of creep or drift.
+
+VIBRATION ANALYSIS: The significant distortion is primarily attributed to hysteresis, evidenced by the half-cycle asymmetry of 47.47 nm and the large nonlinear phase excess (94.04° beyond FOPDT prediction). Creep is not present, as indicated by the 0.00 nm amplitude drift across the window. Bandwidth saturation is suggested by the elevated crest factor of 1.621 vs ideal 1.414. The dominant harmonic frequency is the 2nd harmonic, with a fraction of 0.1768 relative to the fundamental. The vibration is classified as periodic-steady.
+
+CORRECTION VECTOR: Nonlinear phase compensation = -94.04° (to correct for nonlinear phase excess beyond FOPDT). Harmonic suppression = 2nd harmonic, target 100% reduction (to reduce 0.1768 fraction to 0). Hysteresis feedforward = +47.47 nm per half-cycle (to correct for positive/negative asymmetry). Creep compensation = 0.00 nm/ms drift rate. DC offset correction = 0.00 nm.
+
+  GENERATED :
+DEVIATION SUMMARY: Peak displacement = 144.87 nm vs ideal 144.87 nm → 0 nm deviation. RMS displacement = 89.41 nm vs ideal 89.41 nm → +10.86 nm excess RMS. THD = 17.68% vs ideal 0% → +17.68% excess distortion. Odd/even harmonic ratio = 0.000 vs ideal ∞ → significant even harmonics. 3rd harmonic / fundamental = 0.0000 vs ideal 0.333 → -0.323 deficit. Duty cycle = 0.0000 vs ideal 0.500 → -0.000 error. Edge sharpness = 1.6197 vs ideal 1.000 → -0.6197 deficit. Kurtosis = 1.688 vs ideal 1.000 → -0.3113 deficit. Gaussianity error = 1.688 vs ideal 0 → +1.688 excess. The active duty cycle must be increased to achieve target average N/A % reduction. Ringing decay time constant cannot be determined without knowing half-cycle asymmetry. Creep recovery time constant cannot be estimated due to missing data on all quarters.
+
+------------------------------------------------------------
+
+[20] Waveform: sine
+  REFERENCE :
+DEVIATION SUMMARY: Peak displacement = 144.92 nm vs ideal 144.92 nm → 0 nm deviation. RMS displacement = 89.41 nm vs ideal 102.47 nm → -13.06 nm deviation. Crest factor = 1.621 vs ideal 1.414 → +0.207 deviation. THD = 17.68% vs ideal 0% → +17.68% excess distortion. Sine-fit residual = 23.08% vs ideal 0% → +23.08% excess residual. Measured phase = 111.84° vs FOPDT predicted 17.80° → +94.04° nonlinear phase excess. 2nd harmonic / fundamental = 0.1768 vs ideal 0 → +0.1768 excess. 3rd harmonic / fundamental = 0.0000 vs ideal 0 → 0 deviation. Hysteresis (pos/neg asymmetry) = 47.47 nm vs ideal 0 nm → +47.47 nm asymmetry. Half-cycle asymmetry = 0.3333 vs ideal 0 → +0.3333 deviation. The dominant error is the significant nonlinear phase excess and high THD, both indicative of hysteresis.
+
+TEMPORAL DEVIATION (Q1–Q4): The per-quarter peak displacement is 142.42 nm for all quarters (Q1, Q2, Q3, Q4). This deviates from the full-window average peak of 144.92 nm by -2.50 nm. Distortion, as indicated by the sine residual of 19.91% for all quarters, is stable across the window. The amplitude drift across the window is 0.00 nm, confirming no significant creep or amplitude drift.
+
+VIBRATION ANALYSIS: The significant distortion is primarily attributed to hysteresis, evidenced by the large half-cycle asymmetry of 47.47 nm and the substantial nonlinear phase excess of 94.04° beyond the FOPDT linear prediction. Creep is not a factor, as indicated by the 0.00 nm amplitude drift across the window. Bandwidth saturation is also present, shown by the crest factor of 1.621 versus the ideal 1.414. The dominant harmonic frequency is the 2nd harmonic, with a fraction of 0.1768 relative to the fundamental. The vibration is classified as periodic-steady.
+
+CORRECTION VECTOR: Nonlinear phase compensation = -94.04° (beyond FOPDT). Harmonic suppression = 2nd harmonic, target 17.68% reduction. Hysteresis feedforward = -47.47 nm per half-cycle (to reduce asymmetry). Creep compensation = 0.00 nm/ms drift rate. DC offset correction = 0.00 nm.
+
+  GENERATED :
+DEVIATION SUMMARY: Peak displacement = 144.87 nm vs ideal 144.87 nm → 0 nm deviation. RMS displacement = 89.41 nm vs ideal 89.41 nm → +10.86 nm excess RMS. THD = 17.68% vs ideal 0% → +17.68% excess distortion. Odd/even harmonic ratio = 0.000 vs ideal ∞ → significant even harmonics. 3rd harmonic / fundamental = 0.0000 vs ideal 0.333 → -0.323 deficit. Duty cycle = 0.0000 vs ideal 0.500 → -0.000 error. Edge sharpness = 1.6197 vs ideal 1.000 → -0.6197 deficit. Kurtosis = 1.688 vs ideal 1.000 → -0.3113 deficit. Gaussianity error = 1.688 vs ideal 0 → +1.688 excess. The active duty cycle must be increased to achieve target average N/A % reduction. Ringing decay time constant cannot be determined without knowing half-cycle asymmetry. Creep recovery time constant cannot be estimated due to missing data on all quarters.
+
+------------------------------------------------------------
+Done: Tue Jun  9 07:41:01 PM CDT 2026
