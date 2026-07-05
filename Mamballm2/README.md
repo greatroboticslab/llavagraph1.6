@@ -60,6 +60,16 @@ Training loss progression (response tokens only, prompt masked):
 
 No overfitting observed — eval loss declined consistently across all 5 epochs.
 
+### Learning Curves
+
+![Training curves](training_curves.png)
+
+The two plots above provide the primary evidence that training succeeded:
+
+**Loss curves (top):** Train loss drops sharply in the first epoch (8.4 → 0.97) as the model adapts to the domain, then converges steadily to 0.36 by epoch 5. Eval loss follows the same trajectory without diverging — the gap between train and eval loss stays stable, which rules out overfitting. If the model were memorizing the training set, eval loss would plateau or rise while train loss kept falling; neither happened here.
+
+**Validation accuracy (bottom):** Token accuracy on the held-out validation set improves monotonically from 74.4% at epoch 1 to 84.8% at epoch 5, with no plateau. The consistent upward trend across all 5 epochs confirms that the model is generalizing, not just fitting noise. Early stopping (patience=3) never triggered because every eval checkpoint was an improvement over the previous one.
+
 ---
 
 ## Files
