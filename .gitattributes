@@ -1,5 +1,7 @@
 # Large binary files go through Git LFS
 *.png  filter=lfs diff=lfs merge=lfs -text
+# Small README figures stored as regular git objects (not LFS)
+mamba_zamba/figures/*.png !filter !diff !merge -text
 *.jpg  filter=lfs diff=lfs merge=lfs -text
 *.jpeg filter=lfs diff=lfs merge=lfs -text
 *.zip  filter=lfs diff=lfs merge=lfs -text
