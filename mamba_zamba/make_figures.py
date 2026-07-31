@@ -49,16 +49,15 @@ EXAMPLES = {
             "hysteresis_ff_nm": -18.62,
         },
         "diagnosis": (
-            "The commanded sine at 100 Hz exhibits significant nonlinear distortion "
-            "due to hysteresis and phase lag. The measured phase lag of 76.1° is far "
-            "greater than the predicted 9.11°, indicating 66.99° of excess nonlinear "
-            "lag. Crest factor 2.398 (ideal: 1.414) shows a non-sinusoidal peak. "
-            "Amplitude drift of 74.86 nm from Q1 to Q4 indicates growing instability."
+            "The commanded 100 Hz sine shows strong nonlinear distortion from "
+            "hysteresis and phase lag. Measured phase lag is 76.1° versus 9.11° "
+            "predicted (66.99° excess). Crest factor 2.398 (ideal 1.414) and "
+            "74.86 nm drift confirm a non-sinusoidal, drifting output."
         ),
         "correction": (
-            "Advance the phase by 66.99° to compensate for the nonlinear lag. "
-            "Cancel the 3rd harmonic (ratio 0.01873) to reduce distortion. "
-            "Apply hysteresis feedforward of -18.62 nm to counteract DC creep."
+            "Advance phase by 66.99° to cancel the nonlinear lag, cancel the 3rd "
+            "harmonic (0.01873), and apply -18.62 nm hysteresis feedforward to "
+            "counteract DC creep."
         ),
     },
     "square": {
@@ -74,16 +73,15 @@ EXAMPLES = {
             "dc_offset_nm":            0.0,
         },
         "diagnosis": (
-            "The commanded square at 100 Hz is distorted due to bandwidth limitation "
-            "and nonlinear effects. THD is 56.93% (ideal: 48.3%). Duty cycle is "
-            "0.4763 (ideal: 0.500) and edge sharpness is 0.9166 (ideal: 1.000), "
-            "showing the actuator cannot track sharp transitions. Amplitude drift "
-            "is stable at 0 nm across all quarters."
+            "The commanded 100 Hz square is distorted by bandwidth limits and "
+            "nonlinearity. THD is 56.93% (ideal 48.3%), duty cycle 0.4763 (ideal "
+            "0.500), edge sharpness 0.9166 (ideal 1.000) — the actuator cannot "
+            "track sharp transitions. Amplitude drift is stable at 0 nm."
         ),
         "correction": (
-            "Trim duty cycle by +0.0237 to restore 50% symmetry. Apply edge "
-            "pre-emphasis to recover the 0.0834 sharpness deficit at transitions. "
-            "Cancel the 2nd harmonic (ratio 0.02587) to remove even-order distortion."
+            "Trim duty cycle by +0.0237 to restore symmetry, apply edge "
+            "pre-emphasis to recover the 0.0834 sharpness deficit, and cancel "
+            "the 2nd harmonic (0.02587)."
         ),
     },
 }
@@ -135,14 +133,14 @@ def make_figure(wtype):
     amp  = f["target_peak"]
     ylim = (-amp * 1.25, amp * 1.25)
 
-    fig = plt.figure(figsize=(22, 8))
+    fig = plt.figure(figsize=(26, 9.5))
     fig.patch.set_facecolor("#F4F4F4")
     gs  = gridspec.GridSpec(
         1, 3, figure=fig,
-        width_ratios=[1.0, 1.4, 1.0],
+        width_ratios=[1.0, 1.55, 0.95],
         left=0.02, right=0.98,
-        top=0.88, bottom=0.08,
-        wspace=0.05,
+        top=0.87, bottom=0.08,
+        wspace=0.06,
     )
 
     # ── panel 1: real hardware measurement ───────────────────────────────────
@@ -163,7 +161,7 @@ def make_figure(wtype):
     ax1.set_title(
         f"Measured Waveform — {wtype.upper()} at {int(f['freq'])} Hz\n"
         f"(real hardware data, piezoelectric actuator)",
-        fontsize=10, fontweight="bold", color="#B71C1C", pad=8,
+        fontsize=14, fontweight="bold", color="#B71C1C", pad=10,
     )
 
     # ── panel 2: LLM diagnostic report ───────────────────────────────────────
@@ -176,11 +174,11 @@ def make_figure(wtype):
     # Use axes height in points to compute safe line spacing
     # At figsize 22x8, the center panel axes height ≈ 0.80 * 8 * 72 = 460 pt
     # We'll use normalized coords and a fixed step that avoids overlap
-    BODY_SIZE  = 8.2
-    HEAD_SIZE  = 10.0
-    BODY_STEP  = 0.040
-    HEAD_STEP  = 0.052
-    SEC_GAP    = 0.025
+    BODY_SIZE  = 13.5
+    HEAD_SIZE  = 16.0
+    BODY_STEP  = 0.048
+    HEAD_STEP  = 0.060
+    SEC_GAP    = 0.022
 
     y_cur = 0.97
 
@@ -197,25 +195,25 @@ def make_figure(wtype):
 
     # DIAGNOSIS
     put("DIAGNOSIS", bold=True, fcolor=color, size=HEAD_SIZE, step=HEAD_STEP)
-    for line in textwrap.wrap(ex["diagnosis"], 58):
+    for line in textwrap.wrap(ex["diagnosis"], 60):
         put(line)
     y_cur -= SEC_GAP
 
     # CORRECTION
     put("CORRECTION", bold=True, fcolor=color, size=HEAD_SIZE, step=HEAD_STEP)
-    for line in textwrap.wrap(ex["correction"], 58):
+    for line in textwrap.wrap(ex["correction"], 60):
         put(line)
     y_cur -= SEC_GAP
 
     # CORRECTION VECTOR
     put("CORRECTION VECTOR", bold=True, fcolor="#444444",
-        size=9.0, step=0.048)
+        size=14.0, step=0.056)
     put("(analytically computed from measured features)",
-        fcolor="#777777", size=7.2, indent=0.02, step=0.036)
-    y_cur -= 0.008
+        fcolor="#777777", size=11.0, indent=0.02, step=0.046)
+    y_cur -= 0.006
     for k, v in cv.items():
-        put(f"  {k:<28} = {v:+.5f}", fcolor="#222222",
-            size=7.8, indent=0.04, step=0.038)
+        put(f"  {k:<26} = {v:+.5f}", fcolor="#222222",
+            size=12.5, indent=0.04, step=0.047)
 
     # arrow
     ax2.annotate("", xy=(1.04, 0.50), xytext=(0.97, 0.50),
@@ -228,8 +226,9 @@ def make_figure(wtype):
     ax3.set_facecolor("#FFFFFF")
     ax3.plot(t_corr, y_corr, color="#1B5E20", linewidth=2.0, alpha=0.9)
     ax3.axhline(0, color="#CCCCCC", linewidth=0.8, linestyle="--")
-    ax3.set_xlabel("Time (ms)", fontsize=10)
-    ax3.set_ylabel("Displacement (nm)", fontsize=10)
+    ax3.set_xlabel("Time (ms)", fontsize=12)
+    ax3.set_ylabel("Displacement (nm)", fontsize=12)
+    ax3.tick_params(labelsize=11)
     ax3.set_ylim(ylim)
     ax3.set_xlim(0, 150)
     ax3.grid(True, alpha=0.2, linewidth=0.5)
@@ -238,7 +237,7 @@ def make_figure(wtype):
         sp.set_linewidth(1.5)
     ax3.set_title(
         "Predicted After Correction\n(analytically computed)",
-        fontsize=10, fontweight="bold", color="#1B5E20", pad=8,
+        fontsize=14, fontweight="bold", color="#1B5E20", pad=10,
     )
 
     if wtype == "sine":
@@ -257,14 +256,14 @@ def make_figure(wtype):
                  f"2nd harmonic:  cancelled\n"
                  f"THD:  {f['thd']:.1f}% → ~48.3% (ideal)")
     ax3.text(0.04, 0.97, stats, transform=ax3.transAxes,
-             fontsize=8.2, verticalalignment="top", fontfamily="monospace",
+             fontsize=11, verticalalignment="top", fontfamily="monospace",
              bbox=dict(boxstyle="round,pad=0.5", facecolor="#E8F5E9",
                        edgecolor="#A5D6A7", alpha=0.95))
 
     fig.suptitle(
         f"Zamba2-7B-instruct  |  Piezoelectric Actuator Waveform Diagnosis  "
         f"|  {wtype.upper()} at {int(f['freq'])} Hz",
-        fontsize=12, fontweight="bold", color="#111111", y=0.96,
+        fontsize=16, fontweight="bold", color="#111111", y=0.96,
     )
 
     out_path = OUT / f"{wtype}_example.png"
