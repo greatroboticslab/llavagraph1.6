@@ -3,6 +3,7 @@
 # Small README/paper figures stored as regular git objects (not LFS)
 mamba_zamba/figures/*.png   !filter !diff !merge -text
 paper_figures/figures/*.png !filter !diff !merge -text
+mamba2_fast/figures/*.png   !filter !diff !merge -text
 *.jpg  filter=lfs diff=lfs merge=lfs -text
 *.jpeg filter=lfs diff=lfs merge=lfs -text
 *.zip  filter=lfs diff=lfs merge=lfs -text

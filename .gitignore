@@ -10,3 +10,15 @@ training_fft/
 *.pth
 *.bin
 *.pt
+
+# mamba2_fast: small README figures and the compressed train/val/test
+# splits are meant to be tracked normally (not LFS), same exception
+# pattern as mamba_zamba/figures/
+!mamba2_fast/figures/*.png
+!mamba2_fast/data/
+!mamba2_fast/data/*
+
+# Python / macOS artifacts — never belong in git
+__pycache__/
+*.pyc
+.DS_Store

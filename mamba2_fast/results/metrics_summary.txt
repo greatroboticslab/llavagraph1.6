@@ -1,0 +1,17 @@
+============================================================
+EVALUATION SUMMARY — mamba2-780m-hf (fine-tuned, zero-shot)
+============================================================
+Total samples: 487
+Total time:    18.5 min
+
+sine     n=120 | BLEU-1=0.496  ROUGE-L=0.342  avg=2246ms  p50=2368ms
+square   n=120 | BLEU-1=0.510  ROUGE-L=0.347  avg=2277ms  p50=2355ms
+ramp     n= 80 | BLEU-1=0.538  ROUGE-L=0.370  avg=2279ms  p50=2307ms
+pulse    n= 75 | BLEU-1=0.477  ROUGE-L=0.304  avg=2313ms  p50=2313ms
+noise    n= 92 | BLEU-1=0.514  ROUGE-L=0.337  avg=2268ms  p50=2314ms
+------------------------------------------------------------
+OVERALL  n=487 | BLEU-1=0.507  ROUGE-L=0.341  avg=2274ms  p50=2334ms
+============================================================
+
+For comparison, the Zamba2-7B few-shot baseline was:
+  BLEU-1=0.382  ROUGE-L=0.209  avg=~22000ms/sample
