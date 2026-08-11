@@ -12,7 +12,7 @@ different jobs:
   gets under.
 - **Defect classification** (below) — same input features, but the target
   is a single defect-category code instead of a paragraph, inspired by how
-  real-time detection models (e.g. Mamba YOLO) get to genuine millisecond
+  real-time detection models get to genuine millisecond
   latency: one forward pass, not an autoregressive loop. **This is the track
   that actually reaches ms-level latency** (~56ms/sample) — the generation
   track's 2.3s does not, and structurally can't without changing what it
