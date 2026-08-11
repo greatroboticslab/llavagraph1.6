@@ -1,0 +1,23 @@
+======================================================================
+EVALUATION SUMMARY — mamba2-780m-hf classifier (fine-tuned)
+======================================================================
+Total samples: 487
+Total time:    0.6 min
+
+sine     n=120 | accuracy= 61.7%  majority_baseline= 46.7%  [ABOVE majority baseline]
+                  avg=105.01ms  p50=56.33ms  true_dist={'2': 15, '0': 56, '1': 18, '3': 31}  pred_dist={'2': 7, '0': 84, '3': 25, '1': 4}
+square   n=120 | accuracy= 86.7%  majority_baseline= 49.2%  [ABOVE majority baseline]
+                  avg=56.14ms  p50=56.16ms  true_dist={'6': 59, '4': 27, '5': 34}  pred_dist={'6': 61, '5': 34, '4': 25}
+ramp     n= 80 | accuracy= 86.2%  majority_baseline= 81.2%  [ABOVE majority baseline]
+                  avg=55.95ms  p50=55.96ms  true_dist={'8': 65, '9': 8, '7': 7}  pred_dist={'8': 62, '9': 10, '7': 8}
+pulse    n= 75 | accuracy= 82.7%  majority_baseline= 78.7%  [ABOVE majority baseline]
+                  avg=57.52ms  p50=56.09ms  true_dist={'B': 59, 'A': 8, 'C': 6, 'D': 2}  pred_dist={'B': 72, 'A': 3}
+noise    n= 92 | accuracy= 80.4%  majority_baseline= 77.2%  [ABOVE majority baseline]
+                  avg=56.06ms  p50=56.10ms  true_dist={'G': 71, 'F': 10, 'E': 11}  pred_dist={'G': 89, 'E': 3}
+----------------------------------------------------------------------
+OVERALL  n=487 | accuracy=78.6%  avg=68.35ms  p50=56.14ms
+======================================================================
+
+For comparison:
+  Text-generation track (mamba2-780m, this repo): avg=2274ms/sample
+  Zamba2-7B few-shot baseline: avg=~21600ms/sample

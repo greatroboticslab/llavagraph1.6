@@ -1,17 +1,26 @@
 # mamba2_fast
 
 Fast-inference counterpart to `mamba_zamba/`: same piezoelectric actuator
-diagnostic task (waveform features in, DIAGNOSIS + CORRECTION text out, plus
-an analytically computed CORRECTION VECTOR), but using a fine-tuned
-**pure-Mamba2** model instead of a 7B Mamba+Transformer hybrid prompted
-few-shot. The goal was to test whether a small, architecturally pure Mamba
-model can be both faster and more accurate than the Zamba2-7B few-shot
-baseline. Speed improved substantially; accuracy improved as well; the
-original millisecond-level latency target was not reached.
+diagnostic task, but using a fine-tuned **pure-Mamba2** model instead of a
+7B Mamba+Transformer hybrid prompted few-shot. Two tracks live here, for two
+different jobs:
+
+- **Text generation** (below) — DIAGNOSIS + CORRECTION prose for a human to
+  read, plus the analytically computed CORRECTION VECTOR. Faster and more
+  accurate than the Zamba2-7B baseline, but tops out at ~2.3s/sample —
+  generating free text token-by-token has a hard speed floor no model size
+  gets under.
+- **Defect classification** (below) — same input features, but the target
+  is a single defect-category code instead of a paragraph, inspired by how
+  real-time detection models (e.g. Mamba YOLO) get to genuine millisecond
+  latency: one forward pass, not an autoregressive loop. **This is the track
+  that actually reaches ms-level latency** (~56ms/sample) — the generation
+  track's 2.3s does not, and structurally can't without changing what it
+  produces.
 
 ---
 
-## Result summary (487-sample test set)
+## Track 1 — Text generation: result summary (487-sample test set)
 
 | | Zamba2-7B (few-shot, no fine-tuning) | Mamba2-780M (fine-tuned, this track) |
 |---|---|---|
@@ -139,9 +148,9 @@ GPU than the Zamba2 baseline (see comparability caveats above).
 
 ## Known limitations / open questions
 
-- **Latency target not met** (see above) — the two unexplored levers are
-  further output compression (fewer generated tokens) and a smaller
-  backbone (below 780M).
+- **Latency target not met by this track specifically.** Free-text
+  generation has a hard speed floor — see Track 2 below, which reaches
+  genuine ms-level latency by not generating free text at all.
 - **Why EOS training collapses training is still unknown.** Anyone
   revisiting this should look at the transformers version's interaction
   between `label_smoothing_factor`, gradient accumulation, and Mamba2's SSM
@@ -195,7 +204,128 @@ docstring — do not match by filename alone).
 
 ---
 
+## Track 2 — Defect classification
+
+**Why this track exists:** free-text generation (Track 1) cannot reach
+genuine ms-level latency at any model size — every token costs another
+forward pass. Real-time detection models (YOLO, and Mamba YOLO's
+SSM-based version of it) get to true ms latency a different way: one
+forward pass per input, not an autoregressive loop. Applied here as
+classification rather than detection specifically — the correction applied
+per sample is a single global adjustment (not several independently
+localized regions needing separate bounding boxes), so a classifier is the
+right-sized version of that idea for this data, not a full detection
+framework built for a different problem shape (see conversation notes on
+why `HZAI-ZJNU/Mamba-YOLO` itself was not used directly: it is an
+object-detection framework, and adapting it to whole-sample classification
+would be forcing a mismatched tool).
+
+### Result summary (487-sample test set, unweighted — the version kept as final)
+
+| Waveform | n | accuracy | majority-class baseline | avg latency |
+|---|---|---|---|---|
+| sine | 120 | 61.7% | 46.7% | 105ms* |
+| square | 120 | 86.7% | 49.2% | 56ms |
+| ramp | 80 | 86.2% | 81.2% | 56ms |
+| pulse | 75 | 82.7% | 78.7% | 58ms |
+| noise | 92 | 80.4% | 77.2% | 56ms |
+| **Overall** | **487** | **78.6%** | — | **avg 68ms, p50 56ms** |
+
+\* sine's higher average is a one-time CUDA-kernel warmup cost on the
+first sample processed, not steady-state speed — its own p50 (56ms)
+matches every other type.
+
+**All 5 waveform types beat their own majority-class baseline** — i.e.
+none of this is the model getting a good-looking score by always guessing
+the most common category (see "Method" below for why that check matters
+here). **p50 latency ~56ms is genuine millisecond-level latency**: ~40x
+faster than Track 1's generation approach (2,274ms) and ~385x faster than
+the Zamba2-7B baseline (~21,600ms).
+
+### Method
+
+**Category labels** (`label_scheme.py`): for each waveform type, the
+17 categories are "which measured quantity deviates most from its typical
+value, relative to how much that quantity normally varies" (z-score /
+argmax over the same physically-meaningful fields the CORRECTION VECTOR
+formulas already use) — a fixed, deterministic function of the real
+measured features, not a human-labeled or LLM-labeled category. E.g. sine
+splits into phase-lag-dominant / hysteresis-dominant / 2nd-harmonic-dominant
+/ 3rd-harmonic-dominant. 17 categories total across the 5 waveform types,
+each assigned a single-token label character (`0`-`9`, `A`-`G`).
+
+**No classification head exists for Mamba2 in `transformers`** (checked:
+no `Mamba2ForSequenceClassification`, unlike some older architectures).
+Rather than write and debug a custom classification head — new, unverified
+code, the same risk category as the Track 1 EOS-training failures — the
+existing, already-proven `Mamba2ForCausalLM` is reused: the target is
+*one* label token instead of a paragraph. This sidesteps the "when to
+stop" problem entirely (no stopping decision to learn — generation is
+always exactly 1 token, `max_new_tokens=1`) and this is also what makes
+the latency genuinely ms-level: `generate()` for 1 token is one forward
+pass, not a decoding loop.
+
+**Training:** `train_classifier.py`, same proven config as Track 1's
+`finetune_mamba2.py` (full-parameter, right-padding, LR 2e-5, weight decay
+0.01, label smoothing 0.05, early stopping) — only the target changed.
+
+### Class imbalance — what was tried, and why the plain version was kept
+
+Majority-class baselines range 44%-87% across waveform types (see table
+above) — meaningfully imbalanced. Rather than add class-weighted loss
+pre-emptively (untested-complexity risk, same category as the Track 1 EOS
+attempts), the plan was: train plain first, check per-category predictions
+against the baseline, and only add weighting if that showed a real
+majority-collapse problem.
+
+It did, partially: the unweighted model never predicted pulse's rarest
+categories (`C`: 6 true examples, `D`: 2 true examples in the test set) or
+noise's `F` (10 true examples) — not full majority-collapse (square and
+ramp showed no such gap, and overall accuracy clearly beat every baseline),
+but those 3 specific rare categories were invisible to it.
+
+Two class-weighted re-runs were tried (`train_classifier.py`,
+inverse-frequency weight per label token via a custom `WeightedTrainer`,
+capped to avoid pulse's rarest class getting a ~12x weight from only 7
+training examples):
+
+| | Unweighted (kept) | Weighted, cap 5x | Weighted, cap 3x |
+|---|---|---|---|
+| Overall accuracy | **78.6%** | 76.2% | 76.6% |
+| ramp vs. its baseline | above (86.2% vs 81.2%) | **below** (78.8% vs 81.2%) | **below** (80.0% vs 81.2%) |
+| noise's `F` category | never predicted | fixed (predicted 12x, true 10x) | fixed (predicted 11x) |
+| pulse's `C` category | never predicted | partially fixed (3x) | never predicted (regressed) |
+
+Both weighted versions fixed noise's blind spot, but overcorrected on
+ramp — pushing a type that was learning fine *below* its own majority
+baseline, which is a worse failure mode than "3 rare categories are
+invisible." Lowering the weight cap didn't resolve this and lost the
+partial pulse fix. **Kept the unweighted version**: highest overall
+accuracy, and no waveform type fails to beat its own baseline, at the cost
+of pulse's 2 rarest categories (6 and 2 real test examples — likely a real
+data-scarcity limit, not something a training fix resolves) and noise's
+least common category staying unrecognized.
+
+### Known limitations (this track)
+
+- **Pulse's `C`/`D` and noise's `F` categories are not learned** by the
+  kept (unweighted) model — see above. Given how few real examples exist
+  for the rarest of these (`D`: 7 train / 2 test, largely near-duplicate
+  augmented copies of very few underlying physical samples), more data for
+  these specific categories is the more likely fix than further loss
+  engineering.
+- **Classification accuracy is not comparable to Track 1's BLEU-1/ROUGE-L**
+  — different task, different metric. "Better" here means "accuracy clearly
+  above the majority-class baseline for that type," not a number to compare
+  against the 0.507 BLEU-1 figure above.
+- **Same hardware caveat as Track 1** — measured on RTX 5000 Ada, not the
+  A100 the Zamba2 baseline used.
+
+---
+
 ## Files
+
+**Track 1 — text generation:**
 
 | File | Purpose |
 |---|---|
@@ -209,8 +339,18 @@ docstring — do not match by filename alone).
 | `make_figures.py` | Learning curve, accuracy comparison, speed comparison charts |
 | `make_example_figure.py` | The 3-panel worked example above |
 
+**Track 2 — defect classification:**
+
+| File | Purpose |
+|---|---|
+| `label_scheme.py` | Defines the 17 defect categories and the fixed function that computes a sample's label from its real measured features |
+| `prepare_classifier_data.py` | Builds `data/{train,val,test}_cls.jsonl` (same inputs as Track 1, single-token category labels) |
+| `train_classifier.py` / `run_train_classifier.sbatch` | Fine-tuning; includes the optional `WeightedTrainer` for the class-weighting experiments (unweighted is the version actually kept — see above) |
+| `eval_classifier.py` / `run_eval_classifier.sbatch` | Per-type accuracy vs. majority-class baseline, plus real per-sample latency (`--suffix` selects which checkpoint/output-file set) |
+
 ## Reproducing
 
+Track 1:
 ```bash
 python compress_labels.py          # ~3h, needs GEMINI_API_KEY
 python fix_flagged.py              # only if compress_labels.py flags anything
@@ -221,4 +361,15 @@ sbatch run_eval.sbatch             # ~20 min
 # sync results/ back locally, then:
 python make_figures.py
 python make_example_figure.py --idx 1
+```
+
+Track 2 (after Track 1's `data/{train,val,test}.jsonl` already exist):
+```bash
+python prepare_classifier_data.py
+# sync to cluster, then (interactive srun, not sbatch — see conda-env note
+# in conversation history if sbatch jobs fail with EnvironmentLocationNotFound):
+srun --partition=research-gpu --gres=gpu:RTX5000Ada:1 --pty bash
+conda activate mamba_env
+python train_classifier.py         # ~15-20 min
+python eval_classifier.py --suffix ""   # empty suffix = unweighted, the kept version
 ```
