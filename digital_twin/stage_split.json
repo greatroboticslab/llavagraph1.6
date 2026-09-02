@@ -1,0 +1,1988 @@
+{
+  "train": [
+    {
+      "waveform": "sine",
+      "freq_hz": 99.9694,
+      "filename": "sine-100Hz-10_absolute.csv"
+    },
+    {
+      "waveform": "sine",
+      "freq_hz": 100.0542,
+      "filename": "sine-100Hz-4_absolute.csv"
+    },
+    {
+      "waveform": "sine",
+      "freq_hz": 100.0116,
+      "filename": "sine-100Hz-5_absolute.csv"
+    },
+    {
+      "waveform": "sine",
+      "freq_hz": 99.9693,
+      "filename": "sine-100Hz-6_absolute.csv"
+    },
+    {
+      "waveform": "sine",
+      "freq_hz": 100.0,
+      "filename": "sine-100Hz-7_absolute.csv"
+    },
+    {
+      "waveform": "sine",
+      "freq_hz": 100.0277,
+      "filename": "sine-100Hz-8_absolute.csv"
+    },
+    {
+      "waveform": "sine",
+      "freq_hz": 99.9759,
+      "filename": "sine-100Hz-9_absolute.csv"
+    },
+    {
+      "waveform": "sine",
+      "freq_hz": 21.9809,
+      "filename": "sine-1Hz-10_absolute.csv"
+    },
+    {
+      "waveform": "sine",
+      "freq_hz": 20.0225,
+      "filename": "sine-1Hz-2_absolute.csv"
+    },
+    {
+      "waveform": "sine",
+      "freq_hz": 20.0123,
+      "filename": "sine-1Hz-3_absolute.csv"
+    },
+    {
+      "waveform": "sine",
+      "freq_hz": 20.9771,
+      "filename": "sine-1Hz-4_absolute.csv"
+    },
+    {
+      "waveform": "sine",
+      "freq_hz": 21.0115,
+      "filename": "sine-1Hz-5_absolute.csv"
+    },
+    {
+      "waveform": "sine",
+      "freq_hz": 20.0106,
+      "filename": "sine-1Hz-6_absolute.csv"
+    },
+    {
+      "waveform": "sine",
+      "freq_hz": 19.9653,
+      "filename": "sine-1Hz-7_absolute.csv"
+    },
+    {
+      "waveform": "sine",
+      "freq_hz": 21.0452,
+      "filename": "sine-1Hz-9_absolute.csv"
+    },
+    {
+      "waveform": "sine",
+      "freq_hz": 200.0226,
+      "filename": "sine-200Hz-2_absolute.csv"
+    },
+    {
+      "waveform": "sine",
+      "freq_hz": 200.0434,
+      "filename": "sine-200Hz-3_absolute.csv"
+    },
+    {
+      "waveform": "sine",
+      "freq_hz": 200.0449,
+      "filename": "sine-200Hz-6_absolute.csv"
+    },
+    {
+      "waveform": "sine",
+      "freq_hz": 200.0511,
+      "filename": "sine-200Hz-9_absolute.csv"
+    },
+    {
+      "waveform": "sine",
+      "freq_hz": 299.9808,
+      "filename": "sine-300Hz-10_absolute.csv"
+    },
+    {
+      "waveform": "sine",
+      "freq_hz": 299.9444,
+      "filename": "sine-300Hz-1_absolute.csv"
+    },
+    {
+      "waveform": "sine",
+      "freq_hz": 299.987,
+      "filename": "sine-300Hz-2_absolute.csv"
+    },
+    {
+      "waveform": "sine",
+      "freq_hz": 300.0219,
+      "filename": "sine-300Hz-4_absolute.csv"
+    },
+    {
+      "waveform": "sine",
+      "freq_hz": 299.9861,
+      "filename": "sine-300Hz-5_absolute.csv"
+    },
+    {
+      "waveform": "sine",
+      "freq_hz": 299.9447,
+      "filename": "sine-300Hz-6_absolute.csv"
+    },
+    {
+      "waveform": "sine",
+      "freq_hz": 299.9639,
+      "filename": "sine-300Hz-9_absolute.csv"
+    },
+    {
+      "waveform": "sine",
+      "freq_hz": 399.9477,
+      "filename": "sine-400Hz-10_absolute.csv"
+    },
+    {
+      "waveform": "sine",
+      "freq_hz": 400.0581,
+      "filename": "sine-400Hz-1_absolute.csv"
+    },
+    {
+      "waveform": "sine",
+      "freq_hz": 399.9784,
+      "filename": "sine-400Hz-2_absolute.csv"
+    },
+    {
+      "waveform": "sine",
+      "freq_hz": 400.0,
+      "filename": "sine-400Hz-3_absolute.csv"
+    },
+    {
+      "waveform": "sine",
+      "freq_hz": 400.2677,
+      "filename": "sine-400Hz-4_absolute.csv"
+    },
+    {
+      "waveform": "sine",
+      "freq_hz": 399.975,
+      "filename": "sine-400Hz-7_absolute.csv"
+    },
+    {
+      "waveform": "sine",
+      "freq_hz": 399.9734,
+      "filename": "sine-400Hz-8_absolute.csv"
+    },
+    {
+      "waveform": "sine",
+      "freq_hz": 399.9735,
+      "filename": "sine-400Hz-9_absolute.csv"
+    },
+    {
+      "waveform": "sine",
+      "freq_hz": 99.9832,
+      "filename": "sine_100Hz_100Hz_10_absolute.csv"
+    },
+    {
+      "waveform": "sine",
+      "freq_hz": 100.006,
+      "filename": "sine_100Hz_100Hz_11_absolute.csv"
+    },
+    {
+      "waveform": "sine",
+      "freq_hz": 100.0055,
+      "filename": "sine_100Hz_100Hz_12_absolute.csv"
+    },
+    {
+      "waveform": "sine",
+      "freq_hz": 99.9887,
+      "filename": "sine_100Hz_100Hz_13_absolute.csv"
+    },
+    {
+      "waveform": "sine",
+      "freq_hz": 100.0,
+      "filename": "sine_100Hz_100Hz_1_absolute.csv"
+    },
+    {
+      "waveform": "sine",
+      "freq_hz": 99.9942,
+      "filename": "sine_100Hz_100Hz_4_absolute.csv"
+    },
+    {
+      "waveform": "sine",
+      "freq_hz": 100.0278,
+      "filename": "sine_100Hz_100Hz_5_absolute.csv"
+    },
+    {
+      "waveform": "sine",
+      "freq_hz": 99.9968,
+      "filename": "sine_100Hz_100Hz_7_absolute.csv"
+    },
+    {
+      "waveform": "sine",
+      "freq_hz": 99.9813,
+      "filename": "sine_100Hz_100Hz_8_absolute.csv"
+    },
+    {
+      "waveform": "sine",
+      "freq_hz": 100.0182,
+      "filename": "sine_100Hz_100Hz_9_absolute.csv"
+    },
+    {
+      "waveform": "sine",
+      "freq_hz": 99.9846,
+      "filename": "sine_100Hz_absolute.csv"
+    },
+    {
+      "waveform": "sine",
+      "freq_hz": 119.9965,
+      "filename": "sine_1Hx_absolute.csv"
+    },
+    {
+      "waveform": "sine",
+      "freq_hz": 119.9706,
+      "filename": "sine_1Hz_1Hz_10_absolute.csv"
+    },
+    {
+      "waveform": "sine",
+      "freq_hz": 119.9927,
+      "filename": "sine_1Hz_1Hz_11_absolute.csv"
+    },
+    {
+      "waveform": "sine",
+      "freq_hz": 120.0538,
+      "filename": "sine_1Hz_1Hz_12_absolute.csv"
+    },
+    {
+      "waveform": "sine",
+      "freq_hz": 120.0068,
+      "filename": "sine_1Hz_1Hz_1_absolute.csv"
+    },
+    {
+      "waveform": "sine",
+      "freq_hz": 119.9622,
+      "filename": "sine_1Hz_1Hz_7_absolute.csv"
+    },
+    {
+      "waveform": "sine",
+      "freq_hz": 120.0422,
+      "filename": "sine_1Hz_1Hz_8_absolute.csv"
+    },
+    {
+      "waveform": "sine",
+      "freq_hz": 120.0371,
+      "filename": "sine_1Hz_1Hz_9_absolute.csv"
+    },
+    {
+      "waveform": "sine",
+      "freq_hz": 120.0378,
+      "filename": "sine_1Hz_1hz_2_absolute.csv"
+    },
+    {
+      "waveform": "sine",
+      "freq_hz": 120.0379,
+      "filename": "sine_1Hz_1hz_6_absolute.csv"
+    },
+    {
+      "waveform": "sine",
+      "freq_hz": 120.0429,
+      "filename": "sine_1Hz_absolute.csv"
+    },
+    {
+      "waveform": "sine",
+      "freq_hz": 200.0112,
+      "filename": "sine_200Hz_200Hz_10_absolute.csv"
+    },
+    {
+      "waveform": "sine",
+      "freq_hz": 200.0271,
+      "filename": "sine_200Hz_200Hz_12_absolute.csv"
+    },
+    {
+      "waveform": "sine",
+      "freq_hz": 199.9781,
+      "filename": "sine_200Hz_200Hz_4_absolute.csv"
+    },
+    {
+      "waveform": "sine",
+      "freq_hz": 200.0256,
+      "filename": "sine_200Hz_200Hz_5_absolute.csv"
+    },
+    {
+      "waveform": "sine",
+      "freq_hz": 200.0,
+      "filename": "sine_200Hz_200Hz_6_absolute.csv"
+    },
+    {
+      "waveform": "sine",
+      "freq_hz": 200.0213,
+      "filename": "sine_200Hz_200Hz_9_absolute.csv"
+    },
+    {
+      "waveform": "sine",
+      "freq_hz": 200.0,
+      "filename": "sine_200Hz_absolute.csv"
+    },
+    {
+      "waveform": "sine",
+      "freq_hz": 300.0089,
+      "filename": "sine_300Hz_300Hz_12_absolute.csv"
+    },
+    {
+      "waveform": "sine",
+      "freq_hz": 299.9795,
+      "filename": "sine_300Hz_300Hz_13_absolute.csv"
+    },
+    {
+      "waveform": "sine",
+      "freq_hz": 300.0256,
+      "filename": "sine_300Hz_300Hz_1_absolute.csv"
+    },
+    {
+      "waveform": "sine",
+      "freq_hz": 299.9958,
+      "filename": "sine_300Hz_300Hz_2_absolute.csv"
+    },
+    {
+      "waveform": "sine",
+      "freq_hz": 300.0281,
+      "filename": "sine_300Hz_300Hz_3_absolute.csv"
+    },
+    {
+      "waveform": "sine",
+      "freq_hz": 299.9819,
+      "filename": "sine_300Hz_300Hz_5_absolute.csv"
+    },
+    {
+      "waveform": "sine",
+      "freq_hz": 300.0228,
+      "filename": "sine_300Hz_300Hz_6_absolute.csv"
+    },
+    {
+      "waveform": "sine",
+      "freq_hz": 299.9841,
+      "filename": "sine_300Hz_300Hz_7_absolute.csv"
+    },
+    {
+      "waveform": "sine",
+      "freq_hz": 299.9959,
+      "filename": "sine_300Hz_300Hz_8_absolute.csv"
+    },
+    {
+      "waveform": "sine",
+      "freq_hz": 300.0255,
+      "filename": "sine_300Hz_300Hz_9_absolute.csv"
+    },
+    {
+      "waveform": "sine",
+      "freq_hz": 400.021,
+      "filename": "sine_400Hz_400Hz_10_absolute.csv"
+    },
+    {
+      "waveform": "sine",
+      "freq_hz": 399.9777,
+      "filename": "sine_400Hz_400Hz_11_absolute.csv"
+    },
+    {
+      "waveform": "sine",
+      "freq_hz": 400.0165,
+      "filename": "sine_400Hz_400Hz_12_absolute.csv"
+    },
+    {
+      "waveform": "sine",
+      "freq_hz": 400.0215,
+      "filename": "sine_400Hz_400Hz_13_absolute.csv"
+    },
+    {
+      "waveform": "sine",
+      "freq_hz": 399.9806,
+      "filename": "sine_400Hz_400Hz_1_absolute.csv"
+    },
+    {
+      "waveform": "sine",
+      "freq_hz": 399.9778,
+      "filename": "sine_400Hz_400Hz_2_absolute.csv"
+    },
+    {
+      "waveform": "sine",
+      "freq_hz": 400.0099,
+      "filename": "sine_400Hz_400Hz_3_absolute.csv"
+    },
+    {
+      "waveform": "sine",
+      "freq_hz": 399.9902,
+      "filename": "sine_400Hz_400Hz_6_absolute.csv"
+    },
+    {
+      "waveform": "sine",
+      "freq_hz": 400.0059,
+      "filename": "sine_400Hz_400Hz_7_absolute.csv"
+    },
+    {
+      "waveform": "sine",
+      "freq_hz": 400.0,
+      "filename": "sine_400Hz_400Hz_8_absolute.csv"
+    },
+    {
+      "waveform": "sine",
+      "freq_hz": 399.9894,
+      "filename": "sine_400Hz_400Hz_9_absolute.csv"
+    },
+    {
+      "waveform": "square",
+      "freq_hz": 100.0319,
+      "filename": "Square-100Hz-10_absolute.csv"
+    },
+    {
+      "waveform": "square",
+      "freq_hz": 100.0514,
+      "filename": "Square-100Hz-2_absolute.csv"
+    },
+    {
+      "waveform": "square",
+      "freq_hz": 99.9623,
+      "filename": "Square-100Hz-4_absolute.csv"
+    },
+    {
+      "waveform": "square",
+      "freq_hz": 100.0128,
+      "filename": "Square-100Hz-5_absolute.csv"
+    },
+    {
+      "waveform": "square",
+      "freq_hz": 100.0241,
+      "filename": "Square-100Hz-8_absolute.csv"
+    },
+    {
+      "waveform": "square",
+      "freq_hz": 100.0458,
+      "filename": "Square-100Hz-9_absolute.csv"
+    },
+    {
+      "waveform": "square",
+      "freq_hz": 3.0205,
+      "filename": "Square-1Hz-10_absolute.csv"
+    },
+    {
+      "waveform": "square",
+      "freq_hz": 2.9821,
+      "filename": "Square-1Hz-1_absolute.csv"
+    },
+    {
+      "waveform": "square",
+      "freq_hz": 3.0033,
+      "filename": "Square-1Hz-2_absolute.csv"
+    },
+    {
+      "waveform": "square",
+      "freq_hz": 2.973,
+      "filename": "Square-1Hz-3_absolute.csv"
+    },
+    {
+      "waveform": "square",
+      "freq_hz": 2.9445,
+      "filename": "Square-1Hz-4_absolute.csv"
+    },
+    {
+      "waveform": "square",
+      "freq_hz": 3.0008,
+      "filename": "Square-1Hz-5_absolute.csv"
+    },
+    {
+      "waveform": "square",
+      "freq_hz": 2.9472,
+      "filename": "Square-1Hz-7_absolute.csv"
+    },
+    {
+      "waveform": "square",
+      "freq_hz": 3.0006,
+      "filename": "Square-1Hz-8_absolute.csv"
+    },
+    {
+      "waveform": "square",
+      "freq_hz": 3.0205,
+      "filename": "Square-1Hz-9_absolute.csv"
+    },
+    {
+      "waveform": "square",
+      "freq_hz": 200.0,
+      "filename": "Square-200Hz-10_absolute.csv"
+    },
+    {
+      "waveform": "square",
+      "freq_hz": 199.9756,
+      "filename": "Square-200Hz-1_absolute.csv"
+    },
+    {
+      "waveform": "square",
+      "freq_hz": 199.954,
+      "filename": "Square-200Hz-2_absolute.csv"
+    },
+    {
+      "waveform": "square",
+      "freq_hz": 200.0,
+      "filename": "Square-200Hz-3_absolute.csv"
+    },
+    {
+      "waveform": "square",
+      "freq_hz": 200.0218,
+      "filename": "Square-200Hz-4_absolute.csv"
+    },
+    {
+      "waveform": "square",
+      "freq_hz": 200.0455,
+      "filename": "Square-200Hz-5_absolute.csv"
+    },
+    {
+      "waveform": "square",
+      "freq_hz": 200.0414,
+      "filename": "Square-200Hz-6_absolute.csv"
+    },
+    {
+      "waveform": "square",
+      "freq_hz": 199.9746,
+      "filename": "Square-200Hz-7_absolute.csv"
+    },
+    {
+      "waveform": "square",
+      "freq_hz": 199.9555,
+      "filename": "Square-200Hz-8_absolute.csv"
+    },
+    {
+      "waveform": "square",
+      "freq_hz": 199.9645,
+      "filename": "Square-200Hz-9_absolute.csv"
+    },
+    {
+      "waveform": "square",
+      "freq_hz": 300.0,
+      "filename": "Square-300Hz-10_absolute.csv"
+    },
+    {
+      "waveform": "square",
+      "freq_hz": 300.0232,
+      "filename": "Square-300Hz-1_absolute.csv"
+    },
+    {
+      "waveform": "square",
+      "freq_hz": 300.0245,
+      "filename": "Square-300Hz-2_absolute.csv"
+    },
+    {
+      "waveform": "square",
+      "freq_hz": 299.9743,
+      "filename": "Square-300Hz-3_absolute.csv"
+    },
+    {
+      "waveform": "square",
+      "freq_hz": 299.9521,
+      "filename": "Square-300Hz-4_absolute.csv"
+    },
+    {
+      "waveform": "square",
+      "freq_hz": 300.0454,
+      "filename": "Square-300Hz-7_absolute.csv"
+    },
+    {
+      "waveform": "square",
+      "freq_hz": 300.0423,
+      "filename": "Square-300Hz-9_absolute.csv"
+    },
+    {
+      "waveform": "square",
+      "freq_hz": 400.0186,
+      "filename": "Square-400Hz-1_absolute.csv"
+    },
+    {
+      "waveform": "square",
+      "freq_hz": 400.0,
+      "filename": "Square-400Hz-3_absolute.csv"
+    },
+    {
+      "waveform": "square",
+      "freq_hz": 399.9616,
+      "filename": "Square-400Hz-4_absolute.csv"
+    },
+    {
+      "waveform": "square",
+      "freq_hz": 400.0647,
+      "filename": "Square-400Hz-5_absolute.csv"
+    },
+    {
+      "waveform": "square",
+      "freq_hz": 400.0,
+      "filename": "Square-400Hz-6_absolute.csv"
+    },
+    {
+      "waveform": "square",
+      "freq_hz": 399.9801,
+      "filename": "Square-400Hz-8_absolute.csv"
+    },
+    {
+      "waveform": "square",
+      "freq_hz": 400.046,
+      "filename": "Square-400Hz-9_absolute.csv"
+    },
+    {
+      "waveform": "square",
+      "freq_hz": 99.9863,
+      "filename": "square_100Hz_100Hz_12_absolute.csv"
+    },
+    {
+      "waveform": "square",
+      "freq_hz": 99.9871,
+      "filename": "square_100Hz_100Hz_2_absolute.csv"
+    },
+    {
+      "waveform": "square",
+      "freq_hz": 100.0051,
+      "filename": "square_100Hz_100Hz_3_absolute.csv"
+    },
+    {
+      "waveform": "square",
+      "freq_hz": 100.0,
+      "filename": "square_100Hz_100Hz_5_absolute.csv"
+    },
+    {
+      "waveform": "square",
+      "freq_hz": 100.0,
+      "filename": "square_100Hz_100Hz_6_absolute.csv"
+    },
+    {
+      "waveform": "square",
+      "freq_hz": 99.9839,
+      "filename": "square_100Hz_100Hz_7_absolute.csv"
+    },
+    {
+      "waveform": "square",
+      "freq_hz": 100.0045,
+      "filename": "square_100Hz_100Hz_8_absolute.csv"
+    },
+    {
+      "waveform": "square",
+      "freq_hz": 100.0108,
+      "filename": "square_100Hz_100Hz_9_absolute.csv"
+    },
+    {
+      "waveform": "square",
+      "freq_hz": 3.012,
+      "filename": "square_1Hz_1Hz_11_absolute.csv"
+    },
+    {
+      "waveform": "square",
+      "freq_hz": 2.9971,
+      "filename": "square_1Hz_1Hz_12_absolute.csv"
+    },
+    {
+      "waveform": "square",
+      "freq_hz": 3.0025,
+      "filename": "square_1Hz_1Hz_13_absolute.csv"
+    },
+    {
+      "waveform": "square",
+      "freq_hz": 3.0138,
+      "filename": "square_1Hz_1Hz_1_absolute.csv"
+    },
+    {
+      "waveform": "square",
+      "freq_hz": 3.0097,
+      "filename": "square_1Hz_1Hz_2_absolute.csv"
+    },
+    {
+      "waveform": "square",
+      "freq_hz": 3.0125,
+      "filename": "square_1Hz_1Hz_3_absolute.csv"
+    },
+    {
+      "waveform": "square",
+      "freq_hz": 3.0169,
+      "filename": "square_1Hz_1Hz_4_absolute.csv"
+    },
+    {
+      "waveform": "square",
+      "freq_hz": 2.9841,
+      "filename": "square_1Hz_1Hz_5_absolute.csv"
+    },
+    {
+      "waveform": "square",
+      "freq_hz": 2.9893,
+      "filename": "square_1Hz_1Hz_6_absolute.csv"
+    },
+    {
+      "waveform": "square",
+      "freq_hz": 3.0171,
+      "filename": "square_1Hz_1Hz_7_absolute.csv"
+    },
+    {
+      "waveform": "square",
+      "freq_hz": 200.0205,
+      "filename": "square_200Hz_200Hz_10_absolute.csv"
+    },
+    {
+      "waveform": "square",
+      "freq_hz": 199.9868,
+      "filename": "square_200Hz_200Hz_13_absolute.csv"
+    },
+    {
+      "waveform": "square",
+      "freq_hz": 200.0,
+      "filename": "square_200Hz_200Hz_1_absolute.csv"
+    },
+    {
+      "waveform": "square",
+      "freq_hz": 200.0118,
+      "filename": "square_200Hz_200Hz_2_absolute.csv"
+    },
+    {
+      "waveform": "square",
+      "freq_hz": 199.9792,
+      "filename": "square_200Hz_200Hz_3_absolute.csv"
+    },
+    {
+      "waveform": "square",
+      "freq_hz": 200.0,
+      "filename": "square_200Hz_200Hz_4_absolute.csv"
+    },
+    {
+      "waveform": "square",
+      "freq_hz": 200.0123,
+      "filename": "square_200Hz_200Hz_5_absolute.csv"
+    },
+    {
+      "waveform": "square",
+      "freq_hz": 199.9765,
+      "filename": "square_200Hz_200Hz_6_absolute.csv"
+    },
+    {
+      "waveform": "square",
+      "freq_hz": 199.9729,
+      "filename": "square_200Hz_200Hz_9_absolute.csv"
+    },
+    {
+      "waveform": "square",
+      "freq_hz": 200.0,
+      "filename": "square_200Hz_absolute.csv"
+    },
+    {
+      "waveform": "square",
+      "freq_hz": 299.9796,
+      "filename": "square_300Hz_300Hz_10_absolute.csv"
+    },
+    {
+      "waveform": "square",
+      "freq_hz": 300.0276,
+      "filename": "square_300Hz_300Hz_12_absolute.csv"
+    },
+    {
+      "waveform": "square",
+      "freq_hz": 300.0125,
+      "filename": "square_300Hz_300Hz_13_absolute.csv"
+    },
+    {
+      "waveform": "square",
+      "freq_hz": 300.0061,
+      "filename": "square_300Hz_300Hz_2_absolute.csv"
+    },
+    {
+      "waveform": "square",
+      "freq_hz": 300.0,
+      "filename": "square_300Hz_300Hz_4_absolute.csv"
+    },
+    {
+      "waveform": "square",
+      "freq_hz": 300.0108,
+      "filename": "square_300Hz_300Hz_5_absolute.csv"
+    },
+    {
+      "waveform": "square",
+      "freq_hz": 299.9817,
+      "filename": "square_300Hz_300Hz_6_absolute.csv"
+    },
+    {
+      "waveform": "square",
+      "freq_hz": 299.9778,
+      "filename": "square_300Hz_300Hz_7_absolute.csv"
+    },
+    {
+      "waveform": "square",
+      "freq_hz": 300.0,
+      "filename": "square_300Hz_300Hz_8_absolute.csv"
+    },
+    {
+      "waveform": "square",
+      "freq_hz": 299.9763,
+      "filename": "square_300Hz_300Hz_9_absolute.csv"
+    },
+    {
+      "waveform": "square",
+      "freq_hz": 300.0306,
+      "filename": "square_300Hz_absolute.csv"
+    },
+    {
+      "waveform": "square",
+      "freq_hz": 400.0174,
+      "filename": "square_400Hz_400Hz_10_absolute.csv"
+    },
+    {
+      "waveform": "square",
+      "freq_hz": 400.0264,
+      "filename": "square_400Hz_400Hz_12_absolute.csv"
+    },
+    {
+      "waveform": "square",
+      "freq_hz": 399.9934,
+      "filename": "square_400Hz_400Hz_13_absolute.csv"
+    },
+    {
+      "waveform": "square",
+      "freq_hz": 399.9906,
+      "filename": "square_400Hz_400Hz_5_absolute.csv"
+    },
+    {
+      "waveform": "square",
+      "freq_hz": 399.9812,
+      "filename": "square_400Hz_400Hz_6_absolute.csv"
+    },
+    {
+      "waveform": "square",
+      "freq_hz": 400.0,
+      "filename": "square_400Hz_absolute.csv"
+    },
+    {
+      "waveform": "ramp",
+      "freq_hz": 9.9602,
+      "filename": "Ramp-11_absolute.csv"
+    },
+    {
+      "waveform": "ramp",
+      "freq_hz": 10.0356,
+      "filename": "Ramp-12_absolute.csv"
+    },
+    {
+      "waveform": "ramp",
+      "freq_hz": 9.9518,
+      "filename": "Ramp-13_absolute.csv"
+    },
+    {
+      "waveform": "ramp",
+      "freq_hz": 9.9863,
+      "filename": "Ramp-14_absolute.csv"
+    },
+    {
+      "waveform": "ramp",
+      "freq_hz": 9.9835,
+      "filename": "Ramp-1_absolute.csv"
+    },
+    {
+      "waveform": "ramp",
+      "freq_hz": 9.9964,
+      "filename": "Ramp-2_absolute.csv"
+    },
+    {
+      "waveform": "ramp",
+      "freq_hz": 10.0191,
+      "filename": "Ramp-3_absolute.csv"
+    },
+    {
+      "waveform": "ramp",
+      "freq_hz": 9.9777,
+      "filename": "Ramp-4_absolute.csv"
+    },
+    {
+      "waveform": "ramp",
+      "freq_hz": 10.0205,
+      "filename": "Ramp-5_absolute.csv"
+    },
+    {
+      "waveform": "ramp",
+      "freq_hz": 10.0088,
+      "filename": "Ramp-7_absolute.csv"
+    },
+    {
+      "waveform": "ramp",
+      "freq_hz": 3.0225,
+      "filename": "Ramp-trail2_10_absolute.csv"
+    },
+    {
+      "waveform": "ramp",
+      "freq_hz": 2.9893,
+      "filename": "Ramp-trail2_12_absolute.csv"
+    },
+    {
+      "waveform": "ramp",
+      "freq_hz": 3.0002,
+      "filename": "Ramp-trail2_13_absolute.csv"
+    },
+    {
+      "waveform": "ramp",
+      "freq_hz": 3.0012,
+      "filename": "Ramp-trail2_15_absolute.csv"
+    },
+    {
+      "waveform": "ramp",
+      "freq_hz": 2.9562,
+      "filename": "Ramp-trail2_1_absolute.csv"
+    },
+    {
+      "waveform": "ramp",
+      "freq_hz": 3.0181,
+      "filename": "Ramp-trail2_2_absolute.csv"
+    },
+    {
+      "waveform": "ramp",
+      "freq_hz": 2.9632,
+      "filename": "Ramp-trail2_3_absolute.csv"
+    },
+    {
+      "waveform": "ramp",
+      "freq_hz": 3.0385,
+      "filename": "Ramp-trail2_5_absolute.csv"
+    },
+    {
+      "waveform": "ramp",
+      "freq_hz": 3.0414,
+      "filename": "Ramp-trail2_7_absolute.csv"
+    },
+    {
+      "waveform": "ramp",
+      "freq_hz": 2.9689,
+      "filename": "Ramp-trail2_8_absolute.csv"
+    },
+    {
+      "waveform": "ramp",
+      "freq_hz": 2.9782,
+      "filename": "Ramp-trail2_9_absolute.csv"
+    },
+    {
+      "waveform": "ramp",
+      "freq_hz": 99.9657,
+      "filename": "ramp-100Hz-10_absolute.csv"
+    },
+    {
+      "waveform": "ramp",
+      "freq_hz": 99.9778,
+      "filename": "ramp-100Hz-1_absolute.csv"
+    },
+    {
+      "waveform": "ramp",
+      "freq_hz": 100.0404,
+      "filename": "ramp-100Hz-2_absolute.csv"
+    },
+    {
+      "waveform": "ramp",
+      "freq_hz": 100.0333,
+      "filename": "ramp-100Hz-3_absolute.csv"
+    },
+    {
+      "waveform": "ramp",
+      "freq_hz": 99.9891,
+      "filename": "ramp-100Hz-4_absolute.csv"
+    },
+    {
+      "waveform": "ramp",
+      "freq_hz": 99.9784,
+      "filename": "ramp-100Hz-5_absolute.csv"
+    },
+    {
+      "waveform": "ramp",
+      "freq_hz": 100.041,
+      "filename": "ramp-100Hz-6_absolute.csv"
+    },
+    {
+      "waveform": "ramp",
+      "freq_hz": 99.9483,
+      "filename": "ramp-100Hz-7_absolute.csv"
+    },
+    {
+      "waveform": "ramp",
+      "freq_hz": 100.0386,
+      "filename": "ramp-100Hz-8_absolute.csv"
+    },
+    {
+      "waveform": "ramp",
+      "freq_hz": 2.9923,
+      "filename": "ramp-1Hz-10_absolute.csv"
+    },
+    {
+      "waveform": "ramp",
+      "freq_hz": 2.9759,
+      "filename": "ramp-1Hz-1_absolute.csv"
+    },
+    {
+      "waveform": "ramp",
+      "freq_hz": 2.9612,
+      "filename": "ramp-1Hz-2_absolute.csv"
+    },
+    {
+      "waveform": "ramp",
+      "freq_hz": 2.9567,
+      "filename": "ramp-1Hz-3_absolute.csv"
+    },
+    {
+      "waveform": "ramp",
+      "freq_hz": 2.9993,
+      "filename": "ramp-1Hz-4_absolute.csv"
+    },
+    {
+      "waveform": "ramp",
+      "freq_hz": 3.0153,
+      "filename": "ramp-1Hz-6_absolute.csv"
+    },
+    {
+      "waveform": "ramp",
+      "freq_hz": 2.9695,
+      "filename": "ramp-1Hz-7_absolute.csv"
+    },
+    {
+      "waveform": "ramp",
+      "freq_hz": 2.9603,
+      "filename": "ramp-1Hz-8_absolute.csv"
+    },
+    {
+      "waveform": "ramp",
+      "freq_hz": 2.9576,
+      "filename": "ramp-1Hz-9_absolute.csv"
+    },
+    {
+      "waveform": "ramp",
+      "freq_hz": 200.021,
+      "filename": "ramp-200Hz-1_absolute.csv"
+    },
+    {
+      "waveform": "ramp",
+      "freq_hz": 199.9572,
+      "filename": "ramp-200Hz-2_absolute.csv"
+    },
+    {
+      "waveform": "ramp",
+      "freq_hz": 199.9555,
+      "filename": "ramp-200Hz-3_absolute.csv"
+    },
+    {
+      "waveform": "ramp",
+      "freq_hz": 200.0425,
+      "filename": "ramp-200Hz-5_absolute.csv"
+    },
+    {
+      "waveform": "ramp",
+      "freq_hz": 200.0,
+      "filename": "ramp-200Hz-6_absolute.csv"
+    },
+    {
+      "waveform": "ramp",
+      "freq_hz": 200.0,
+      "filename": "ramp-200Hz-7_absolute.csv"
+    },
+    {
+      "waveform": "ramp",
+      "freq_hz": 300.021,
+      "filename": "ramp-300Hz-2_absolute.csv"
+    },
+    {
+      "waveform": "ramp",
+      "freq_hz": 299.9704,
+      "filename": "ramp-300Hz-3_absolute.csv"
+    },
+    {
+      "waveform": "ramp",
+      "freq_hz": 300.0495,
+      "filename": "ramp-300Hz-6_absolute.csv"
+    },
+    {
+      "waveform": "ramp",
+      "freq_hz": 299.9651,
+      "filename": "ramp-300Hz-7_absolute.csv"
+    },
+    {
+      "waveform": "ramp",
+      "freq_hz": 399.9578,
+      "filename": "ramp-400Hz-1_absolute.csv"
+    },
+    {
+      "waveform": "ramp",
+      "freq_hz": 400.0396,
+      "filename": "ramp-400Hz-2_absolute.csv"
+    },
+    {
+      "waveform": "ramp",
+      "freq_hz": 399.9793,
+      "filename": "ramp-400Hz-3_absolute.csv"
+    },
+    {
+      "waveform": "ramp",
+      "freq_hz": 400.0,
+      "filename": "ramp-400Hz-5_absolute.csv"
+    },
+    {
+      "waveform": "ramp",
+      "freq_hz": 400.2375,
+      "filename": "ramp-400Hz-6_absolute.csv"
+    },
+    {
+      "waveform": "ramp",
+      "freq_hz": 400.0,
+      "filename": "ramp-400Hz-7_absolute.csv"
+    },
+    {
+      "waveform": "ramp",
+      "freq_hz": 400.0189,
+      "filename": "ramp-400Hz-8_absolute.csv"
+    },
+    {
+      "waveform": "pulse",
+      "freq_hz": 2.4588,
+      "filename": "Pulse-10_absolute.csv"
+    },
+    {
+      "waveform": "pulse",
+      "freq_hz": 2.4038,
+      "filename": "Pulse-12-1Vpp_absolute.csv"
+    },
+    {
+      "waveform": "pulse",
+      "freq_hz": 2.1777,
+      "filename": "Pulse-13-1Vpp_absolute.csv"
+    },
+    {
+      "waveform": "pulse",
+      "freq_hz": 1.9741,
+      "filename": "Pulse-15_absolute.csv"
+    },
+    {
+      "waveform": "pulse",
+      "freq_hz": 2.6108,
+      "filename": "Pulse-16_absolute.csv"
+    },
+    {
+      "waveform": "pulse",
+      "freq_hz": 2.5968,
+      "filename": "Pulse-17_absolute.csv"
+    },
+    {
+      "waveform": "pulse",
+      "freq_hz": 2.2356,
+      "filename": "Pulse-18_absolute.csv"
+    },
+    {
+      "waveform": "pulse",
+      "freq_hz": 1.8931,
+      "filename": "Pulse-19-1Vpp_absolute.csv"
+    },
+    {
+      "waveform": "pulse",
+      "freq_hz": 8.4118,
+      "filename": "Pulse-21-1Vpp_absolute.csv"
+    },
+    {
+      "waveform": "pulse",
+      "freq_hz": 10.861,
+      "filename": "Pulse-22_absolute.csv"
+    },
+    {
+      "waveform": "pulse",
+      "freq_hz": 8.5463,
+      "filename": "Pulse-23_absolute.csv"
+    },
+    {
+      "waveform": "pulse",
+      "freq_hz": 1.9621,
+      "filename": "Pulse-24_absolute.csv"
+    },
+    {
+      "waveform": "pulse",
+      "freq_hz": 3.0369,
+      "filename": "Pulse-27_absolute.csv"
+    },
+    {
+      "waveform": "pulse",
+      "freq_hz": 1.936,
+      "filename": "Pulse-28_absolute.csv"
+    },
+    {
+      "waveform": "pulse",
+      "freq_hz": 8.3492,
+      "filename": "Pulse-30_absolute.csv"
+    },
+    {
+      "waveform": "pulse",
+      "freq_hz": 14.6387,
+      "filename": "Pulse-5-1pp_absolute.csv"
+    },
+    {
+      "waveform": "pulse",
+      "freq_hz": 1.9963,
+      "filename": "Pulse-6_absolute.csv"
+    },
+    {
+      "waveform": "pulse",
+      "freq_hz": 2.1519,
+      "filename": "Pulse-7_absolute.csv"
+    },
+    {
+      "waveform": "pulse",
+      "freq_hz": 1.9257,
+      "filename": "Pulse-8_absolute.csv"
+    },
+    {
+      "waveform": "pulse",
+      "freq_hz": 1.9291,
+      "filename": "pulse-100Hz-2_absolute.csv"
+    },
+    {
+      "waveform": "pulse",
+      "freq_hz": 1.9362,
+      "filename": "pulse-100Hz-4_absolute.csv"
+    },
+    {
+      "waveform": "pulse",
+      "freq_hz": 7.8497,
+      "filename": "pulse-100Hz-5_absolute.csv"
+    },
+    {
+      "waveform": "pulse",
+      "freq_hz": 2.0412,
+      "filename": "pulse-100Hz-6_absolute.csv"
+    },
+    {
+      "waveform": "pulse",
+      "freq_hz": 1.9888,
+      "filename": "pulse-100Hz-7_absolute.csv"
+    },
+    {
+      "waveform": "pulse",
+      "freq_hz": 1.9873,
+      "filename": "pulse-100Hz-8_absolute.csv"
+    },
+    {
+      "waveform": "pulse",
+      "freq_hz": 8.726,
+      "filename": "pulse-100Hz-9_absolute.csv"
+    },
+    {
+      "waveform": "pulse",
+      "freq_hz": 2.0342,
+      "filename": "pulse-1Hz-1_absolute.csv"
+    },
+    {
+      "waveform": "pulse",
+      "freq_hz": 7.5897,
+      "filename": "pulse-1Hz-3_absolute.csv"
+    },
+    {
+      "waveform": "pulse",
+      "freq_hz": 1.9415,
+      "filename": "pulse-1Hz-4_absolute.csv"
+    },
+    {
+      "waveform": "pulse",
+      "freq_hz": 1.9763,
+      "filename": "pulse-1Hz-5_absolute.csv"
+    },
+    {
+      "waveform": "pulse",
+      "freq_hz": 2.1228,
+      "filename": "pulse-1Hz-6_absolute.csv"
+    },
+    {
+      "waveform": "pulse",
+      "freq_hz": 8.0678,
+      "filename": "pulse-1Hz-7_absolute.csv"
+    },
+    {
+      "waveform": "pulse",
+      "freq_hz": 1.9623,
+      "filename": "pulse-1Hz-8_absolute.csv"
+    },
+    {
+      "waveform": "pulse",
+      "freq_hz": 1.9025,
+      "filename": "pulse-1Hz-9_absolute.csv"
+    },
+    {
+      "waveform": "pulse",
+      "freq_hz": 1.9966,
+      "filename": "pulse-200Hz-2_absolute.csv"
+    },
+    {
+      "waveform": "pulse",
+      "freq_hz": 2.3039,
+      "filename": "pulse-200Hz-3_absolute.csv"
+    },
+    {
+      "waveform": "pulse",
+      "freq_hz": 1.9323,
+      "filename": "pulse-200Hz-4_absolute.csv"
+    },
+    {
+      "waveform": "pulse",
+      "freq_hz": 7.5381,
+      "filename": "pulse-200Hz-5_absolute.csv"
+    },
+    {
+      "waveform": "pulse",
+      "freq_hz": 2.4563,
+      "filename": "pulse-200Hz-8_absolute.csv"
+    },
+    {
+      "waveform": "pulse",
+      "freq_hz": 2.0504,
+      "filename": "pulse-200Hz-9_absolute.csv"
+    },
+    {
+      "waveform": "pulse",
+      "freq_hz": 9.0307,
+      "filename": "pulse-300Hz-10_absolute.csv"
+    },
+    {
+      "waveform": "pulse",
+      "freq_hz": 1.915,
+      "filename": "pulse-300Hz-1_absolute.csv"
+    },
+    {
+      "waveform": "pulse",
+      "freq_hz": 7.6399,
+      "filename": "pulse-300Hz-3_absolute.csv"
+    },
+    {
+      "waveform": "pulse",
+      "freq_hz": 2.455,
+      "filename": "pulse-300Hz-4_absolute.csv"
+    },
+    {
+      "waveform": "pulse",
+      "freq_hz": 492.1704,
+      "filename": "pulse-300Hz-5_absolute.csv"
+    },
+    {
+      "waveform": "pulse",
+      "freq_hz": 3.6864,
+      "filename": "pulse-300Hz-6_absolute.csv"
+    },
+    {
+      "waveform": "pulse",
+      "freq_hz": 3.11,
+      "filename": "pulse-300Hz-7_absolute.csv"
+    },
+    {
+      "waveform": "pulse",
+      "freq_hz": 1.933,
+      "filename": "pulse-400Hz-10_absolute.csv"
+    },
+    {
+      "waveform": "pulse",
+      "freq_hz": 9.0621,
+      "filename": "pulse-400Hz-1_absolute.csv"
+    },
+    {
+      "waveform": "pulse",
+      "freq_hz": 2.0523,
+      "filename": "pulse-400Hz-2_absolute.csv"
+    },
+    {
+      "waveform": "pulse",
+      "freq_hz": 2.5319,
+      "filename": "pulse-400Hz-5_absolute.csv"
+    },
+    {
+      "waveform": "pulse",
+      "freq_hz": 2.3692,
+      "filename": "pulse-400Hz-6_absolute.csv"
+    },
+    {
+      "waveform": "pulse",
+      "freq_hz": 2.4609,
+      "filename": "pulse-400Hz-7_absolute.csv"
+    },
+    {
+      "waveform": "pulse",
+      "freq_hz": 1.9421,
+      "filename": "pulse-400Hz-9_absolute.csv"
+    }
+  ],
+  "val": [
+    {
+      "waveform": "sine",
+      "freq_hz": 20.0601,
+      "filename": "sine-1-1_absolute.csv"
+    },
+    {
+      "waveform": "sine",
+      "freq_hz": 100.0153,
+      "filename": "sine-100Hz-1_absolute.csv"
+    },
+    {
+      "waveform": "sine",
+      "freq_hz": 100.0096,
+      "filename": "sine-100Hz-2_absolute.csv"
+    },
+    {
+      "waveform": "sine",
+      "freq_hz": 200.0,
+      "filename": "sine-200Hz-10_absolute.csv"
+    },
+    {
+      "waveform": "sine",
+      "freq_hz": 200.0,
+      "filename": "sine-200Hz-4_absolute.csv"
+    },
+    {
+      "waveform": "sine",
+      "freq_hz": 200.0226,
+      "filename": "sine-200Hz-5_absolute.csv"
+    },
+    {
+      "waveform": "sine",
+      "freq_hz": 300.0404,
+      "filename": "sine-300Hz-7_absolute.csv"
+    },
+    {
+      "waveform": "sine",
+      "freq_hz": 399.9475,
+      "filename": "sine-400Hz-5_absolute.csv"
+    },
+    {
+      "waveform": "sine",
+      "freq_hz": 400.0404,
+      "filename": "sine-400Hz-6_absolute.csv"
+    },
+    {
+      "waveform": "sine",
+      "freq_hz": 100.0104,
+      "filename": "sine_100Hz_100Hz_3_absolute.csv"
+    },
+    {
+      "waveform": "sine",
+      "freq_hz": 119.9982,
+      "filename": "sine_1Hz_1Hz_3_absolute.csv"
+    },
+    {
+      "waveform": "sine",
+      "freq_hz": 119.9812,
+      "filename": "sine_1Hz_1Hz_5_absolute.csv"
+    },
+    {
+      "waveform": "sine",
+      "freq_hz": 199.987,
+      "filename": "sine_200H_absolute.csv"
+    },
+    {
+      "waveform": "sine",
+      "freq_hz": 200.0114,
+      "filename": "sine_200Hz_200Hz_1_absolute.csv"
+    },
+    {
+      "waveform": "sine",
+      "freq_hz": 200.0194,
+      "filename": "sine_200Hz_200Hz_3_absolute.csv"
+    },
+    {
+      "waveform": "sine",
+      "freq_hz": 200.0109,
+      "filename": "sine_200Hz_200Hz_7_absolute.csv"
+    },
+    {
+      "waveform": "sine",
+      "freq_hz": 300.004,
+      "filename": "sine_300Hz_300Hz_10_absolute.csv"
+    },
+    {
+      "waveform": "sine",
+      "freq_hz": 299.9887,
+      "filename": "sine_300Hz_300Hz_11_absolute.csv"
+    },
+    {
+      "waveform": "square",
+      "freq_hz": 100.0496,
+      "filename": "Square-100Hz-3_absolute.csv"
+    },
+    {
+      "waveform": "square",
+      "freq_hz": 99.9598,
+      "filename": "Square-100Hz-6_absolute.csv"
+    },
+    {
+      "waveform": "square",
+      "freq_hz": 400.0346,
+      "filename": "Square-400Hz-10_absolute.csv"
+    },
+    {
+      "waveform": "square",
+      "freq_hz": 399.9561,
+      "filename": "Square-400Hz-2_absolute.csv"
+    },
+    {
+      "waveform": "square",
+      "freq_hz": 100.0219,
+      "filename": "square_100Hz_100Hz_11_absolute.csv"
+    },
+    {
+      "waveform": "square",
+      "freq_hz": 100.0112,
+      "filename": "square_100Hz_100Hz_13_absolute.csv"
+    },
+    {
+      "waveform": "square",
+      "freq_hz": 99.9761,
+      "filename": "square_100Hz_100Hz_1_absolute.csv"
+    },
+    {
+      "waveform": "square",
+      "freq_hz": 100.0,
+      "filename": "square_100Hz_absolute.csv"
+    },
+    {
+      "waveform": "square",
+      "freq_hz": 3.0246,
+      "filename": "square_1Hz_1Hz_9_absolute.csv"
+    },
+    {
+      "waveform": "square",
+      "freq_hz": 3.0118,
+      "filename": "square_1Hz_absolute.csv"
+    },
+    {
+      "waveform": "square",
+      "freq_hz": 200.0114,
+      "filename": "square_200Hz_200Hz_11_absolute.csv"
+    },
+    {
+      "waveform": "square",
+      "freq_hz": 300.006,
+      "filename": "square_300Hz_300Hz_3_absolute.csv"
+    },
+    {
+      "waveform": "square",
+      "freq_hz": 400.0117,
+      "filename": "square_400Hz_400Hz_11_absolute.csv"
+    },
+    {
+      "waveform": "square",
+      "freq_hz": 399.9777,
+      "filename": "square_400Hz_400Hz_1_absolute.csv"
+    },
+    {
+      "waveform": "square",
+      "freq_hz": 400.022,
+      "filename": "square_400Hz_400Hz_2_absolute.csv"
+    },
+    {
+      "waveform": "square",
+      "freq_hz": 400.0156,
+      "filename": "square_400Hz_400Hz_4_absolute.csv"
+    },
+    {
+      "waveform": "square",
+      "freq_hz": 400.0212,
+      "filename": "square_400Hz_400Hz_7_absolute.csv"
+    },
+    {
+      "waveform": "square",
+      "freq_hz": 399.9919,
+      "filename": "square_400Hz_400Hz_9_absolute.csv"
+    },
+    {
+      "waveform": "ramp",
+      "freq_hz": 10.0056,
+      "filename": "Ramp-10_absolute.csv"
+    },
+    {
+      "waveform": "ramp",
+      "freq_hz": 9.981,
+      "filename": "Ramp-8_absolute.csv"
+    },
+    {
+      "waveform": "ramp",
+      "freq_hz": 10.0037,
+      "filename": "Ramp-9_absolute.csv"
+    },
+    {
+      "waveform": "ramp",
+      "freq_hz": 2.9914,
+      "filename": "Ramp-trail2_14_absolute.csv"
+    },
+    {
+      "waveform": "ramp",
+      "freq_hz": 2.9922,
+      "filename": "Ramp-trail2_4_absolute.csv"
+    },
+    {
+      "waveform": "ramp",
+      "freq_hz": 3.0104,
+      "filename": "Ramp-trail2_6_absolute.csv"
+    },
+    {
+      "waveform": "ramp",
+      "freq_hz": 100.04,
+      "filename": "ramp-100Hz-9_absolute.csv"
+    },
+    {
+      "waveform": "ramp",
+      "freq_hz": 200.0,
+      "filename": "ramp-200Hz-8_absolute.csv"
+    },
+    {
+      "waveform": "ramp",
+      "freq_hz": 299.9642,
+      "filename": "ramp-300Hz-10_absolute.csv"
+    },
+    {
+      "waveform": "ramp",
+      "freq_hz": 300.0225,
+      "filename": "ramp-300Hz-4_absolute.csv"
+    },
+    {
+      "waveform": "ramp",
+      "freq_hz": 299.9697,
+      "filename": "ramp-300Hz-5_absolute.csv"
+    },
+    {
+      "waveform": "ramp",
+      "freq_hz": 399.9804,
+      "filename": "ramp-400Hz-10_absolute.csv"
+    },
+    {
+      "waveform": "pulse",
+      "freq_hz": 2.1613,
+      "filename": "Pulse-14_absolute.csv"
+    },
+    {
+      "waveform": "pulse",
+      "freq_hz": 1.9648,
+      "filename": "Pulse-20-1Vpp_absolute.csv"
+    },
+    {
+      "waveform": "pulse",
+      "freq_hz": 1.9768,
+      "filename": "Pulse-25_absolute.csv"
+    },
+    {
+      "waveform": "pulse",
+      "freq_hz": 2.2452,
+      "filename": "pulse-100Hz-10_absolute.csv"
+    },
+    {
+      "waveform": "pulse",
+      "freq_hz": 7.6714,
+      "filename": "pulse-100Hz-1_absolute.csv"
+    },
+    {
+      "waveform": "pulse",
+      "freq_hz": 2.0298,
+      "filename": "pulse-200Hz-10_absolute.csv"
+    },
+    {
+      "waveform": "pulse",
+      "freq_hz": 2.1747,
+      "filename": "pulse-200Hz-6_absolute.csv"
+    },
+    {
+      "waveform": "pulse",
+      "freq_hz": 9.821,
+      "filename": "pulse-200Hz-7_absolute.csv"
+    },
+    {
+      "waveform": "pulse",
+      "freq_hz": 1.9679,
+      "filename": "pulse-300Hz-8_absolute.csv"
+    },
+    {
+      "waveform": "pulse",
+      "freq_hz": 40.1329,
+      "filename": "pulse-300Hz-9_absolute.csv"
+    },
+    {
+      "waveform": "pulse",
+      "freq_hz": 1.8998,
+      "filename": "pulse-400Hz-8_absolute.csv"
+    }
+  ],
+  "test": [
+    {
+      "waveform": "sine",
+      "freq_hz": 100.0106,
+      "filename": "sine-100Hz-3_absolute.csv"
+    },
+    {
+      "waveform": "sine",
+      "freq_hz": 20.9983,
+      "filename": "sine-1Hz-8_absolute.csv"
+    },
+    {
+      "waveform": "sine",
+      "freq_hz": 199.9807,
+      "filename": "sine-200Hz-1_absolute.csv"
+    },
+    {
+      "waveform": "sine",
+      "freq_hz": 200.0235,
+      "filename": "sine-200Hz-7_absolute.csv"
+    },
+    {
+      "waveform": "sine",
+      "freq_hz": 200.0,
+      "filename": "sine-200Hz-8_absolute.csv"
+    },
+    {
+      "waveform": "sine",
+      "freq_hz": 299.988,
+      "filename": "sine-300Hz-3_absolute.csv"
+    },
+    {
+      "waveform": "sine",
+      "freq_hz": 300.0,
+      "filename": "sine-300Hz-8_absolute.csv"
+    },
+    {
+      "waveform": "sine",
+      "freq_hz": 99.9946,
+      "filename": "sine_100Hz_100Hz_2_absolute.csv"
+    },
+    {
+      "waveform": "sine",
+      "freq_hz": 99.9864,
+      "filename": "sine_100Hz_100Hz_6_absolute.csv"
+    },
+    {
+      "waveform": "sine",
+      "freq_hz": 120.0748,
+      "filename": "sine_1Hz_1Hz_4_absolute.csv"
+    },
+    {
+      "waveform": "sine",
+      "freq_hz": 200.011,
+      "filename": "sine_200Hz_200Hz_11_absolute.csv"
+    },
+    {
+      "waveform": "sine",
+      "freq_hz": 200.0,
+      "filename": "sine_200Hz_200Hz_2_absolute.csv"
+    },
+    {
+      "waveform": "sine",
+      "freq_hz": 199.9923,
+      "filename": "sine_200Hz_200Hz_8_absolute.csv"
+    },
+    {
+      "waveform": "sine",
+      "freq_hz": 299.9901,
+      "filename": "sine_300Hz_300Hz_4_absolute.csv"
+    },
+    {
+      "waveform": "sine",
+      "freq_hz": 300.0,
+      "filename": "sine_300Hz_absolute.csv"
+    },
+    {
+      "waveform": "sine",
+      "freq_hz": 400.008,
+      "filename": "sine_400Hz_400Hz_4_absolute.csv"
+    },
+    {
+      "waveform": "sine",
+      "freq_hz": 400.0259,
+      "filename": "sine_400Hz_400Hz_5_absolute.csv"
+    },
+    {
+      "waveform": "sine",
+      "freq_hz": 399.9751,
+      "filename": "sine_400Hz_absolute.csv"
+    },
+    {
+      "waveform": "square",
+      "freq_hz": 99.9475,
+      "filename": "Square-100Hz-1_absolute.csv"
+    },
+    {
+      "waveform": "square",
+      "freq_hz": 99.9881,
+      "filename": "Square-100Hz-7_absolute.csv"
+    },
+    {
+      "waveform": "square",
+      "freq_hz": 3.0379,
+      "filename": "Square-1Hz-6_absolute.csv"
+    },
+    {
+      "waveform": "square",
+      "freq_hz": 300.0243,
+      "filename": "Square-300Hz-5_absolute.csv"
+    },
+    {
+      "waveform": "square",
+      "freq_hz": 299.9888,
+      "filename": "Square-300Hz-6_absolute.csv"
+    },
+    {
+      "waveform": "square",
+      "freq_hz": 300.0324,
+      "filename": "Square-300Hz-8_absolute.csv"
+    },
+    {
+      "waveform": "square",
+      "freq_hz": 400.0,
+      "filename": "Square-400Hz-7_absolute.csv"
+    },
+    {
+      "waveform": "square",
+      "freq_hz": 99.9944,
+      "filename": "square_100Hz_100Hz_10_absolute.csv"
+    },
+    {
+      "waveform": "square",
+      "freq_hz": 100.0309,
+      "filename": "square_100Hz_100Hz_4_absolute.csv"
+    },
+    {
+      "waveform": "square",
+      "freq_hz": 3.0107,
+      "filename": "square_1Hz_1Hz_10_absolute.csv"
+    },
+    {
+      "waveform": "square",
+      "freq_hz": 2.9796,
+      "filename": "square_1Hz_1Hz_8_absolute.csv"
+    },
+    {
+      "waveform": "square",
+      "freq_hz": 200.0,
+      "filename": "square_200Hz_200Hz_12_absolute.csv"
+    },
+    {
+      "waveform": "square",
+      "freq_hz": 200.0,
+      "filename": "square_200Hz_200Hz_7_absolute.csv"
+    },
+    {
+      "waveform": "square",
+      "freq_hz": 199.9913,
+      "filename": "square_200Hz_200Hz_8_absolute.csv"
+    },
+    {
+      "waveform": "square",
+      "freq_hz": 299.9882,
+      "filename": "square_300Hz_300Hz_11_absolute.csv"
+    },
+    {
+      "waveform": "square",
+      "freq_hz": 300.0196,
+      "filename": "square_300Hz_300Hz_1_absolute.csv"
+    },
+    {
+      "waveform": "square",
+      "freq_hz": 399.98,
+      "filename": "square_400Hz_400Hz_3_absolute.csv"
+    },
+    {
+      "waveform": "square",
+      "freq_hz": 399.9904,
+      "filename": "square_400Hz_400Hz_8_absolute.csv"
+    },
+    {
+      "waveform": "ramp",
+      "freq_hz": 10.0034,
+      "filename": "Ramp-15_absolute.csv"
+    },
+    {
+      "waveform": "ramp",
+      "freq_hz": 9.9646,
+      "filename": "Ramp-6_absolute.csv"
+    },
+    {
+      "waveform": "ramp",
+      "freq_hz": 2.9931,
+      "filename": "Ramp-trail2_11_absolute.csv"
+    },
+    {
+      "waveform": "ramp",
+      "freq_hz": 3.0218,
+      "filename": "ramp-1Hz-5_absolute.csv"
+    },
+    {
+      "waveform": "ramp",
+      "freq_hz": 199.9799,
+      "filename": "ramp-200Hz-10_absolute.csv"
+    },
+    {
+      "waveform": "ramp",
+      "freq_hz": 200.0,
+      "filename": "ramp-200Hz-4_absolute.csv"
+    },
+    {
+      "waveform": "ramp",
+      "freq_hz": 200.0226,
+      "filename": "ramp-200Hz-9_absolute.csv"
+    },
+    {
+      "waveform": "ramp",
+      "freq_hz": 299.9799,
+      "filename": "ramp-300Hz-1_absolute.csv"
+    },
+    {
+      "waveform": "ramp",
+      "freq_hz": 300.0,
+      "filename": "ramp-300Hz-8_absolute.csv"
+    },
+    {
+      "waveform": "ramp",
+      "freq_hz": 300.0164,
+      "filename": "ramp-300Hz-9_absolute.csv"
+    },
+    {
+      "waveform": "ramp",
+      "freq_hz": 399.9508,
+      "filename": "ramp-400Hz-4_absolute.csv"
+    },
+    {
+      "waveform": "ramp",
+      "freq_hz": 399.98,
+      "filename": "ramp-400Hz-9_absolute.csv"
+    },
+    {
+      "waveform": "pulse",
+      "freq_hz": 2.404,
+      "filename": "Pulse-11_absolute.csv"
+    },
+    {
+      "waveform": "pulse",
+      "freq_hz": 1.9972,
+      "filename": "Pulse-26_absolute.csv"
+    },
+    {
+      "waveform": "pulse",
+      "freq_hz": 2.0107,
+      "filename": "Pulse-4-1pp_absolute.csv"
+    },
+    {
+      "waveform": "pulse",
+      "freq_hz": 1.9777,
+      "filename": "pulse-100Hz-3_absolute.csv"
+    },
+    {
+      "waveform": "pulse",
+      "freq_hz": 2.2184,
+      "filename": "pulse-1Hz-10_absolute.csv"
+    },
+    {
+      "waveform": "pulse",
+      "freq_hz": 2.4871,
+      "filename": "pulse-1Hz-2_absolute.csv"
+    },
+    {
+      "waveform": "pulse",
+      "freq_hz": 2.2793,
+      "filename": "pulse-200Hz-1_absolute.csv"
+    },
+    {
+      "waveform": "pulse",
+      "freq_hz": 2.3997,
+      "filename": "pulse-300Hz-2_absolute.csv"
+    },
+    {
+      "waveform": "pulse",
+      "freq_hz": 8.7226,
+      "filename": "pulse-31_absolute.csv"
+    },
+    {
+      "waveform": "pulse",
+      "freq_hz": 1.9481,
+      "filename": "pulse-400Hz-3_absolute.csv"
+    },
+    {
+      "waveform": "pulse",
+      "freq_hz": 2.244,
+      "filename": "pulse-400Hz-4_absolute.csv"
+    }
+  ]
+}

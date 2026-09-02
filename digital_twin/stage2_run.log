@@ -1,0 +1,24 @@
+Calibrating shared parameters on 40 real measurements (10 per waveform type x 4 types)...
+  [calibrate_shared] eval 20: gap=6.568
+  [calibrate_shared] eval 40: gap=6.264
+  [calibrate_shared] eval 60: gap=6.302
+  [calibrate_shared] eval 80: gap=6.306
+  [calibrate_shared] eval 100: gap=6.274
+  [calibrate_shared] eval 120: gap=6.291
+  [calibrate_shared] eval 140: gap=6.301
+  [calibrate_shared] eval 160: gap=6.276
+  [calibrate_shared] eval 180: gap=6.265
+
+gap before: 7.326  ->  gap after: 6.173
+fitted shared parameters:
+  K_nm_per_v: 141.96
+  tau_s: 0.00029678
+  hyst_r1_v: 0.019768
+  hyst_r2_v: 0.085174
+  hyst_r3_v: 0.25034
+  hyst_w1: 0.4864
+  hyst_w2: 0.35736
+  hyst_w3: 0.21838
+  sat_nm: 2206.8
+
+saved stage2_fitted_params.json

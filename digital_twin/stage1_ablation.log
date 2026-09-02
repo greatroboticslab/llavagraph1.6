@@ -1,0 +1,16 @@
+variant                                            sine    square      ramp     pulse   overall
+B0 old buggy op, uncalibrated                     1.585     3.923     5.331    12.780     5.148
+B1 bugfix only (single op), uncalibrated          1.497     3.762     5.250    12.149     4.937
+B2 bugfix+PI structure, uncalibrated              1.408     3.651     5.276    11.746     4.806
+B3 bugfix+PI+shared calibration (T1-v2)           1.090     2.692     5.092     7.366     3.563
+
+calibrating B4 (single-hysteron-equivalent, shared)...
+  [calibrate_shared] eval 20: gap=7.092
+  [calibrate_shared] eval 40: gap=6.950
+  [calibrate_shared] eval 60: gap=7.196
+  [calibrate_shared] eval 80: gap=7.200
+  [calibrate_shared] eval 100: gap=7.187
+  [calibrate_shared] eval 120: gap=7.184
+B4 calibration: gap 7.122 -> 6.816
+B4 fitted: {'K_nm_per_v': np.float64(369.147), 'tau_s': np.float64(0.0003), 'hyst_r1_v': np.float64(0.0203), 'hyst_r2_v': np.float64(0.0795), 'hyst_r3_v': np.float64(0.2511), 'hyst_w1': np.float64(0.5035), 'hyst_w2': np.float64(0.0), 'hyst_w3': np.float64(0.0), 'sat_nm': np.float64(1995.2188)}
+B4 bugfix, single op, shared calibration          1.496     3.733     5.206    12.203     4.929
