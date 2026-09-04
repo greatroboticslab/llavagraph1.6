@@ -94,12 +94,26 @@ in the paper repo, for anyone working from that side instead).
   The gain is specifically PI structure *enabling* calibration to do
   something (B2->B3: 4.806 -> 3.563).
 - **Stage 3, Mamba correction on top of T1-v2**: a further **22.5%**
-  gap reduction overall, but *not* uniform -- helps square/ramp/pulse
-  (pulse most, -52%), makes sine slightly worse (+62%, since T1-v2
-  already explains sine well and the corrector has nothing useful left
-  to learn there). That non-uniformity is itself evidence the
-  physics/learned split is doing something real, not just "the neural
-  net always wins."
+  reduction in the aggregate *feature*-gap score, but *not* uniform --
+  helps square/ramp/pulse (pulse most, -52%), makes sine slightly worse
+  (+62%, since T1-v2 already explains sine well and the corrector has
+  nothing useful left to learn there). That non-uniformity is itself
+  evidence the physics/learned split is doing something real, not just
+  "the neural net always wins."
+- **Direct waveform similarity (R^2, Pearson correlation) is a separate,
+  more important question and the answer is different.** Scoring
+  phase-aligned real-vs-simulated waveforms directly (not via the
+  feature-gap score) gives: overall R^2 0.383 -> 0.314 and correlation
+  0.729 -> 0.688 -- both *worse* after the Mamba correction, most
+  dramatically for pulse (correlation 0.307 -> -0.192). The corrector
+  reduces the aggregate feature-gap metric it was trained against while
+  making the raw output waveform *less* similar to real measurements
+  point-by-point. We do not claim the corrector improves waveform
+  similarity -- the paper (`subsec:twinsimilarity`) reports this
+  directly, including the still-open question of why (leading
+  hypothesis: 279 training pairs is too few for the corrector to
+  generalize point-by-point, even though it generalizes fine in
+  aggregate feature space).
 - **Stage 4**: no evidence of second-order resonance (step transients
   are smooth, non-oscillatory). The fixed-methodology frequency sweep
   instead shows a gain minimum + ~170-degree phase flip around 90-100Hz
